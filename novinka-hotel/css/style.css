@@ -293,8 +293,7 @@ section {
 .more_arrow:hover .arrow {
   background: #900E0E;
   transition: 0.4s;
-  -webkit-animation: arrow 1.8s infinite;
-          animation: arrow 1.8s infinite;
+  animation: arrow 1.8s infinite;
 }
 
 .arrow {
@@ -311,15 +310,6 @@ section {
   font-weight: 500;
   font-size: 15px;
   line-height: 120%;
-}
-
-@-webkit-keyframes arrow {
-  from {
-    padding-left: 0px;
-  }
-  to {
-    padding-left: 15px;
-  }
 }
 
 @keyframes arrow {
@@ -374,20 +364,8 @@ section {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px 100px 100px 0px;
   opacity: 0;
-  -webkit-animation: conveniences_hide 1s forwards;
-          animation: conveniences_hide 1s forwards;
+  animation: conveniences_hide 1s forwards;
   transition: 0.4s;
-}
-
-@-webkit-keyframes conveniences_hide {
-  0% {
-    max-width: 0px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    max-width: 100px;
-  }
 }
 
 @keyframes conveniences_hide {
@@ -547,7 +525,7 @@ section {
   position: relative;
   height: 1005px;
   width: 100%;
-  background: url(/img/fon.png);
+  background: url(/novinka-hotel/img/fon.png);
   padding-top: 380px;
 }
 .main_title {
@@ -584,20 +562,7 @@ section {
   justify-content: center;
 }
 .scroll_border:hover {
-  -webkit-animation: scroll_move 0.8s infinite;
-          animation: scroll_move 0.8s infinite;
-}
-
-@-webkit-keyframes scroll_move {
-  0% {
-    padding-top: 0px;
-  }
-  50% {
-    padding-top: 3px;
-  }
-  100% {
-    padding-top: 6px;
-  }
+  animation: scroll_move 0.8s infinite;
 }
 
 @keyframes scroll_move {
