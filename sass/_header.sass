@@ -1,0 +1,37 @@
+.header
+    position: absolute
+    padding-top: 25px
+    z-index: 2
+    width: 100%
+    &_contact
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+        padding-bottom: 25px
+    &_nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 30px
+    &_wrapper
+        display: flex
+        & .icon_contact
+            padding-right: 50px
+        & a
+            color: $maincolor
+            font-weight: normal
+            font-size: 18px
+            line-height: 120%
+.nav  
+    &_wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_bar
+        position: relative
+        padding-right: 70px 
+        &:last-of-type
+            padding-right: 0px
+    &_item
+        color: $maincolor

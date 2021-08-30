@@ -1,0 +1,338 @@
+$maincolor:#fff
+$maincolordark:#1C1C20
+$sectioncolor:#F9F9F9
+$roomscolor:#F0EBE6
+$secondcolor: #900E0E
+$secondcolor-special: #A42222
+$thirdcolor:#40A629
+$titlecolor: #282828
+$textcolor: #4F616B
+$textfootercolor: #BFBFBF
+$borderconveniences: rgba(79, 97, 107, 0.1)
+$content-size: 1400px
+$mainpading: 100px
+
+*
+    margin: 0 
+    padding: 0 
+    box-sizing: border-box
+    color: $textcolor
+body
+    background: #fff
+    font-family: "Pragmatica"
+    .dark
+        background: $maincolordark
+h1,h2,h3,h4,h5,h6
+    margin: 0
+ul,li
+    list-style: none
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+    color: $textcolor
+p
+    margin: 0
+.title
+    color: $secondcolor
+    font-weight: 500
+    font-size: 12px
+    text-transform: uppercase
+    padding-bottom: 25px
+    &.little
+        font-weight: 500
+        font-size: 22px
+        line-height: 120%
+        color: $titlecolor
+.subtitle
+    font-weight: 500
+    font-size: 44px
+    line-height: 110%
+    color: $titlecolor
+    width: 50%
+.text
+    font-size: 15px
+    line-height: 160%
+section
+    position: relative
+.wrapper
+    display: flex
+    flex-direction: column
+    height: 100%
+.container
+    margin: 0 auto
+    max-width: $content-size
+    width: 100%
+.icon
+    &_wrapper
+        display: flex
+    &_social
+        border-radius: 50%
+        display: flex
+        border: 1px solid #F2F2F2
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 32px
+        margin-right: 20px
+        &:nth-last-of-type(2)
+            padding-left: 1px
+        &:last-of-type
+            margin-right: 0px
+        &:hover .icon_social-center
+            fill: $maincolor
+            transition: 0.4s
+.vk:hover 
+    background: #2C5FE1
+    border: 1px solid #2C5FE1
+    transition: 0.4s
+.instagram:hover 
+    background: linear-gradient(180deg, #FF15E8 0%, #FF8A00 100%)
+    border: none
+    transition: 0.4s 
+.odnoklassniki
+    display: flex
+    flex-direction: column
+.odnoklassniki:hover 
+    background: #EC8021
+    border: 1px solid #EC8021
+    transition: 0.4s 
+.youtube:hover 
+    background: #FD000D
+    border: 1px solid #FD000D
+    transition: 0.4s 
+
+.icon_contact
+    display: flex
+    align-items: center
+    & a
+        padding-left: 10px
+    &:hover .icon_hover
+        fill: $secondcolor
+        transition: 0.4s
+.dropdown
+    display: flex
+    cursor: pointer
+    &_text
+        padding-right: 8px
+        font-weight: 500
+        font-size: 15px
+    &_svg
+        border-radius: 50%
+        display: flex
+        border: 2px solid #F2F2F2
+        align-items: center
+        justify-content: center
+        width: 18px
+        height: 18px
+    &:hover .dropdown_svg-center
+        fill: $secondcolor
+        transition: 0.4s
+    &_list
+        position: absolute
+        left: 0
+        display: none
+        top: 30px
+        background: #FFFFFF
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 2px
+    &:hover .dropdown_list
+        display: block
+    &_item
+        font-weight: 400
+        font-size: 15px
+        margin: 0 15px
+        padding: 15px 0 
+        border-bottom: 1px solid borderconveniences
+        &:last-of-type
+            border-bottom: none
+        & a
+            color: $textcolor
+        &:hover a
+            color: $secondcolor
+.button
+    background: $maincolor
+    width: 220px
+    height: 46px
+    text-align: center
+    border: 1px solid $secondcolor
+    border-radius: 2px
+    color: $secondcolor
+    font-weight: 500
+    font-size: 13px
+    line-height: 46px
+    letter-spacing: 0.01em
+    cursor: pointer
+    &:hover
+        background: $secondcolor
+        color: #fff
+        transition: 0.4s
+    &.filled
+        background: $secondcolor
+        color: #fff
+        &:hover
+            background: $secondcolor-special
+            transition: 0.4s
+    &.transparent
+        background: none
+    &_circle
+        position: relative
+        width: 36px
+        height: 36px
+        border: 1px solid borderconveniences
+        border-radius: 50%
+        cursor: pointer
+        &:hover .button_bord
+            background: $titlecolor
+    &_bord
+        position: absolute
+        top: 50%
+        left: 25%
+        width: 18px
+        height: 2px
+        background: $textcolor
+        border-radius: 2px
+        &:first-child
+            transform: rotate(45deg)
+        &:last-child
+            transform: rotate(-45deg)
+    &_rooms
+        border-radius: 100px
+        display: flex
+        border: 2px solid rgba(79, 97, 107, 0.5)
+        align-items: center
+        justify-content: center
+        width: 112px
+        height: 30px
+        transition: 0.4s
+        &:hover
+            border: 2px solid $textcolor
+.more_wrap
+    border-bottom: 1px solid $borderconveniences
+    padding-bottom: 20px            
+.more_arrow
+    display: flex
+    align-items: center
+    &:hover .arrow_center
+        fill: #fff
+        transition: 0.4s
+    &:hover .more_wrap
+        border-bottom: 1px solid $secondcolor
+        transition: 0.4s
+    &:hover .arrow
+        background: $secondcolor
+        transition: 0.4s
+        animation: arrow 1.8s infinite
+
+.arrow
+    border-radius: 50%
+    display: flex
+    border: 2px solid $borderconveniences
+    align-items: center
+    justify-content: center
+    width: 50px
+    height: 50px
+    &_center
+    &_text
+        padding-left: 10px
+        font-weight: 500
+        font-size: 15px
+        line-height: 120%
+@keyframes arrow
+    from     
+        padding-left: 0px
+    to 
+        padding-left: 15px
+.conveniences
+    display: flex
+    position: relative
+    width: 155px
+    height: 40px
+    &.big
+        justify-content: space-between
+        width: 440px
+        height: 100%
+        border-bottom: 1px solid $borderconveniences
+        padding-bottom: 20px
+        &:hover circle
+            stroke: $secondcolor
+            stroke-opacity: 1
+        &:hover .svg_center
+            fill: $secondcolor
+        &:hover.conveniences.big
+            border-bottom: 1px solid $secondcolor
+    &_text
+        margin: auto 0
+    &_icon
+        position: absolute
+        &.big
+            position: relative
+            width: 70px
+            height: 70px
+    &_hide
+        line-height: 42px
+        text-align: center
+        height: 40px
+        opacity: 0
+    &:hover .conveniences_hide
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 0px 100px 100px 0px
+        opacity: 0
+        animation: conveniences_hide 1s forwards
+        transition: 0.4s
+@keyframes conveniences_hide
+    0%   
+        max-width: 0px
+        opacity: 0
+    100%
+        opacity: 1
+        max-width: 100px
+.room
+    display: flex
+    overflow: hidden
+    padding-left: 13.5%
+    &_wrapper
+        padding-right: 50px
+        &:last-of-type
+            padding-right: 0px
+        & img
+            padding-bottom: 30px
+    &_title
+        padding-bottom: 10px
+    &_text
+        padding-bottom: 40px
+.card
+    &_wrapper
+        background: $maincolor
+        width: 433px
+        padding: 25px 25px 22px
+    &_svg
+        padding-bottom: 20px
+    &_text
+        font-size: 14px
+        line-height: 150%
+        padding-bottom: 30px
+        color: $titlecolor
+    &_photo
+        padding-bottom: 10px
+    &_name
+        font-weight: 500
+        font-size: 13px
+        line-height: 120%
+        padding-bottom: 5px
+        color: $titlecolor
+    &_date
+        font-size: 13px
+        line-height: 120%
+@import 'fonts'
+@import 'header'
+@import 'main'
+@import 'aboutus'
+@import 'excursion'
+@import 'advantages'
+@import 'rooms'
+@import 'gallery'
+@import 'reviews'
+@import 'CEO'
+@import 'contacts'
+@import 'footer'

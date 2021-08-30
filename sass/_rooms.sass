@@ -1,0 +1,41 @@
+.rooms
+    padding: $mainpading 0
+    background-color: $roomscolor
+    &_title
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        padding-bottom: 30px
+    &_subtitle
+        padding-right: 25px
+        width: 50%
+    &_text
+        padding-left: 25px
+        width: 50%
+.maney
+    &_wrap
+        border-bottom: 1px solid $borderconveniences
+        padding-bottom: 20px
+        &:hover.maney_wrap
+            border-bottom: 1px solid $secondcolor
+            transition: 0.4s
+        &:hover .maney_svg
+            border: 2px solid $secondcolor
+            transition: 0.4s
+    &_icon
+        display: flex
+        align-items: center
+    &_svg
+        border-radius: 50%
+        display: flex
+        border: 2px solid $borderconveniences
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+    &_center
+    &_text
+        padding-left: 10px
+        font-weight: 500
+        font-size: 15px
+        line-height: 120%
