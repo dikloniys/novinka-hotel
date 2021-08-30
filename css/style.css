@@ -191,7 +191,7 @@ section {
   font-size: 15px;
   margin: 0 15px;
   padding: 15px 0;
-  border-bottom: 1px solid borderconveniences;
+  border-bottom: 1px solid rgba(79, 97, 107, 0.1);
 }
 .dropdown_item:last-of-type {
   border-bottom: none;
@@ -237,7 +237,7 @@ section {
   position: relative;
   width: 36px;
   height: 36px;
-  border: 1px solid borderconveniences;
+  border: 1px solid rgba(79, 97, 107, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
