@@ -105,15 +105,27 @@ section {
   transition: 0.4s;
 }
 
+.instagram {
+  padding-left: 1px;
+}
+
 .instagram:hover {
   background: linear-gradient(180deg, #FF15E8 0%, #FF8A00 100%);
   border: none;
   transition: 0.4s;
 }
 
+.odnoklassniki_head {
+  margin-bottom: -9px;
+  padding-left: 9px;
+}
+
+.odnoklassniki_body {
+  padding-left: 8px;
+}
+
 .odnoklassniki {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .odnoklassniki:hover {
@@ -684,7 +696,7 @@ section {
 .card_img {
   width: 70px;
   height: 70px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .card_title {
   padding-bottom: 20px;
@@ -701,6 +713,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  align-items: center;
 }
 .rooms_subtitle {
   padding-right: 25px;
@@ -752,10 +765,13 @@ section {
 .gallery_wrapper {
   display: flex;
 }
+.gallery_wrapodd {
+  padding-right: 50px;
+}
 .gallery_wrapodd .gallery_text {
   padding-bottom: 30px;
 }
-.gallery_wrapeven .gallery_text {
+.gallery_wrapeven.gallery_text {
   padding-bottom: 80px;
 }
 .gallery_carg {
