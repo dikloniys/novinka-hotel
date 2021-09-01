@@ -156,6 +156,18 @@ section
             color: $textcolor
         &:hover a
             color: $secondcolor
+.button_transparent
+    width: 220px
+    height: 46px
+    text-align: center
+    border: 1px solid $maincolor
+    border-radius: 2px
+    color: $maincolor
+    font-weight: 500
+    font-size: 13px
+    line-height: 46px
+    letter-spacing: 0.01em
+    cursor: pointer
 .button
     background: $maincolor
     width: 220px
@@ -179,8 +191,6 @@ section
         &:hover
             background: $secondcolor-special
             transition: 0.4s
-    &.transparent
-        background: none
     &_circle
         position: relative
         width: 36px
@@ -293,6 +303,18 @@ section
     100%
         opacity: 1
         max-width: 100px
+.request
+    &_icon
+        border-right: 1px solid $maincolor
+        padding: 0 15px 10px
+    &_emptiness
+        width: 45px
+    &_guests
+        border-bottom: 1px solid $maincolor
+        color: $maincolor
+        width: 130px
+        height: 40px
+        text-align: center
 .room
     display: flex
     overflow: hidden
