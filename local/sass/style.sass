@@ -1,16 +1,5 @@
-$maincolor:#fff
-$maincolordark:#1C1C20
-$sectioncolor:#F9F9F9
-$roomscolor:#F0EBE6
-$secondcolor: #900E0E
-$secondcolor-special: #A42222
-$thirdcolor:#40A629
-$titlecolor: #282828
-$textcolor: #4F616B
-$textfootercolor: #BFBFBF
-$borderconveniences: rgba(79, 97, 107, 0.1)
-$content-size: 1400px
-$mainpading: 100px
+@import 'helpers/_variables'
+@import 'helpers/fonts'
 
 *
     margin: 0 
@@ -330,15 +319,16 @@ section
     &_date
         font-size: 13px
         line-height: 120%
-@import 'fonts'
-@import 'header'
-@import 'main'
-@import 'aboutus'
-@import 'excursion'
-@import 'advantages'
-@import 'rooms'
-@import 'gallery'
-@import 'reviews'
-@import 'CEO'
-@import 'contacts'
-@import 'footer'
+
+
+@import 'components/header'
+@import 'blocks/main'
+@import 'blocks/aboutus'
+@import 'blocks/excursion'
+@import 'blocks/advantages'
+@import 'blocks/rooms'
+@import 'blocks/gallery'
+@import 'blocks/reviews'
+@import 'blocks/CEO'
+@import 'blocks/contacts'
+@import 'components/footer'

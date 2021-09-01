@@ -1,3 +1,53 @@
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Light.eot");
+  src: url("/local/fonts/PragmaticaSlab-Light.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Light.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/Pragmatica-Book.eot");
+  src: url("/local/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/Pragmatica-Book.ttf") format("truetype");
+  src: url("/local/fonts/Pragmatica-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Medium.eot");
+  src: url("/local/fonts/PragmaticaSlab-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Medium.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Bold.eot");
+  src: url("/local/fonts/PragmaticaSlab-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Bold.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url("/local/fonts/Cormorant-SemiBold.eot");
+  src: url("/local/fonts/Cormorant-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/Cormorant-SemiBold.ttf") format("truetype");
+  src: url("/local/fonts/Cormorant-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +59,7 @@ body {
   background: #fff;
   font-family: "Pragmatica";
 }
+
 body .dark {
   background: #1C1C20;
 }
@@ -39,6 +90,7 @@ p {
   text-transform: uppercase;
   padding-bottom: 25px;
 }
+
 .title.little {
   font-weight: 500;
   font-size: 22px;
@@ -78,6 +130,7 @@ section {
 .icon_wrapper {
   display: flex;
 }
+
 .icon_social {
   border-radius: 50%;
   display: flex;
@@ -88,12 +141,15 @@ section {
   height: 32px;
   margin-right: 20px;
 }
+
 .icon_social:nth-last-of-type(2) {
   padding-left: 1px;
 }
+
 .icon_social:last-of-type {
   margin-right: 0px;
 }
+
 .icon_social:hover .icon_social-center {
   fill: #fff;
   transition: 0.4s;
@@ -144,9 +200,11 @@ section {
   display: flex;
   align-items: center;
 }
+
 .icon_contact a {
   padding-left: 10px;
 }
+
 .icon_contact:hover .icon_hover {
   fill: #900E0E;
   transition: 0.4s;
@@ -156,11 +214,13 @@ section {
   display: flex;
   cursor: pointer;
 }
+
 .dropdown_text {
   padding-right: 8px;
   font-weight: 500;
   font-size: 15px;
 }
+
 .dropdown_svg {
   border-radius: 50%;
   display: flex;
@@ -170,10 +230,12 @@ section {
   width: 18px;
   height: 18px;
 }
+
 .dropdown:hover .dropdown_svg-center {
   fill: #900E0E;
   transition: 0.4s;
 }
+
 .dropdown_list {
   position: absolute;
   left: 0;
@@ -183,9 +245,11 @@ section {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
 }
+
 .dropdown:hover .dropdown_list {
   display: block;
 }
+
 .dropdown_item {
   font-weight: 400;
   font-size: 15px;
@@ -193,12 +257,15 @@ section {
   padding: 15px 0;
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
 }
+
 .dropdown_item:last-of-type {
   border-bottom: none;
 }
+
 .dropdown_item a {
   color: #4F616B;
 }
+
 .dropdown_item:hover a {
   color: #900E0E;
 }
@@ -217,22 +284,27 @@ section {
   letter-spacing: 0.01em;
   cursor: pointer;
 }
+
 .button:hover {
   background: #900E0E;
   color: #fff;
   transition: 0.4s;
 }
+
 .button.filled {
   background: #900E0E;
   color: #fff;
 }
+
 .button.filled:hover {
   background: #A42222;
   transition: 0.4s;
 }
+
 .button.transparent {
   background: none;
 }
+
 .button_circle {
   position: relative;
   width: 36px;
@@ -241,9 +313,11 @@ section {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .button_circle:hover .button_bord {
   background: #282828;
 }
+
 .button_bord {
   position: absolute;
   top: 50%;
@@ -253,12 +327,15 @@ section {
   background: #4F616B;
   border-radius: 2px;
 }
+
 .button_bord:first-child {
   transform: rotate(45deg);
 }
+
 .button_bord:last-child {
   transform: rotate(-45deg);
 }
+
 .button_rooms {
   border-radius: 100px;
   display: flex;
@@ -269,6 +346,7 @@ section {
   height: 30px;
   transition: 0.4s;
 }
+
 .button_rooms:hover {
   border: 2px solid #4F616B;
 }
@@ -282,19 +360,21 @@ section {
   display: flex;
   align-items: center;
 }
+
 .more_arrow:hover .arrow_center {
   fill: #fff;
   transition: 0.4s;
 }
+
 .more_arrow:hover .more_wrap {
   border-bottom: 1px solid #900E0E;
   transition: 0.4s;
 }
+
 .more_arrow:hover .arrow {
   background: #900E0E;
   transition: 0.4s;
-  -webkit-animation: arrow 1.8s infinite;
-          animation: arrow 1.8s infinite;
+  animation: arrow 1.8s infinite;
 }
 
 .arrow {
@@ -306,20 +386,12 @@ section {
   width: 50px;
   height: 50px;
 }
+
 .arrow_text {
   padding-left: 10px;
   font-weight: 500;
   font-size: 15px;
   line-height: 120%;
-}
-
-@-webkit-keyframes arrow {
-  from {
-    padding-left: 0px;
-  }
-  to {
-    padding-left: 15px;
-  }
 }
 
 @keyframes arrow {
@@ -330,12 +402,14 @@ section {
     padding-left: 15px;
   }
 }
+
 .conveniences {
   display: flex;
   position: relative;
   width: 155px;
   height: 40px;
 }
+
 .conveniences.big {
   justify-content: space-between;
   width: 440px;
@@ -343,51 +417,47 @@ section {
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
 }
+
 .conveniences.big:hover circle {
   stroke: #900E0E;
   stroke-opacity: 1;
 }
+
 .conveniences.big:hover .svg_center {
   fill: #900E0E;
 }
+
 .conveniences.big:hover.conveniences.big {
   border-bottom: 1px solid #900E0E;
 }
+
 .conveniences_text {
   margin: auto 0;
 }
+
 .conveniences_icon {
   position: absolute;
 }
+
 .conveniences_icon.big {
   position: relative;
   width: 70px;
   height: 70px;
 }
+
 .conveniences_hide {
   line-height: 42px;
   text-align: center;
   height: 40px;
   opacity: 0;
 }
+
 .conveniences:hover .conveniences_hide {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px 100px 100px 0px;
   opacity: 0;
-  -webkit-animation: conveniences_hide 1s forwards;
-          animation: conveniences_hide 1s forwards;
+  animation: conveniences_hide 1s forwards;
   transition: 0.4s;
-}
-
-@-webkit-keyframes conveniences_hide {
-  0% {
-    max-width: 0px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    max-width: 100px;
-  }
 }
 
 @keyframes conveniences_hide {
@@ -400,23 +470,29 @@ section {
     max-width: 100px;
   }
 }
+
 .room {
   display: flex;
   overflow: hidden;
   padding-left: 13.5%;
 }
+
 .room_wrapper {
   padding-right: 50px;
 }
+
 .room_wrapper:last-of-type {
   padding-right: 0px;
 }
+
 .room_wrapper img {
   padding-bottom: 30px;
 }
+
 .room_title {
   padding-bottom: 10px;
 }
+
 .room_text {
   padding-bottom: 40px;
 }
@@ -426,18 +502,22 @@ section {
   width: 433px;
   padding: 25px 25px 22px;
 }
+
 .card_svg {
   padding-bottom: 20px;
 }
+
 .card_text {
   font-size: 14px;
   line-height: 150%;
   padding-bottom: 30px;
   color: #282828;
 }
+
 .card_photo {
   padding-bottom: 10px;
 }
+
 .card_name {
   font-weight: 500;
   font-size: 13px;
@@ -445,62 +525,19 @@ section {
   padding-bottom: 5px;
   color: #282828;
 }
+
 .card_date {
   font-size: 13px;
   line-height: 120%;
 }
 
-@font-face {
-  font-family: "Pragmatica";
-  src: url("/fonts/PragmaticaSlab-Light.eot");
-  src: url("/fonts/PragmaticaSlab-Light.eot?#iefix") format("embedded-opentype");
-  src: url("/fonts/PragmaticaSlab-Light.ttf") format("truetype");
-  src: url("/fonts/PragmaticaSlab-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Pragmatica";
-  src: url("/fonts/Pragmatica-Book.eot");
-  src: url("/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype");
-  src: url("/fonts/Pragmatica-Book.ttf") format("truetype");
-  src: url("/fonts/Pragmatica-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Pragmatica";
-  src: url("/fonts/PragmaticaSlab-Medium.eot");
-  src: url("/fonts/PragmaticaSlab-Medium.eot?#iefix") format("embedded-opentype");
-  src: url("/fonts/PragmaticaSlab-Medium.ttf") format("truetype");
-  src: url("/fonts/PragmaticaSlab-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Pragmatica";
-  src: url("/fonts/PragmaticaSlab-Bold.eot");
-  src: url("/fonts/PragmaticaSlab-Bold.eot?#iefix") format("embedded-opentype");
-  src: url("/fonts/PragmaticaSlab-Bold.ttf") format("truetype");
-  src: url("/fonts/PragmaticaSlab-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Cormorant";
-  src: url("/fonts/Cormorant-SemiBold.eot");
-  src: url("/fonts/Cormorant-SemiBold.eot?#iefix") format("embedded-opentype");
-  src: url("/fonts/Cormorant-SemiBold.ttf") format("truetype");
-  src: url("/fonts/Cormorant-SemiBold.woff") format("woff");
-  font-weight: normal;
-  font-style: 500;
-}
 .header {
   position: absolute;
   padding-top: 25px;
   z-index: 2;
   width: 100%;
 }
+
 .header_contact {
   display: flex;
   align-items: center;
@@ -508,18 +545,22 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 25px;
 }
+
 .header_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
 }
+
 .header_wrapper {
   display: flex;
 }
+
 .header_wrapper .icon_contact {
   padding-right: 50px;
 }
+
 .header_wrapper a {
   color: #fff;
   font-weight: normal;
@@ -532,13 +573,16 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav_bar {
   position: relative;
   padding-right: 70px;
 }
+
 .nav_bar:last-of-type {
   padding-right: 0px;
 }
+
 .nav_item {
   color: #fff;
 }
@@ -547,9 +591,10 @@ section {
   position: relative;
   height: 1005px;
   width: 100%;
-  background: url(/img/fon.png);
+  background: url(/local/img/promo-background.png);
   padding-top: 380px;
 }
+
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
@@ -560,11 +605,13 @@ section {
   text-transform: uppercase;
   color: #fff;
 }
+
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -583,21 +630,9 @@ section {
   align-items: center;
   justify-content: center;
 }
-.scroll_border:hover {
-  -webkit-animation: scroll_move 0.8s infinite;
-          animation: scroll_move 0.8s infinite;
-}
 
-@-webkit-keyframes scroll_move {
-  0% {
-    padding-top: 0px;
-  }
-  50% {
-    padding-top: 3px;
-  }
-  100% {
-    padding-top: 6px;
-  }
+.scroll_border:hover {
+  animation: scroll_move 0.8s infinite;
 }
 
 @keyframes scroll_move {
@@ -611,35 +646,44 @@ section {
     padding-top: 6px;
   }
 }
+
 .aboutus {
   padding: 100px 0;
 }
+
 .aboutus_wrapper {
   display: flex;
 }
+
 .aboutus_wrap {
   width: 50%;
 }
+
 .aboutus_subtitle {
   width: 100%;
   padding-bottom: 20px;
 }
+
 .aboutus_text {
   padding-bottom: 20px;
 }
+
 .aboutus_text:last-of-type {
   padding-bottom: 50px;
 }
+
 .aboutus_difference {
   display: flex;
   justify-content: space-between;
   padding-bottom: 57px;
 }
+
 .aboutus_photo {
   width: 600px;
   height: 700px;
   padding-left: 100px;
 }
+
 .difference_wrapper {
   border-radius: 50%;
   display: flex;
@@ -650,12 +694,14 @@ section {
   width: 200px;
   height: 200px;
 }
+
 .difference_pluses {
   font-weight: 300;
   font-size: 80px;
   line-height: 120%;
   color: #900E0E;
 }
+
 .difference_description {
   font-size: 14px;
   line-height: 130%;
@@ -668,10 +714,12 @@ section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .excursion_title {
   text-align: center;
   padding-bottom: 10px;
 }
+
 .excursion_button {
   margin: 0 auto;
 }
@@ -679,16 +727,20 @@ section {
 .advantages {
   padding: 100px 0;
 }
+
 .advantages_subtitle {
   padding-bottom: 50px;
 }
+
 .advantages_wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 .advantages_card {
   padding-right: 50px;
 }
+
 .advantages_card:last-of-type {
   padding-right: 0;
 }
@@ -698,9 +750,11 @@ section {
   height: 70px;
   margin-bottom: 20px;
 }
+
 .card_title {
   padding-bottom: 20px;
 }
+
 .card_text {
   padding-bottom: 40px;
 }
@@ -709,16 +763,19 @@ section {
   padding: 100px 0;
   background-color: #F0EBE6;
 }
+
 .rooms_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
   align-items: center;
 }
+
 .rooms_subtitle {
   padding-right: 25px;
   width: 50%;
 }
+
 .rooms_text {
   padding-left: 25px;
   width: 50%;
@@ -728,18 +785,22 @@ section {
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
 }
+
 .maney_wrap:hover.maney_wrap {
   border-bottom: 1px solid #900E0E;
   transition: 0.4s;
 }
+
 .maney_wrap:hover .maney_svg {
   border: 2px solid #900E0E;
   transition: 0.4s;
 }
+
 .maney_icon {
   display: flex;
   align-items: center;
 }
+
 .maney_svg {
   border-radius: 50%;
   display: flex;
@@ -749,6 +810,7 @@ section {
   width: 50px;
   height: 50px;
 }
+
 .maney_text {
   padding-left: 10px;
   font-weight: 500;
@@ -759,32 +821,41 @@ section {
 .gallery {
   padding: 100px 0;
 }
+
 .gallery_subtitle {
   padding-bottom: 20px;
 }
+
 .gallery_wrapper {
   display: flex;
 }
+
 .gallery_wrapodd {
   padding-right: 50px;
 }
+
 .gallery_wrapodd .gallery_text {
   padding-bottom: 30px;
 }
+
 .gallery_wrapeven.gallery_text {
   padding-bottom: 80px;
 }
+
 .gallery_carg {
   padding-bottom: 100px;
 }
+
 .gallery img {
   padding-bottom: 15px;
 }
+
 .gallery_number {
   font-size: 13px;
   line-height: 120%;
   color: #900E0E;
 }
+
 .gallery_signature {
   font-size: 18px;
   line-height: 120%;
@@ -798,15 +869,19 @@ section {
   padding: 100px 0;
   background: #F9F9F9;
 }
+
 .reviews_subtitle {
   padding-bottom: 30px;
 }
+
 .reviews_wrapper {
   display: flex;
 }
+
 .reviews_card {
   padding-right: 50px;
 }
+
 .reviews_card:last-of-type {
   padding-right: 0;
 }
@@ -814,18 +889,23 @@ section {
 .CEO {
   padding: 100px 0;
 }
+
 .CEO_subtitle {
   padding-bottom: 20px;
 }
+
 .CEO_wrapper {
   display: flex;
 }
+
 .CEO_wrap {
   padding-right: 25px;
 }
+
 .CEO_text {
   padding-bottom: 10px;
 }
+
 .CEO_text:last-of-type {
   padding-bottom: 0;
 }
@@ -838,20 +918,25 @@ section {
   background: #F9F9F9;
   padding: 100px 0;
 }
+
 .contacts_subtitle {
   padding-bottom: 30px;
 }
+
 .contacts_box {
   padding-bottom: 30px;
 }
+
 .contacts_icon {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
+
 .contacts_icon a {
   padding-left: 10px;
 }
+
 .contacts_wrap {
   border-radius: 50%;
   display: flex;
@@ -861,19 +946,23 @@ section {
   width: 32px;
   height: 32px;
 }
+
 .contacts_wrap-email {
   display: flex;
   align-items: center;
 }
+
 .contacts_center {
   fill: #900E0E;
 }
+
 .contacts_svgtitle {
   padding-left: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
 }
+
 .contacts_text {
   font-size: 18px;
   line-height: 130%;
@@ -884,15 +973,18 @@ section {
   background: #1C1C20;
   flex: 0 0 auto;
 }
+
 .footer_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 41px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .footer_logo {
   padding-bottom: 38px;
 }
+
 .footer_title {
   color: #BFBFBF;
   font-weight: 500;
@@ -900,37 +992,45 @@ section {
   line-height: 120%;
   padding-bottom: 20px;
 }
+
 .footer_wrap {
   display: flex;
 }
+
 .footer_numbers {
   padding-right: 78px;
 }
+
 .footer_number {
   color: #fff;
   padding-bottom: 15px;
 }
+
 .footer_addres {
   color: #fff;
   padding-bottom: 15px;
 }
+
 .footer_nav {
   display: flex;
   width: 47%;
   justify-content: space-between;
 }
+
 .footer_copyright-wrap {
   padding: 42px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .footer_copyright {
   width: 433px;
   font-size: 12px;
   line-height: 120%;
   color: #BFBFBF;
 }
+
 .footer_documents a {
   color: #BFBFBF;
 }
@@ -938,20 +1038,25 @@ section {
 .nav_wrapper:first-of-type {
   padding-bottom: 40px;
 }
+
 .nav_title {
   padding-bottom: 20px;
 }
+
 .nav_title a {
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
   color: #fff;
 }
+
 .nav_list {
   padding-bottom: 15px;
 }
+
 .nav_list a {
   color: #BFBFBF;
   font-size: 14px;
   line-height: 120%;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
