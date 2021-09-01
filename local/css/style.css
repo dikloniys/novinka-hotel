@@ -1,3 +1,56 @@
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Light.eot");
+  src: url("/local/fonts/PragmaticaSlab-Light.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Light.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/Pragmatica-Book.eot");
+  src: url("/local/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/Pragmatica-Book.ttf") format("truetype");
+  src: url("/local/fonts/Pragmatica-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Medium.eot");
+  src: url("/local/fonts/PragmaticaSlab-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Medium.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url("/local/fonts/PragmaticaSlab-Bold.eot");
+  src: url("/local/fonts/PragmaticaSlab-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/PragmaticaSlab-Bold.ttf") format("truetype");
+  src: url("/local/fonts/PragmaticaSlab-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url("/local/fonts/Cormorant-SemiBold.eot");
+  src: url("/local/fonts/Cormorant-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("/local/fonts/Cormorant-SemiBold.ttf") format("truetype");
+  src: url("/local/fonts/Cormorant-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: 500;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +62,10 @@ body {
   background: #fff;
   font-family: "Pragmatica";
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 body .dark {
   background: #1C1C20;
 }
@@ -39,6 +96,10 @@ p {
   text-transform: uppercase;
   padding-bottom: 25px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .title.little {
   font-weight: 500;
   font-size: 22px;
@@ -78,6 +139,10 @@ section {
 .icon_wrapper {
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .icon_social {
   border-radius: 50%;
   display: flex;
@@ -88,12 +153,24 @@ section {
   height: 32px;
   margin-right: 20px;
 }
+<<<<<<< HEAD
 .icon_social:nth-last-of-type(2) {
   padding-left: 1px;
 }
 .icon_social:last-of-type {
   margin-right: 0px;
 }
+=======
+
+.icon_social:nth-last-of-type(2) {
+  padding-left: 1px;
+}
+
+.icon_social:last-of-type {
+  margin-right: 0px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .icon_social:hover .icon_social-center {
   fill: #fff;
   transition: 0.4s;
@@ -144,9 +221,17 @@ section {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
 .icon_contact a {
   padding-left: 10px;
 }
+=======
+
+.icon_contact a {
+  padding-left: 10px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .icon_contact:hover .icon_hover {
   fill: #900E0E;
   transition: 0.4s;
@@ -156,11 +241,19 @@ section {
   display: flex;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown_text {
   padding-right: 8px;
   font-weight: 500;
   font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown_svg {
   border-radius: 50%;
   display: flex;
@@ -170,10 +263,18 @@ section {
   width: 18px;
   height: 18px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown:hover .dropdown_svg-center {
   fill: #900E0E;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown_list {
   position: absolute;
   left: 0;
@@ -183,9 +284,17 @@ section {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
 }
+<<<<<<< HEAD
 .dropdown:hover .dropdown_list {
   display: block;
 }
+=======
+
+.dropdown:hover .dropdown_list {
+  display: block;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown_item {
   font-weight: 400;
   font-size: 15px;
@@ -193,12 +302,24 @@ section {
   padding: 15px 0;
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
 }
+<<<<<<< HEAD
 .dropdown_item:last-of-type {
   border-bottom: none;
 }
 .dropdown_item a {
   color: #4F616B;
 }
+=======
+
+.dropdown_item:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown_item a {
+  color: #4F616B;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .dropdown_item:hover a {
   color: #900E0E;
 }
@@ -231,19 +352,42 @@ section {
   letter-spacing: 0.01em;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button:hover {
   background: #900E0E;
   color: #fff;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button.filled {
   background: #900E0E;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button.filled:hover {
   background: #A42222;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:local/css/style.css
+
+.button.transparent {
+  background: none;
+}
+
+========
+>>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3:novinka-hotel/css/style.css
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button_circle {
   position: relative;
   width: 36px;
@@ -252,9 +396,17 @@ section {
   border-radius: 50%;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .button_circle:hover .button_bord {
   background: #282828;
 }
+=======
+
+.button_circle:hover .button_bord {
+  background: #282828;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button_bord {
   position: absolute;
   top: 50%;
@@ -264,12 +416,24 @@ section {
   background: #4F616B;
   border-radius: 2px;
 }
+<<<<<<< HEAD
 .button_bord:first-child {
   transform: rotate(45deg);
 }
 .button_bord:last-child {
   transform: rotate(-45deg);
 }
+=======
+
+.button_bord:first-child {
+  transform: rotate(45deg);
+}
+
+.button_bord:last-child {
+  transform: rotate(-45deg);
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button_rooms {
   border-radius: 100px;
   display: flex;
@@ -280,6 +444,10 @@ section {
   height: 30px;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .button_rooms:hover {
   border: 2px solid #4F616B;
 }
@@ -293,14 +461,26 @@ section {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .more_arrow:hover .arrow_center {
   fill: #fff;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .more_arrow:hover .more_wrap {
   border-bottom: 1px solid #900E0E;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .more_arrow:hover .arrow {
   background: #900E0E;
   transition: 0.4s;
@@ -316,6 +496,10 @@ section {
   width: 50px;
   height: 50px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .arrow_text {
   padding-left: 10px;
   font-weight: 500;
@@ -331,12 +515,20 @@ section {
     padding-left: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences {
   display: flex;
   position: relative;
   width: 155px;
   height: 40px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences.big {
   justify-content: space-between;
   width: 440px;
@@ -344,10 +536,15 @@ section {
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences.big:hover circle {
   stroke: #900E0E;
   stroke-opacity: 1;
 }
+<<<<<<< HEAD
 .conveniences.big:hover .svg_center {
   fill: #900E0E;
 }
@@ -360,17 +557,44 @@ section {
 .conveniences_icon {
   position: absolute;
 }
+=======
+
+.conveniences.big:hover .svg_center {
+  fill: #900E0E;
+}
+
+.conveniences.big:hover.conveniences.big {
+  border-bottom: 1px solid #900E0E;
+}
+
+.conveniences_text {
+  margin: auto 0;
+}
+
+.conveniences_icon {
+  position: absolute;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences_icon.big {
   position: relative;
   width: 70px;
   height: 70px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences_hide {
   line-height: 42px;
   text-align: center;
   height: 40px;
   opacity: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .conveniences:hover .conveniences_hide {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px 100px 100px 0px;
@@ -389,6 +613,11 @@ section {
     max-width: 100px;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:local/css/style.css
+========
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .request_icon {
   border-right: 1px solid #fff;
   padding: 0 15px 10px;
@@ -403,12 +632,17 @@ section {
   height: 40px;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+>>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3:novinka-hotel/css/style.css
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 
 .room {
   display: flex;
   overflow: hidden;
   padding-left: 13.5%;
 }
+<<<<<<< HEAD
 .room_wrapper {
   padding-right: 50px;
 }
@@ -421,6 +655,25 @@ section {
 .room_title {
   padding-bottom: 10px;
 }
+=======
+
+.room_wrapper {
+  padding-right: 50px;
+}
+
+.room_wrapper:last-of-type {
+  padding-right: 0px;
+}
+
+.room_wrapper img {
+  padding-bottom: 30px;
+}
+
+.room_title {
+  padding-bottom: 10px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .room_text {
   padding-bottom: 40px;
 }
@@ -430,18 +683,34 @@ section {
   width: 433px;
   padding: 25px 25px 22px;
 }
+<<<<<<< HEAD
 .card_svg {
   padding-bottom: 20px;
 }
+=======
+
+.card_svg {
+  padding-bottom: 20px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .card_text {
   font-size: 14px;
   line-height: 150%;
   padding-bottom: 30px;
   color: #282828;
 }
+<<<<<<< HEAD
 .card_photo {
   padding-bottom: 10px;
 }
+=======
+
+.card_photo {
+  padding-bottom: 10px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .card_name {
   font-weight: 500;
   font-size: 13px;
@@ -449,11 +718,16 @@ section {
   padding-bottom: 5px;
   color: #282828;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .card_date {
   font-size: 13px;
   line-height: 120%;
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: "Pragmatica";
   src: url("/fonts/PragmaticaSlab-Light.eot");
@@ -499,12 +773,18 @@ section {
   font-weight: normal;
   font-style: 500;
 }
+=======
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .header {
   position: absolute;
   padding-top: 25px;
   z-index: 2;
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .header_contact {
   display: flex;
   align-items: center;
@@ -512,18 +792,34 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 25px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .header_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
 }
+<<<<<<< HEAD
 .header_wrapper {
   display: flex;
 }
 .header_wrapper .icon_contact {
   padding-right: 50px;
 }
+=======
+
+.header_wrapper {
+  display: flex;
+}
+
+.header_wrapper .icon_contact {
+  padding-right: 50px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .header_wrapper a {
   color: #fff;
   font-weight: normal;
@@ -536,13 +832,25 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .nav_bar {
   position: relative;
   padding-right: 70px;
 }
+<<<<<<< HEAD
 .nav_bar:last-of-type {
   padding-right: 0px;
 }
+=======
+
+.nav_bar:last-of-type {
+  padding-right: 0px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .nav_item {
   color: #fff;
 }
@@ -551,9 +859,20 @@ section {
   position: relative;
   height: 1005px;
   width: 100%;
+<<<<<<< HEAD
   background: url(/novinka-hotel/img/fon.png);
   padding-top: 380px;
 }
+=======
+<<<<<<<< HEAD:local/css/style.css
+  background: url(/local/img/promo-background.png);
+========
+  background: url(/novinka-hotel/img/fon.png);
+>>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3:novinka-hotel/css/style.css
+  padding-top: 380px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
@@ -564,11 +883,19 @@ section {
   text-transform: uppercase;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -587,6 +914,13 @@ section {
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:local/css/style.css
+
+========
+>>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3:novinka-hotel/css/style.css
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .scroll_border:hover {
   animation: scroll_move 0.8s infinite;
 }
@@ -602,6 +936,7 @@ section {
     padding-top: 6px;
   }
 }
+<<<<<<< HEAD
 .aboutus {
   padding: 100px 0;
 }
@@ -611,26 +946,61 @@ section {
 .aboutus_wrap {
   width: 50%;
 }
+=======
+
+.aboutus {
+  padding: 100px 0;
+}
+
+.aboutus_wrapper {
+  display: flex;
+}
+
+.aboutus_wrap {
+  width: 50%;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .aboutus_subtitle {
   width: 100%;
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
 .aboutus_text {
   padding-bottom: 20px;
 }
 .aboutus_text:last-of-type {
   padding-bottom: 50px;
 }
+=======
+
+.aboutus_text {
+  padding-bottom: 20px;
+}
+
+.aboutus_text:last-of-type {
+  padding-bottom: 50px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .aboutus_difference {
   display: flex;
   justify-content: space-between;
   padding-bottom: 57px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .aboutus_photo {
   width: 600px;
   height: 700px;
   padding-left: 100px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .difference_wrapper {
   border-radius: 50%;
   display: flex;
@@ -641,12 +1011,20 @@ section {
   width: 200px;
   height: 200px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .difference_pluses {
   font-weight: 300;
   font-size: 80px;
   line-height: 120%;
   color: #900E0E;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .difference_description {
   font-size: 14px;
   line-height: 130%;
@@ -659,10 +1037,18 @@ section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .excursion_title {
   text-align: center;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .excursion_button {
   margin: 0 auto;
 }
@@ -670,16 +1056,32 @@ section {
 .advantages {
   padding: 100px 0;
 }
+<<<<<<< HEAD
 .advantages_subtitle {
   padding-bottom: 50px;
 }
+=======
+
+.advantages_subtitle {
+  padding-bottom: 50px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .advantages_wrapper {
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 .advantages_card {
   padding-right: 50px;
 }
+=======
+
+.advantages_card {
+  padding-right: 50px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .advantages_card:last-of-type {
   padding-right: 0;
 }
@@ -689,9 +1091,17 @@ section {
   height: 70px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 .card_title {
   padding-bottom: 20px;
 }
+=======
+
+.card_title {
+  padding-bottom: 20px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .card_text {
   padding-bottom: 40px;
 }
@@ -700,16 +1110,28 @@ section {
   padding: 100px 0;
   background-color: #F0EBE6;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .rooms_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .rooms_subtitle {
   padding-right: 25px;
   width: 50%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .rooms_text {
   padding-left: 25px;
   width: 50%;
@@ -719,18 +1141,34 @@ section {
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .maney_wrap:hover.maney_wrap {
   border-bottom: 1px solid #900E0E;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .maney_wrap:hover .maney_svg {
   border: 2px solid #900E0E;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .maney_icon {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .maney_svg {
   border-radius: 50%;
   display: flex;
@@ -740,6 +1178,10 @@ section {
   width: 50px;
   height: 50px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .maney_text {
   padding-left: 10px;
   font-weight: 500;
@@ -750,6 +1192,7 @@ section {
 .gallery {
   padding: 100px 0;
 }
+<<<<<<< HEAD
 .gallery_subtitle {
   padding-bottom: 20px;
 }
@@ -771,11 +1214,46 @@ section {
 .gallery img {
   padding-bottom: 15px;
 }
+=======
+
+.gallery_subtitle {
+  padding-bottom: 20px;
+}
+
+.gallery_wrapper {
+  display: flex;
+}
+
+.gallery_wrapodd {
+  padding-right: 50px;
+}
+
+.gallery_wrapodd .gallery_text {
+  padding-bottom: 30px;
+}
+
+.gallery_wrapeven.gallery_text {
+  padding-bottom: 80px;
+}
+
+.gallery_carg {
+  padding-bottom: 100px;
+}
+
+.gallery img {
+  padding-bottom: 15px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .gallery_number {
   font-size: 13px;
   line-height: 120%;
   color: #900E0E;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .gallery_signature {
   font-size: 18px;
   line-height: 120%;
@@ -789,6 +1267,7 @@ section {
   padding: 100px 0;
   background: #F9F9F9;
 }
+<<<<<<< HEAD
 .reviews_subtitle {
   padding-bottom: 30px;
 }
@@ -798,6 +1277,21 @@ section {
 .reviews_card {
   padding-right: 50px;
 }
+=======
+
+.reviews_subtitle {
+  padding-bottom: 30px;
+}
+
+.reviews_wrapper {
+  display: flex;
+}
+
+.reviews_card {
+  padding-right: 50px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .reviews_card:last-of-type {
   padding-right: 0;
 }
@@ -805,6 +1299,7 @@ section {
 .CEO {
   padding: 100px 0;
 }
+<<<<<<< HEAD
 .CEO_subtitle {
   padding-bottom: 20px;
 }
@@ -817,6 +1312,25 @@ section {
 .CEO_text {
   padding-bottom: 10px;
 }
+=======
+
+.CEO_subtitle {
+  padding-bottom: 20px;
+}
+
+.CEO_wrapper {
+  display: flex;
+}
+
+.CEO_wrap {
+  padding-right: 25px;
+}
+
+.CEO_text {
+  padding-bottom: 10px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .CEO_text:last-of-type {
   padding-bottom: 0;
 }
@@ -829,20 +1343,40 @@ section {
   background: #F9F9F9;
   padding: 100px 0;
 }
+<<<<<<< HEAD
 .contacts_subtitle {
   padding-bottom: 30px;
 }
 .contacts_box {
   padding-bottom: 30px;
 }
+=======
+
+.contacts_subtitle {
+  padding-bottom: 30px;
+}
+
+.contacts_box {
+  padding-bottom: 30px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .contacts_icon {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 .contacts_icon a {
   padding-left: 10px;
 }
+=======
+
+.contacts_icon a {
+  padding-left: 10px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .contacts_wrap {
   border-radius: 50%;
   display: flex;
@@ -852,19 +1386,35 @@ section {
   width: 32px;
   height: 32px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .contacts_wrap-email {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
 .contacts_center {
   fill: #900E0E;
 }
+=======
+
+.contacts_center {
+  fill: #900E0E;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .contacts_svgtitle {
   padding-left: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .contacts_text {
   font-size: 18px;
   line-height: 130%;
@@ -875,15 +1425,27 @@ section {
   background: #1C1C20;
   flex: 0 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 41px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+<<<<<<< HEAD
 .footer_logo {
   padding-bottom: 38px;
 }
+=======
+
+.footer_logo {
+  padding-bottom: 38px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_title {
   color: #BFBFBF;
   font-weight: 500;
@@ -891,37 +1453,69 @@ section {
   line-height: 120%;
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
 .footer_wrap {
   display: flex;
 }
 .footer_numbers {
   padding-right: 78px;
 }
+=======
+
+.footer_wrap {
+  display: flex;
+}
+
+.footer_numbers {
+  padding-right: 78px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_number {
   color: #fff;
   padding-bottom: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_addres {
   color: #fff;
   padding-bottom: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_nav {
   display: flex;
   width: 47%;
   justify-content: space-between;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_copyright-wrap {
   padding: 42px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_copyright {
   width: 433px;
   font-size: 12px;
   line-height: 120%;
   color: #BFBFBF;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .footer_documents a {
   color: #BFBFBF;
 }
@@ -929,20 +1523,41 @@ section {
 .nav_wrapper:first-of-type {
   padding-bottom: 40px;
 }
+<<<<<<< HEAD
 .nav_title {
   padding-bottom: 20px;
 }
+=======
+
+.nav_title {
+  padding-bottom: 20px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .nav_title a {
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
   color: #fff;
 }
+<<<<<<< HEAD
 .nav_list {
   padding-bottom: 15px;
 }
+=======
+
+.nav_list {
+  padding-bottom: 15px;
+}
+
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
 .nav_list a {
   color: #BFBFBF;
   font-size: 14px;
   line-height: 120%;
+<<<<<<< HEAD
 }/*# sourceMappingURL=style.css.map */
+=======
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> f9e0ef7e204a7ae52f8aaab7681ccda2b9504bc3
