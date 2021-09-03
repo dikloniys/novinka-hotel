@@ -43,11 +43,33 @@
     &_documents
         & a
             color: $textfootercolor
+@media (max-width: 1400px)
+    .footer
+        &_nav 
+            display: block
+    .nav
+        &_wrapper
+            &:nth-of-type(2)
+                padding-right: 100px
+        &_events
+            display: flex
+            justify-content: space-between
+        &_menu
+            padding-right: 90px
 .nav
     &_wrapperup
+        &:first-of-type
+            padding-right: 100px
+    &_wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
     &_wrapper
         &:first-of-type
             padding-bottom: 40px
+    &_aboutus
+    &_menu
+    &_events
     &_title 
         padding-bottom: 20px
         & a

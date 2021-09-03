@@ -34,15 +34,22 @@ p
         font-size: 22px
         line-height: 120%
         color: $titlecolor
+
 .subtitle
     font-weight: 500
     font-size: 44px
     line-height: 110%
     color: $titlecolor
     width: 50%
+@media (max-width: 1400px)
+    .subtitle
+        font-size: 34px
 .text
     font-size: 15px
     line-height: 160%
+@media (max-width: 1400px)
+    .text
+        font-size: 14px
 section
     position: relative
 .wrapper
@@ -53,6 +60,12 @@ section
     margin: 0 auto
     max-width: $content-size
     width: 100%
+@media (max-width: 1400px)
+    .container
+        max-width: 1000px
+@media (max-width: 1000px)
+    .container
+        max-width: 700px
 .icon
     &_wrapper
         display: flex
@@ -106,6 +119,9 @@ section
     &:hover .icon_hover
         fill: $secondcolor
         transition: 0.4s
+@media (max-width: 1000px)
+    .icon_contact
+        display: none
 .dropdown
     display: flex
     cursor: pointer
@@ -203,6 +219,19 @@ section
         transition: 0.4s
         &:hover
             border: 2px solid $textcolor
+.button_transparent
+    width: 220px
+    height: 50px
+    text-align: center
+    border: 1px solid $maincolor
+    color: $maincolor
+    border-radius: 2px
+    font-weight: 500
+    font-size: 13px
+    line-height: 46px
+    letter-spacing: 0.01em
+    cursor: pointer
+    margin-left: 37px
 .more_wrap
     border-bottom: 1px solid $borderconveniences
     padding-bottom: 20px            
@@ -283,10 +312,26 @@ section
     100%
         opacity: 1
         max-width: 100px
+.request
+    &_icon
+        border-right: 1px solid $maincolor
+        padding: 0 15px 10px
+    &_emptiness
+        width: 45px
+        &:first-of-type
+            height: 33px
+            border-left: 1px solid $maincolor
+    &_guests
+        line-height: 40px
+        border-bottom: 1px solid $maincolor
+        color: $maincolor
+        width: 130px
+        height: 40px
+        text-align: center
 .room
     display: flex
     overflow: hidden
-    padding-left: 13.5%
+    padding-left: calc((   100% - 1400px )/2)
     &_wrapper
         padding-right: 50px
         &:last-of-type
@@ -297,6 +342,12 @@ section
         padding-bottom: 10px
     &_text
         padding-bottom: 40px
+@media (max-width: 1400px)
+    .room
+        padding-left: calc((   100% - 1000px )/2)
+        &_wrapper
+            & img
+                width: 475px
 .card
     &_wrapper
         background: $maincolor
@@ -320,7 +371,10 @@ section
     &_date
         font-size: 13px
         line-height: 120%
-
+@media (max-width: 1400px)
+    .card
+        &_wrapper
+            width: 475px
 @import 'components/header'
 
 @import 'components/footer'

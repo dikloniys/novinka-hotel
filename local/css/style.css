@@ -5,24 +5,21 @@
   background: url(/local/img/promo-background.png);
   padding-top: 380px;
 }
-
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
   font-size: 80px;
   line-height: 130%;
   text-align: center;
-  padding-bottom: 231px;
+  padding-bottom: 204px;
   text-transform: uppercase;
   color: #fff;
 }
-
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -41,7 +38,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .scroll_border:hover {
   animation: scroll_move 0.8s infinite;
 }
@@ -57,62 +53,71 @@
     padding-top: 6px;
   }
 }
-
+@media (max-width: 1400px) {
+  .main_title {
+    font-size: 64px;
+    padding-bottom: 85px;
+  }
+}
+@media (max-width: 1000px) {
+  .main_title {
+    font-size: 48px;
+    padding-bottom: 202px;
+  }
+}
 .aboutus {
   padding: 100px 0;
 }
-
 .aboutus_wrapper {
   display: flex;
 }
-
 .aboutus_wrap {
   width: 50%;
 }
-
 .aboutus_subtitle {
   width: 100%;
   padding-bottom: 20px;
 }
-
 .aboutus_text {
   padding-bottom: 20px;
 }
-
 .aboutus_text:last-of-type {
   padding-bottom: 50px;
 }
-
 .aboutus_difference {
   display: flex;
   justify-content: space-between;
   padding-bottom: 57px;
 }
-
 .aboutus_photo {
   width: 600px;
   height: 700px;
   padding-left: 100px;
 }
 
+@media (max-width: 1400px) {
+  .aboutus_photo img {
+    width: 400px;
+    height: 500px;
+    padding-left: 50px;
+  }
+}
 .difference_wrapper {
   border-radius: 50%;
   display: flex;
-  border: 2px solid rgba(79, 97, 107, 0.1);
+  border: 1px solid rgba(79, 97, 107, 0.1);
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 200px;
   height: 200px;
 }
-
 .difference_pluses {
   font-weight: 300;
   font-size: 80px;
   line-height: 120%;
   color: #900E0E;
 }
-
 .difference_description {
   font-size: 14px;
   line-height: 130%;
@@ -120,17 +125,30 @@
   padding: 0 35px;
 }
 
+@media (max-width: 1400px) {
+  .difference_wrapper {
+    width: 170px;
+    height: 170px;
+  }
+  .difference_pluses {
+    font-size: 70px;
+  }
+  .difference_description {
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    padding: 0 35px;
+  }
+}
 .excursion {
   background: #F9F9F9;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 .excursion_title {
   text-align: center;
   padding-bottom: 10px;
 }
-
 .excursion_button {
   margin: 0 auto;
 }
@@ -138,55 +156,50 @@
 .advantages {
   padding: 100px 0;
 }
-
 .advantages_subtitle {
   padding-bottom: 50px;
 }
-
 .advantages_wrapper {
   display: flex;
   justify-content: space-between;
 }
-
 .advantages_card {
   padding-right: 50px;
 }
-
 .advantages_card:last-of-type {
   padding-right: 0;
 }
 
 .card_img {
-  width: 70px;
-  height: 70px;
   margin-bottom: 20px;
 }
-
 .card_title {
   padding-bottom: 20px;
 }
-
 .card_text {
   padding-bottom: 40px;
 }
 
+@media (max-width: 1400px) {
+  .card_img svg {
+    width: 50px;
+    height: 50px;
+  }
+}
 .rooms {
   padding: 100px 0;
   background-color: #F0EBE6;
 }
-
 .rooms_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
   align-items: center;
 }
-
 .rooms_subtitle {
   padding-right: 25px;
   width: 50%;
 }
-
 .rooms_text {
   padding-left: 25px;
   width: 50%;
@@ -196,22 +209,18 @@
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
 }
-
 .maney_wrap:hover.maney_wrap {
   border-bottom: 1px solid #900E0E;
   transition: 0.4s;
 }
-
 .maney_wrap:hover .maney_svg {
   border: 2px solid #900E0E;
   transition: 0.4s;
 }
-
 .maney_icon {
   display: flex;
   align-items: center;
 }
-
 .maney_svg {
   border-radius: 50%;
   display: flex;
@@ -221,7 +230,6 @@
   width: 50px;
   height: 50px;
 }
-
 .maney_text {
   padding-left: 10px;
   font-weight: 500;
@@ -232,41 +240,32 @@
 .gallery {
   padding: 100px 0;
 }
-
 .gallery_subtitle {
   padding-bottom: 20px;
 }
-
 .gallery_wrapper {
   display: flex;
 }
-
 .gallery_wrapodd {
   padding-right: 50px;
 }
-
 .gallery_wrapodd .gallery_text {
   padding-bottom: 30px;
 }
-
-.gallery_wrapeven.gallery_text {
+.gallery_wrapeven .gallery_text {
   padding-bottom: 80px;
 }
-
 .gallery_carg {
   padding-bottom: 100px;
 }
-
 .gallery img {
   padding-bottom: 15px;
 }
-
 .gallery_number {
   font-size: 13px;
   line-height: 120%;
   color: #900E0E;
 }
-
 .gallery_signature {
   font-size: 18px;
   line-height: 120%;
@@ -276,47 +275,52 @@
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
 }
 
+@media (max-width: 1400px) {
+  .gallery img {
+    width: 475px;
+  }
+}
 .reviews {
   padding: 100px 0;
   background: #F9F9F9;
 }
-
 .reviews_subtitle {
   padding-bottom: 30px;
 }
-
 .reviews_wrapper {
   display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-
 .reviews_card {
   padding-right: 50px;
 }
-
 .reviews_card:last-of-type {
   padding-right: 0;
 }
 
+@media (max-width: 1400px) {
+  .reviews_wrapper {
+    margin: 0;
+    padding-left: calc(( 100% - 1000px )/2);
+    overflow: hidden;
+  }
+}
 .CEO {
   padding: 100px 0;
 }
-
 .CEO_subtitle {
   padding-bottom: 20px;
 }
-
 .CEO_wrapper {
   display: flex;
 }
-
 .CEO_wrap {
   padding-right: 25px;
 }
-
 .CEO_text {
   padding-bottom: 10px;
 }
-
 .CEO_text:last-of-type {
   padding-bottom: 0;
 }
@@ -325,29 +329,34 @@
   padding-left: 25px;
 }
 
+@media (max-width: 1400px) {
+  .video iframe {
+    width: 475px;
+    height: 282px;
+  }
+}
 .contacts {
   background: #F9F9F9;
   padding: 100px 0;
+  position: relative;
 }
-
 .contacts_subtitle {
   padding-bottom: 30px;
 }
-
+.contacts_flex {
+  display: flex;
+}
 .contacts_box {
   padding-bottom: 30px;
 }
-
 .contacts_icon {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
-
 .contacts_icon a {
   padding-left: 10px;
 }
-
 .contacts_wrap {
   border-radius: 50%;
   display: flex;
@@ -357,25 +366,25 @@
   width: 32px;
   height: 32px;
 }
-
 .contacts_wrap-email {
   display: flex;
   align-items: center;
 }
-
 .contacts_center {
   fill: #900E0E;
 }
-
 .contacts_svgtitle {
   padding-left: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
 }
-
 .contacts_text {
   font-size: 18px;
   line-height: 130%;
 }
-/*# sourceMappingURL=style.css.map */
+.contacts_map {
+  position: absolute;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */
