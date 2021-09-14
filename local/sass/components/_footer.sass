@@ -18,7 +18,7 @@
     &_wrap
         display: flex
     &_numbers
-        padding-right: 78px
+        padding-right: 73px
     &_number
         color: $maincolor
         padding-bottom: 15px
@@ -30,32 +30,6 @@
         display: flex
         width: 47%
         justify-content: space-between
-    &_copyright-wrap
-        padding: 42px 0
-        display: flex
-        justify-content: space-between
-        align-items: center
-    &_copyright
-        width: 433px
-        font-size: 12px
-        line-height: 120%
-        color: $textfootercolor
-    &_documents
-        & a
-            color: $textfootercolor
-@media (max-width: 1400px)
-    .footer
-        &_nav 
-            display: block
-    .nav
-        &_wrapper
-            &:nth-of-type(2)
-                padding-right: 100px
-        &_events
-            display: flex
-            justify-content: space-between
-        &_menu
-            padding-right: 90px
 .nav
     &_wrapperup
         &:first-of-type
@@ -83,3 +57,66 @@
             color: $textfootercolor
             font-size: 14px
             line-height: 120%
+.copyright
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 42px 0
+    &_wrap
+        display: flex
+        justify-content: space-between
+    &_copyright
+        width: 433px
+        font-size: 12px
+        line-height: 120%
+        color: $textfootercolor
+    &_documents
+        &-wrap
+            display: flex
+        &:first-of-type
+            padding-right: 80px
+        &:last-of-type
+            padding-right: 41px
+        & a
+            color: $textfootercolor
+@media (max-width: 1400px)
+    .footer
+        &_nav 
+            display: block
+        &_documents
+        &-wrap
+            display: block
+    .nav
+        &_wrapper
+            &:nth-of-type(2)
+                padding-right: 100px
+        &_events
+            display: flex
+            justify-content: space-between
+        &_menu
+@media (max-width: 1000px)
+    .footer
+        &_wrapper
+            display: block
+            padding-bottom: 0
+        &_wrap
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+            padding-bottom: 30px
+        &_nav 
+            display: flex
+            width: 100%
+            padding: 30px 0
+        &_documents
+        &-wrap
+            display: flex
+    .nav
+        &_wrapper
+            &:nth-of-type(2)
+                padding-right: 100px
+        &_events
+            display: block
+        &_menu
+    .copyright
+        &_wrap
+            display: block

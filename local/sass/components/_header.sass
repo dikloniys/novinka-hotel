@@ -7,13 +7,15 @@
         display: flex
         align-items: center
         justify-content: space-between
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
         padding-bottom: 25px
     &_nav
         display: flex
         justify-content: space-between
         align-items: center
         padding-top: 30px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+        padding-bottom: 25px
     &_wrapper
         display: flex
         & .icon_contact
@@ -23,6 +25,40 @@
             font-weight: normal
             font-size: 18px
             line-height: 120%
+    &_burgher
+        display: none
+        margin-left: 20px
+        border: 1px solid $borderconveniences
+        width: 46px
+        height: 46px
+        position: relative
+        cursor: pointer
+        & span
+            margin: 4px auto
+            display: block
+            background: $maincolor
+            border: 1px solid $maincolor
+            height: 2px
+            width: 22px
+            &:first-of-type
+                margin-top: 16px
+            &:last-of-type
+    &_burgher:hover
+        & span 
+            display: none
+            &:first-of-type
+                margin-top: 4px
+                transform: rotate(-45deg)
+                position: absolute
+                top: calc( 50% - 5px )
+                left: calc( 50% - 11px )
+                display: block
+            &:last-of-type
+                transform: rotate(45deg)
+                position: absolute
+                top: calc( 50% - 5px )
+                left: calc( 50% - 11px )
+                display: block
 @media (max-width: 1400px)
     .header
         &_wrapper
@@ -37,6 +73,10 @@
                 font-size: 16px
             & .icon_contact
                 padding-right: 30px
+        &_nav
+            display: none
+        &_burgher
+            display: block
 .nav  
     &_wrap
         display: flex

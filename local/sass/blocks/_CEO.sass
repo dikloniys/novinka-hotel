@@ -6,14 +6,25 @@
     &_wrapper
         display: flex
     &_wrap
-        padding-right: 25px
     &_text
         padding-bottom: 10px
         &:last-of-type
-            padding-bottom: 0
+            padding-bottom: 0px
 .video
-    padding-left: 25px
+    padding-left: 50px
 @media (max-width: 1400px)
     .video iframe 
         width: 475px
         height: 282px
+@media (max-width: 1000px)
+    .CEO
+        &_wrapper
+            display: block
+        &_wrap
+            padding-bottom: 30px
+    .video
+        padding-left: 0px
+        & iframe 
+            width: 100%
+            height: 414px
+        

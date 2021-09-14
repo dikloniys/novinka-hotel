@@ -18,6 +18,41 @@
             margin: 0 
             padding-left: calc(( 100% - 1000px )/2)
             overflow: hidden
+@media (max-width: 1000px)
+    .reviews 
+        &_wrapper
+            margin: 0 
+            padding-left: calc(( 100% - 700px )/2)
+            overflow: hidden
+.card
+    &_wrapper
+        background: $maincolor
+        width: 433px
+        padding: 25px 25px 22px
+    &_svg
+        padding-bottom: 20px
+    &_text
+        font-size: 14px
+        line-height: 150%
+        padding-bottom: 30px
+        color: $titlecolor
+    &_photo
+        width: 60px
+        height: 60px
+        margin-bottom: 10px
+    &_name
+        font-weight: 500
+        font-size: 13px
+        line-height: 120%
+        padding-bottom: 5px
+        color: $titlecolor
+    &_date
+        font-size: 13px
+        line-height: 120%
+@media (max-width: 1400px)
+    .card
+        &_wrapper
+            width: 475px
 .card
     &_wrapper
     &_svg

@@ -39,7 +39,7 @@
   justify-content: center;
 }
 .scroll_border:hover {
-  animation: scroll_move 0.8s infinite;
+  animation: scroll_move 0.9s infinite;
 }
 
 @keyframes scroll_move {
@@ -54,17 +54,99 @@
   }
 }
 @media (max-width: 1400px) {
+  .main {
+    height: 720px;
+    padding-top: 256px;
+  }
   .main_title {
     font-size: 64px;
     padding-bottom: 85px;
   }
 }
 @media (max-width: 1000px) {
+  .main {
+    height: 800px;
+    padding-top: 191px;
+  }
   .main_title {
     font-size: 48px;
     padding-bottom: 202px;
   }
+  .main_request {
+    display: block;
+  }
 }
+.catalogrooms {
+  padding: 100px;
+  background-color: #E5E5E5;
+}
+.catalogrooms_subtitle {
+  padding-bottom: 30px;
+}
+.catalogrooms_filter {
+  padding-bottom: 30px;
+}
+.filter {
+  margin-right: 15px;
+}
+.filter:last-of-type {
+  padding-right: 0px;
+}
+.filter_wrapper {
+  display: flex;
+}
+
+.cardroom_wrapper {
+  width: 440px;
+}
+.cardroom_wrap {
+  background-color: #fff;
+  padding: 20px;
+}
+.cardroom_wrap-maney {
+  display: flex;
+}
+.cardroom_img {
+  display: flex;
+  align-items: flex-end;
+  background: url(/local/img/luxury.png);
+  height: 250px;
+  padding: 0 20px;
+}
+.cardroom_slide {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.cardroom_slide:last-of-type {
+  margin-right: 15px;
+}
+.cardroom_slide-visible {
+  width: 68px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.cardroom_slide-visible.active {
+  background: white;
+}
+.cardroom_title {
+  padding-bottom: 10px;
+}
+.cardroom_text {
+  padding-bottom: 15px;
+}
+.cardroom_icon {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  border-bottom: 1px solid rgba(79, 97, 107, 0.1);
+  border-top: 1px solid rgba(79, 97, 107, 0.1);
+}
+
 .catalog__wrap {
   display: grid;
 }/*# sourceMappingURL=catalog.css.map */

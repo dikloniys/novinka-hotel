@@ -1,0 +1,55 @@
+.catalogrooms
+    padding: $mainpadding
+    background-color: $roomcolor
+    &_title
+    &_subtitle
+        padding-bottom: 30px
+    &_filter
+        padding-bottom: 30px
+    &_cardroom
+.filter
+    margin-right: 15px
+    &:last-of-type
+        padding-right: 0px
+    &_wrapper
+        display: flex
+.cardroom
+    &_wrapper
+        width: 440px
+    &_wrap
+        background-color: $maincolor
+        padding: 20px
+        &-maney
+            display: flex
+    &_img
+        display: flex
+        align-items: flex-end
+        background: url(/local/img/luxury.png)
+        height: 250px
+        padding: 0 20px 
+    &_slide
+        display: flex
+        align-items: flex-end
+        height: 100%
+        margin-right: 15px
+        cursor: pointer
+        &:last-of-type
+            margin-right: 15px
+        &-visible
+            width: 68px
+            height: 6px
+            background: rgba(255, 255, 255, 0.5)
+            border-radius: 20px
+            margin-bottom: 15px
+            &.active
+                background: rgba(255, 255, 255)
+    &_title
+        padding-bottom: 10px
+    &_text
+        padding-bottom: 15px
+    &_icon
+        padding: 20px 0
+        margin-bottom: 20px
+        display: flex
+        border-bottom: 1px solid $borderconveniences
+        border-top: 1px solid $borderconveniences

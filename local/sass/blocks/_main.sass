@@ -34,7 +34,7 @@
         align-items: center
         justify-content: center
         &:hover
-            animation: scroll_move 0.8s infinite
+            animation: scroll_move 0.9s infinite
 @keyframes scroll_move
     0%   
         padding-top: 0px
@@ -44,11 +44,17 @@
         padding-top: 6px
 @media (max-width: 1400px)
     .main
+        height: 720px
+        padding-top: 256px
         &_title
             font-size: 64px
             padding-bottom: 85px
 @media (max-width: 1000px)
     .main
+        height: 800px
+        padding-top: 191px
         &_title
             font-size: 48px
             padding-bottom: 202px
+        &_request
+            display: block

@@ -13,6 +13,45 @@
     &_text
         padding-left: 25px
         width: 50%
+.room
+    display: flex
+    overflow: hidden
+    padding-left: calc((   100% - 1400px )/2)
+    &_wrapper
+        padding-right: 50px
+        &:last-of-type
+            padding-right: 0px
+        & img
+            padding-bottom: 30px
+    &_img
+        height: 350px
+        width: 675px
+    &_title
+        padding-bottom: 10px
+    &_text
+        padding-bottom: 40px
+@media (max-width: 1400px)
+    .room
+        padding-left: calc((   100% - 1000px )/2)
+        &_img
+            width: 475px
+            height: 250px
+
+@media (max-width: 1000px)
+    .rooms
+        &_wrapper
+            display: block
+        &_subtitle
+            padding-right: 0px
+            width: 100%
+        &_text
+            padding-left: 0px
+            width: 100%
+        & .swiper-slide
+            width: 475px
+            margin-right: 50px
+    .room
+        padding-left: calc((   100% - 700px )/2)
 .maney
     &_wrap
         border-bottom: 1px solid $borderconveniences

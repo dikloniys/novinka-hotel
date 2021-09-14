@@ -4,15 +4,26 @@
     &_subtitle
         padding-bottom: 20px
     &_wrapper
-        display: flex
-    &_wrapodd
-        padding-right: 50px
-        & .gallery_text
-            padding-bottom: 30px
-    &_wrapeven    
+    &_wrap
+        &-text
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-column-gap: 50px
+            & .gallery_text
+                padding-bottom: 30px
+        &-cards
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-column-gap: 50px
+        &-card:last-of-type
+            padding-top: 50px
+    & img
+        width: 675px
+        height: 450px
+    &_wrap-cards
         & .gallery_text
             padding-bottom: 80px
-    &_carg
+    &_card
         padding-bottom: 100px
     & img
         padding-bottom: 15px
@@ -27,7 +38,25 @@
         padding-left: 34px
         padding-bottom: 20px
         border-bottom: 1px solid $borderconveniences
+    & .more_arrow
+        padding-left: calc( 50% + 27px )
 @media (max-width: 1400px)
     .gallery
         & img
             width: 475px
+            height: 320px
+@media (max-width: 1000px)
+    .gallery
+        & img
+            width: 475px
+            height: 320px
+        &_wrap
+            &-text
+                display: block
+                padding-right: 0px
+                & .gallery_text:first-of-type
+                    padding-bottom: 20px
+                & .gallery_text
+                    padding-bottom: 30px
+            &-card
+                display: none
