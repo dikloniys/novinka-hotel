@@ -28,6 +28,9 @@
   bottom: 30px;
   cursor: pointer;
 }
+.main .button_transparent {
+  margin-left: 37px;
+}
 
 .scroll_border {
   border: 1px solid #FFFFFF;

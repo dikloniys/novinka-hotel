@@ -51,6 +51,9 @@ img
 @media (max-width: 1000px)
     .subtitle
         width: 100%
+@media (max-width: 1000px)
+    .subtitle
+        font-size: 28px
 .text
     font-size: 15px
     line-height: 160%
@@ -73,6 +76,9 @@ section
 @media (max-width: 1000px)
     .container
         max-width: 700px
+@media (max-width: 700px)
+    .container
+        max-width: 345px
 .icon
     &_wrapper
         display: flex
@@ -192,6 +198,9 @@ section
         &:hover
             background: $secondcolor-special
             transition: 0.4s
+        &.catalog
+            height: 50px
+            width: 180px
     &.transparent
         background: none
     &_circle
@@ -215,6 +224,11 @@ section
             transform: rotate(45deg)
         &:last-child
             transform: rotate(-45deg)
+@media (max-width: 1000px)
+    .button
+        &.filled
+            &.catalog
+                width: 100%
 .filter
     cursor: pointer
     border-radius: 100px
@@ -245,10 +259,13 @@ section
     line-height: 46px
     letter-spacing: 0.01em
     cursor: pointer
-    margin-left: 37px
 @media (max-width: 1000px)
     .button_transparent
         margin: 0 auto
+@media (max-width: 700px)
+    .header
+        .button_transparent
+            display: none
 .more
     &_wrap
         border-bottom: 1px solid $borderconveniences
@@ -290,8 +307,9 @@ section
 .conveniences
     display: flex
     position: relative
-    width: 155px
-    height: 40px
+    margin-right: 15px
+    &:last-of-type
+        margin-right: 0
     &.big
         justify-content: space-between
         width: 440px
@@ -308,29 +326,43 @@ section
     &_text
         margin: auto 0
     &_icon
-        position: absolute
+        position: relative
+        z-index: 1
+        width: 40px
+        height: 40px
+        border: 1px solid $borderconveniences
+        border-radius: 50%
+        cursor: pointer
         &.big
             position: relative
             width: 70px
             height: 70px
     &_hide
+        position: absolute
         line-height: 42px
         text-align: center
         height: 40px
         opacity: 0
+        display: none
     &:hover .conveniences_hide
+        background-color: #fff
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1)
-        border-radius: 0px 100px 100px 0px
-        opacity: 0
+        border-radius: 100px 100px
+        padding-right: 10px
         animation: conveniences_hide 1s forwards
         transition: 0.4s
+        display: block
+.wifi
+    padding: 7.5px
 @keyframes conveniences_hide
     0%   
+        padding-left: 0px
         max-width: 0px
         opacity: 0
     100%
+        padding-left: 50px
         opacity: 1
-        max-width: 100px
+        max-width: 300px
 .request
     &_wrapper
         display: flex

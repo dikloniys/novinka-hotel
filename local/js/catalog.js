@@ -1,6 +1,8 @@
-console.log('js-slide')
+
 $(".js-slide").hover(function() {
-    $(".active").removeClass("active");
-    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    console.log((this).find())
+    console.log((this).siblings().removeClass("active"))
+    $(this).find(".js-slide").addClass("active");
     $(this).siblings().addClass("active");
 });

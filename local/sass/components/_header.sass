@@ -10,12 +10,6 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.05)
         padding-bottom: 25px
     &_nav
-        display: flex
-        justify-content: space-between
-        align-items: center
-        padding-top: 30px
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
-        padding-bottom: 25px
     &_wrapper
         display: flex
         & .icon_contact
@@ -59,6 +53,37 @@
                 top: calc( 50% - 5px )
                 left: calc( 50% - 11px )
                 display: block
+    &.fixed
+        & a
+            color: $titlecolor
+        & .header_contact
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+        & .header_nav
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+        & path
+            fill: $titlecolor
+        
+.fixed
+    background-color: #fff
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+.fixed_hidden 
+    background-color: #fff
+    position: relative
+    animation: fixed_hide 1s forwards
+    & a
+        color: $titlecolor
+    & .header_nav
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+@keyframes fixed_hide
+    0%   
+        top: 0
+        opacity: 1
+    100%
+        top: 88
+        opacity: 0
 @media (max-width: 1400px)
     .header
         &_wrapper
@@ -78,6 +103,13 @@
         &_burgher
             display: block
 .nav  
+    &_dropdown
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 30px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+        padding-bottom: 25px
     &_wrap
         display: flex
         justify-content: space-between
@@ -89,6 +121,8 @@
             padding-right: 0px
     &_item
         color: $maincolor
+    
+
 @media (max-width: 1400px)
     .nav  
         &_wrap

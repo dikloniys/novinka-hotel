@@ -120,3 +120,34 @@
     .copyright
         &_wrap
             display: block
+@media (max-width: 700px)
+    .footer
+        &_wrapper
+            display: block
+            padding-bottom: 0
+        &_wrap
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+            padding-bottom: 30px
+            display: block
+        &_nav 
+            display: block
+            width: 100%
+            padding: 30px 0
+        &_documents
+        &-wrap
+            display: flex
+    .nav
+        &_wrap
+            display: block
+        &_wrapper
+            &:nth-of-type(2)
+                padding-right: 100px
+        &_events
+            display: block
+        &_menu
+    .copyright
+        &_wrapper
+            flex-direction: column-reverse
+            align-items: flex-start
+        &_wrap
+            display: block

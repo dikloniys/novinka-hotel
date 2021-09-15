@@ -1,0 +1,92 @@
+@import '../helpers/_variables'
+@import '../blocks/_main'
+.contacts
+    background: $sectioncolor
+    padding: $mainpadding 0
+    position: relative
+    &_title
+    &_subtitle
+        width: 100%
+        padding-bottom: 30px
+    &_flex
+        display: flex
+    &_wrapper
+        padding-right: 50px
+    &_box
+        padding-bottom: 30px
+    &_icon
+        display: flex
+        align-items: center
+        padding-bottom: 10px
+        & a
+            padding-left: 10px
+    &_wrap
+        border-radius: 50%
+        display: flex
+        border: 1px solid #F2F2F2
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 32px
+        &-email
+            display: flex
+            align-items: center
+    &_center
+        fill: $secondcolor
+    &_svgtitle
+        padding-left: 10px
+        font-weight: 700
+        font-size: 14px
+        line-height: 120%
+    &_text
+        font-size: 18px
+        line-height: 130%
+    &_map
+        width: 50%
+        & iframe
+            width: 100%
+            height: 100%
+@media (max-width: 1000px)
+    .contacts
+        &_title
+        &_subtitle
+        &_flex
+            display: block
+        &_wrapper
+            & .more_arrow
+                padding-bottom: 30px
+        &_box
+        &_icon
+            & a
+        &_wrap
+            &-email
+        &_center
+        &_svgtitle
+        &_text
+        &_map
+            position: static
+            & iframe 
+                height: 352px
+                width: 700px
+@media (max-width: 700px)
+    .contacts
+        &_title
+        &_subtitle
+        &_flex
+            display: block
+        &_wrapper
+            & .more_arrow
+                padding-bottom: 30px
+        &_box
+        &_icon
+            & a
+        &_wrap
+            &-email
+        &_center
+        &_svgtitle
+        &_text
+        &_map
+            position: static
+            & iframe 
+                height: 400px
+                width: 345px
