@@ -1,0 +1,128 @@
+@import '../helpers/_variables'
+@import '../blocks/_main'
+.service
+    padding: 100px 0 
+    &_wrapper
+        display: flex
+    &_wrap
+        &:first-of-type
+            width: 50%
+            padding-right: 50px
+    &_title
+    &_subtitle
+        padding-bottom: 20px
+        width: 100%
+    &_list
+        &:last-child
+            padding-bottom: 30px
+    &_item
+        display: flex
+        padding-bottom: 21px
+    &_ordinal
+        width: 26px
+        height: 26px
+        border: 1px solid $borderconveniences
+        border-radius: 50%
+        color: $secondcolor
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 10px
+        font-size: 14px
+        &.symbol
+            font-size: 22px
+    &_text
+        width: 639px
+    &_callback
+        display: flex
+h3.service_subtitle.subtitle
+    font-size: 18px
+    line-height: 120%
+.callback
+    &_wrapper
+        display: flex
+        background-color: $sectioncolor
+        margin-right: 10px
+        padding: 25px 68px 26px 30px
+    &_icon
+        padding-right: 15px
+    &_wrap
+    &_manager
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        background-color: $sectioncolor
+        padding: 25px 29px 26px 28px
+        & .callback_title
+            font-size: 13px
+            line-height: 120%
+            padding-bottom: 3px
+        & .callback_text
+            font-size: 13px
+            line-height: 120%
+            font-weight: 400
+            padding-bottom: 0px
+    &_img
+        width: 80px
+        height: 80px
+        margin-bottom: 8px
+    &_title
+        color: $titlecolor
+        font-weight: 500
+        font-size: 20px
+        line-height: 120%
+        padding-bottom: 10px
+    &_text
+        font-size: 15px
+        line-height: 140%
+        padding-bottom: 20px
+@media (max-width: 1400px)
+    .service
+        padding: 100px  0
+        &_wrapper
+            display: flex
+        &_wrap
+            &:first-of-type
+                padding-right: 50px
+    .callback
+        &_manager
+            display: none
+@media (max-width: 1000px)
+    .service
+        padding: 100px 0
+        &_wrapper
+            display: block
+        &_wrap
+            &:first-of-type
+                padding-right: 0px
+                width: 100%
+    .callback
+        &_manager
+            display: flex
+@media (max-width: 700px)
+    .service
+        padding: 100px 0
+        &_wrapper
+            display: block
+        &_wrap
+            &:first-of-type
+                padding-right: 0px
+                width: 100%
+        &_callback
+            flex-direction: column-reverse
+    .callback
+        &_title
+            font-size: 18px
+        &_manager
+            margin-bottom: 10px
+        &_wrapper
+            margin-right: 0
+            padding: 20px
+        &_wrap-mobile
+            display: flex
+            &.callback_icon
+                padding-right: 10px
+    .button.filled
+        width: 100%
+

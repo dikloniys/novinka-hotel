@@ -22,10 +22,14 @@
     &_number
         color: $maincolor
         padding-bottom: 15px
+        &:last-of-type
+            padding-bottom: 0px
     &_address
     &_addres
         color: $maincolor
         padding-bottom: 15px
+        &:last-of-type
+            padding-bottom: 0px
     &_nav 
         display: flex
         width: 47%
@@ -57,6 +61,11 @@
             color: $textfootercolor
             font-size: 14px
             line-height: 120%
+        &:last-of-type
+            padding-bottom: 0px
+    & .nomobile 
+.mobile 
+    display: none
 .copyright
     &_wrapper
         display: flex
@@ -66,6 +75,12 @@
     &_wrap
         display: flex
         justify-content: space-between
+        & .copyright_documents-wrap
+            display: none
+    &_flex
+        display: flex
+        & .icon_wrapper
+            align-items: center
     &_copyright
         width: 433px
         font-size: 12px
@@ -79,9 +94,13 @@
         &:last-of-type
             padding-right: 41px
         & a
+            font-weight: 400
+            font-size: 12px
+            line-height: 130%
             color: $textfootercolor
 @media (max-width: 1400px)
     .footer
+        padding-top: 50px
         &_nav 
             display: block
         &_documents
@@ -95,6 +114,12 @@
             display: flex
             justify-content: space-between
         &_menu
+    .copyright
+        &_documents 
+            &:first-child
+                padding-bottom: 8px
+            &-wrap
+                flex-direction: column
 @media (max-width: 1000px)
     .footer
         &_wrapper
@@ -118,36 +143,80 @@
             display: block
         &_menu
     .copyright
+        &_wrapper
+            align-items: flex-start
+            padding: 20px 0 30px
         &_wrap
             display: block
+            & .copyright_documents-wrap
+                display: flex
+                flex-direction: row
+        &_documents
+            &:first-child
+                padding-bottom: 0px
+            &:first-of-type
+                padding-right: 8px
+            &:last-of-type
+                padding-right: 0px
+        &_flex
+            display: flex
+            & .copyright_documents-wrap
+                display: none
+        &_copyright
+            padding-bottom: 20px
 @media (max-width: 700px)
     .footer
-        &_wrapper
-            display: block
-            padding-bottom: 0
         &_wrap
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05)
-            padding-bottom: 30px
             display: block
         &_nav 
             display: block
-            width: 100%
-            padding: 30px 0
         &_documents
         &-wrap
-            display: flex
+        &_logo
+            padding-bottom: 20px
+        &_numbers
+            padding-right: 0px
+            padding-bottom: 15px
     .nav
         &_wrap
             display: block
+        &_wrapperup
+            &:first-of-type
+                padding-right: 0px
         &_wrapper
+            padding-bottom: 20px
             &:nth-of-type(2)
-                padding-right: 100px
+                padding-right: 0px
         &_events
             display: block
+        &_title 
+            padding-bottom: 10px
         &_menu
     .copyright
         &_wrapper
             flex-direction: column-reverse
             align-items: flex-start
+            padding: 0 0 20px
         &_wrap
             display: block
+            & .copyright_documents-wrap
+                display: flex
+                flex-direction: row
+        &_flex
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+            width: 100%
+            padding: 20px 0
+            margin-bottom: 20px
+        &_documents
+            &:first-child
+                padding-bottom: 0px
+            &:first-of-type
+                padding-right: 8px
+            &:last-of-type
+                padding-right: 0px
+        &_copyright
+            padding-bottom: 15px
+    .nomobile
+        display: none
+    .mobile
+        display: block

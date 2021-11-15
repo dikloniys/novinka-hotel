@@ -1,12 +1,131 @@
 
 .swiper
-    overflow: hidden
-    padding-left: calc(( 100% - 700px )/2)
+    padding-bottom: 30px
+    &-wrap
+        padding-left: 50px
+    &-wrapper
+        width: 675px
+        height: 450px
+    &-slide
+
+.slick
+    &-preve
+        border-radius: 50%
+        position: relative
+        display: flex
+        border: 2px solid $borderconveniences
+        background-color: $sectioncolor
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        cursor: pointer
+        z-index: 1
+        left: -20px
+        top: calc( 50% + 20px )
+        //&:hover.slick-preve span
+            //border: 1px solid $secondcolor
+    &-preve
+        & span
+            border: 1px solid $secondcolor
+            width: 15px
+            position: absolute
+            left: calc( 50% - 8px )
+            &:first-of-type
+                transform: rotate(-45deg)
+                width: 8px
+                top: 14px
+            &:last-of-type
+                width: 8px
+                transform: rotate(45deg)
+                bottom: 14px
+    &-nexte 
+        border-radius: 50%
+        position: relative
+        display: flex
+        border: 2px solid $borderconveniences
+        background-color: $sectioncolor
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        cursor: pointer
+        z-index: 1
+        left: calc( 100% - 20px )
+        top: calc( -50% - 20px )
+        &:before
+            content: none
+        //&:hover.slick-nexte span
+            //border: 1px solid $secondcolor
+    &-nexte
+        & span
+            border: 1px solid $secondcolor
+            width: 15px
+            position: absolute
+            right: calc( 50% - 8px )
+            &:first-of-type
+                transform: rotate(45deg)
+                width: 8px
+                top: 14px
+            &:last-of-type
+                width: 8px
+                transform: rotate(-45deg)
+                bottom: 14px
+    &-dots li 
+        position: relative
+        display: inline-block
+        width: 68px
+        height: 6px
+        margin: 0 5px
+        padding: 0
+        cursor: pointer
+    &-dots li button
+        font-size: 0
+        line-height: 0
+        display: block
+        width: 68px
+        height: 6px
+        padding: 0px
+        cursor: pointer
+        color: $borderconveniences
+        border: 0
+        outline: none
+        background: rgba(255, 255, 255, 0.5)
+        border: 1px solid $borderconveniences
+        border-radius: 20px
+    &-dots li button:before
+        font-family: 'slick'
+        font-size: 6px
+        line-height: 20px
+        position: absolute
+        top: 0
+        left: 0
+        width: 68px
+        height: 6px
+        content: none
+        text-align: center
+    &-active button
+        background: #fff !important
+    &-disabled span
+        color: $borderconveniences
+        border: 1px solid $borderconveniences
 @media (max-width: 1400px)
+    .swiper
+        padding-bottom: 30px
+        &-wrap
+            padding-left: 50px
+        &-wrapper
+            width: 475px
+            height: 316px
 @media (max-width: 1000px)
     .swiper
         overflow: hidden
         padding-left: calc(( 100% - 700px )/2)
+        &-wrap
+            padding-left: 50px
+        &-wrapper
+            width: 700px
+            height: 466px
         &-button-prev
             display: none
         &-button-next

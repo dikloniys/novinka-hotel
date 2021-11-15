@@ -1,0 +1,149 @@
+@import '../helpers/_variables'
+@import '../blocks/_main'
+.room
+    padding: 50px 0 100px
+    & .slick-dots
+        display: none
+    &_wrapper
+        display: flex
+    &_slider
+        width: 675px
+        height: 452px
+        overflow: hidden
+        margin-right: 50px
+    &_main
+        width: 50%
+    &_title
+        &-conveniences
+            font-weight: 500
+            font-size: 26px
+            line-height: 110%
+            color: $titlecolor
+            padding-bottom: 30px
+    &_subtitle
+        width: 100%
+        padding-bottom: 20px
+    &_text
+        padding-bottom: 30px
+    &_information
+        display: flex
+        justify-content: space-between
+        text-align: center
+    &_size
+        display: flex
+        justify-content: space-between
+        padding: 22px 0 21px
+        width: 100%
+        border-bottom: 1px solid $borderconveniences
+        border-top: 1px solid $borderconveniences
+        &:first-of-type
+            margin-right: 50px
+    &_designation
+        font-size: 14px
+        color: $textcolor
+        line-height: 120%
+    &_meaning
+        font-weight: 500
+        font-size: 14px
+        line-height: 120%
+        color: $titlecolor
+    &_wrap
+        display: flex
+        padding: 25px 0 50px
+    &_price
+        margin-right: 15px
+        background-color: $sectioncolor
+        padding: 20px 23px 26px 20px
+        &:last-of-type
+            margin-right: 0px
+    &_connection
+        display: flex
+        justify-content: space-between 
+        padding-bottom: 112px
+    &_button
+        width: 310px
+        height: 60px
+        line-height: 60px
+    &_conveniences
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+.slider
+    &_for
+    &_slide
+    &_wrapper
+    &_img
+    &_bar
+    &_wrap
+.bar
+    &_wrap
+        display: flex
+    &_border
+        border: 1px solid $borderconveniences
+        margin-right: 10px
+        cursor: pointer
+        &.active
+            border: 1px solid $secondcolor
+        &:last-of-type
+            margin-right: 0
+    &_img
+        width: 117px
+        height: 72px
+        padding: 5px
+.price
+    &_svg
+        margin-bottom: 15px
+        width: 40px
+        height: 40px
+        border: 1px solid $borderconveniences
+        border-radius: 50%
+        display: flex    
+        align-items: center
+        justify-content: space-evenly
+    &_center
+    &_title
+        font-weight: 500
+        font-size: 18px
+        line-height: 120%
+        color: $titlecolor
+        padding-bottom: 10px
+    &_date
+        font-size: 14px
+        line-height: 120%
+.conveniences
+    display: flex
+    position: relative
+    margin-right: 15px
+    &.big
+        margin-right: 0
+        justify-content: space-between
+        width: 440px
+        height: 100%
+        border-top: 1px solid $borderconveniences
+        border-bottom: 1px solid $borderconveniences
+        padding-top: 20px
+        padding-bottom: 20px
+        &:hover circle
+            stroke: $secondcolor
+            stroke-opacity: 1
+        &:hover .svg_center
+            fill: $secondcolor
+        &:hover.conveniences.big
+            border-top: 1px solid $secondcolor
+            border-bottom: 1px solid $secondcolor
+    &_text
+        margin: auto 0
+    &_icon
+        position: relative
+        z-index: 1
+        width: 40px
+        height: 40px
+        border: 1px solid $borderconveniences
+        border-radius: 50%
+        cursor: pointer
+        &.big
+            position: relative
+            width: 70px
+            height: 70px
+            &.wifi
+                padding: 10px

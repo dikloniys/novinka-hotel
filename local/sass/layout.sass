@@ -310,19 +310,6 @@ section
     margin-right: 15px
     &:last-of-type
         margin-right: 0
-    &.big
-        justify-content: space-between
-        width: 440px
-        height: 100%
-        border-bottom: 1px solid $borderconveniences
-        padding-bottom: 20px
-        &:hover circle
-            stroke: $secondcolor
-            stroke-opacity: 1
-        &:hover .svg_center
-            fill: $secondcolor
-        &:hover.conveniences.big
-            border-bottom: 1px solid $secondcolor
     &_text
         margin: auto 0
     &_icon
@@ -385,7 +372,34 @@ section
     .request
         &_wrapper
             margin: 0 auto 40px
-
+.popup
+    background-color: $roomcolor
+    &_wrapper
+        border-radius: 20px
+        background-color: $maincolor
+    &_title
+        font-weight: 500
+        font-size: 24px
+        line-height: 28px
+    &_form
+.form
+    display: flex
+    align-items: flex-end
+    & p
+    & label
+        position: relative
+    & input
+        border: none
+        width: 230px
+        height: 50px
+        margin-right: 25px
+        background-color: #ECF1F7
+        &:hover
+            background-color: #EDF5FE
+    &_text
+        position: absolute
+        left: 50%
+        top: 50%
 @import 'components/header'
 @import 'components/slider'
 

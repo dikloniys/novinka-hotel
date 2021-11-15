@@ -63,12 +63,15 @@
         & path
             fill: $titlecolor
         
+.fixed:first-of-type
+    position: relative
 .fixed
     background-color: #fff
     position: fixed
     top: 0
     left: 0
-    z-index: 1
+    z-index: 20
+    &.header_burgher span
 .fixed_hidden 
     background-color: #fff
     position: relative
@@ -84,24 +87,8 @@
     100%
         top: 88
         opacity: 0
-@media (max-width: 1400px)
-    .header
-        &_wrapper
-            & a
-                font-size: 16px
-            & .icon_contact
-                padding-right: 30px
-@media (max-width: 1000px)
-    .header
-        &_wrapper
-            & a
-                font-size: 16px
-            & .icon_contact
-                padding-right: 30px
-        &_nav
-            display: none
-        &_burgher
-            display: block
+.fixed .header_burgher span
+    border: 1px solid $titlecolor
 .nav  
     &_dropdown
         display: flex
@@ -122,9 +109,28 @@
     &_item
         color: $maincolor
     
-
 @media (max-width: 1400px)
+    .header
+        &_wrapper
+            & a
+                font-size: 16px
+            & .icon_contact
+                padding-right: 30px
     .nav  
         &_wrap
         &_bar
             padding-right: 40px 
+@media (max-width: 1000px)
+    .header
+        &_wrapper
+            & a
+                font-size: 16px
+            & .icon_contact
+                padding-right: 30px
+        &_nav
+            display: none
+        &_burgher
+            display: block
+@media (max-width: 700px)
+    .header .button
+        display: none
