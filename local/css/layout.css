@@ -843,7 +843,11 @@ section {
 .swiper {
   padding-bottom: 30px;
   overflow-x: hidden;
-  padding-left: calc(( 100% - $content-size )/2);
+  margin-left: calc(( 100% - 1400px )/2);
+}
+
+.swiper-slide {
+  width: 675px;
 }
 
 .slick-preve {
