@@ -6,3 +6,10 @@ $(document).ready(function(){
         infinite: false
     });
 });
+
+const mainSliderCatalogOptions = {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true
+}
+var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);

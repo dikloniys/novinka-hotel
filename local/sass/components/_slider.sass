@@ -1,11 +1,9 @@
+@import '../helpers/_variables'
 
 .swiper
     padding-bottom: 30px
-    &-wrap
-        padding-left: 50px
-    &-wrapper
-        width: 675px
-        height: 450px
+    overflow-x: hidden
+    padding-left: calc(( 100% - $content-size )/2)
     &-slide
 
 .slick
@@ -114,18 +112,12 @@
         padding-bottom: 30px
         &-wrap
             padding-left: 50px
-        &-wrapper
-            width: 475px
-            height: 316px
 @media (max-width: 1000px)
     .swiper
         overflow: hidden
         padding-left: calc(( 100% - 700px )/2)
         &-wrap
             padding-left: 50px
-        &-wrapper
-            width: 700px
-            height: 466px
         &-button-prev
             display: none
         &-button-next

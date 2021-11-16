@@ -5,6 +5,7 @@
   background: url(/local/img/promo-background.png);
   padding-top: 380px;
 }
+
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
@@ -15,11 +16,13 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -28,6 +31,7 @@
   bottom: 30px;
   cursor: pointer;
 }
+
 .main .button_transparent {
   margin-left: 37px;
 }
@@ -41,6 +45,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .scroll_border:hover {
   animation: scroll_move 0.9s infinite;
 }
@@ -56,6 +61,7 @@
     padding-top: 6px;
   }
 }
+
 @media (max-width: 1400px) {
   .main {
     height: 720px;
@@ -66,6 +72,7 @@
     padding-bottom: 85px;
   }
 }
+
 @media (max-width: 1000px) {
   .main {
     height: 800px;
@@ -79,27 +86,34 @@
     display: block;
   }
 }
+
 .service {
   padding: 100px 0;
 }
+
 .service_wrapper {
   display: flex;
 }
+
 .service_wrap:first-of-type {
   width: 50%;
   padding-right: 50px;
 }
+
 .service_subtitle {
   padding-bottom: 20px;
   width: 100%;
 }
+
 .service_list:last-child {
   padding-bottom: 30px;
 }
+
 .service_item {
   display: flex;
   padding-bottom: 21px;
 }
+
 .service_ordinal {
   width: 26px;
   height: 26px;
@@ -112,12 +126,15 @@
   margin-right: 10px;
   font-size: 14px;
 }
+
 .service_ordinal.symbol {
   font-size: 22px;
 }
+
 .service_text {
   width: 639px;
 }
+
 .service_callback {
   display: flex;
 }
@@ -133,9 +150,11 @@ h3.service_subtitle.subtitle {
   margin-right: 10px;
   padding: 25px 68px 26px 30px;
 }
+
 .callback_icon {
   padding-right: 15px;
 }
+
 .callback_manager {
   display: flex;
   flex-direction: column;
@@ -144,22 +163,26 @@ h3.service_subtitle.subtitle {
   background-color: #F9F9F9;
   padding: 25px 29px 26px 28px;
 }
+
 .callback_manager .callback_title {
   font-size: 13px;
   line-height: 120%;
   padding-bottom: 3px;
 }
+
 .callback_manager .callback_text {
   font-size: 13px;
   line-height: 120%;
   font-weight: 400;
   padding-bottom: 0px;
 }
+
 .callback_img {
   width: 80px;
   height: 80px;
   margin-bottom: 8px;
 }
+
 .callback_title {
   color: #282828;
   font-weight: 500;
@@ -167,6 +190,7 @@ h3.service_subtitle.subtitle {
   line-height: 120%;
   padding-bottom: 10px;
 }
+
 .callback_text {
   font-size: 15px;
   line-height: 140%;
@@ -175,7 +199,7 @@ h3.service_subtitle.subtitle {
 
 @media (max-width: 1400px) {
   .service {
-    padding: 100px 0;
+    padding: 100px  0;
   }
   .service_wrapper {
     display: flex;
@@ -183,11 +207,11 @@ h3.service_subtitle.subtitle {
   .service_wrap:first-of-type {
     padding-right: 50px;
   }
-
   .callback_manager {
     display: none;
   }
 }
+
 @media (max-width: 1000px) {
   .service {
     padding: 100px 0;
@@ -199,11 +223,11 @@ h3.service_subtitle.subtitle {
     padding-right: 0px;
     width: 100%;
   }
-
   .callback_manager {
     display: flex;
   }
 }
+
 @media (max-width: 700px) {
   .service {
     padding: 100px 0;
@@ -218,7 +242,6 @@ h3.service_subtitle.subtitle {
   .service_callback {
     flex-direction: column-reverse;
   }
-
   .callback_title {
     font-size: 18px;
   }
@@ -235,8 +258,8 @@ h3.service_subtitle.subtitle {
   .callback_wrap-mobile.callback_icon {
     padding-right: 10px;
   }
-
   .button.filled {
     width: 100%;
   }
-}/*# sourceMappingURL=service.css.map */
+}
+/*# sourceMappingURL=service.css.map */
