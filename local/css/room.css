@@ -5,6 +5,7 @@
   background: url(/local/img/promo-background.png);
   padding-top: 380px;
 }
+
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
@@ -15,11 +16,13 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -28,6 +31,7 @@
   bottom: 30px;
   cursor: pointer;
 }
+
 .main .button_transparent {
   margin-left: 37px;
 }
@@ -41,6 +45,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .scroll_border:hover {
   animation: scroll_move 0.9s infinite;
 }
@@ -56,6 +61,7 @@
     padding-top: 6px;
   }
 }
+
 @media (max-width: 1400px) {
   .main {
     height: 720px;
@@ -66,6 +72,7 @@
     padding-bottom: 85px;
   }
 }
+
 @media (max-width: 1000px) {
   .main {
     height: 800px;
@@ -79,24 +86,30 @@
     display: block;
   }
 }
+
 .room {
   padding: 50px 0 100px;
 }
+
 .room .slick-dots {
   display: none;
 }
+
 .room_wrapper {
   display: flex;
 }
+
 .room_slider {
   width: 675px;
   height: 452px;
   overflow: hidden;
   margin-right: 50px;
 }
+
 .room_main {
   width: 50%;
 }
+
 .room_title-conveniences {
   font-weight: 500;
   font-size: 26px;
@@ -104,18 +117,22 @@
   color: #282828;
   padding-bottom: 30px;
 }
+
 .room_subtitle {
   width: 100%;
   padding-bottom: 20px;
 }
+
 .room_text {
   padding-bottom: 30px;
 }
+
 .room_information {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
+
 .room_size {
   display: flex;
   justify-content: space-between;
@@ -124,42 +141,51 @@
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   border-top: 1px solid rgba(79, 97, 107, 0.1);
 }
+
 .room_size:first-of-type {
   margin-right: 50px;
 }
+
 .room_designation {
   font-size: 14px;
   color: #4F616B;
   line-height: 120%;
 }
+
 .room_meaning {
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
   color: #282828;
 }
+
 .room_wrap {
   display: flex;
   padding: 25px 0 50px;
 }
+
 .room_price {
   margin-right: 15px;
   background-color: #F9F9F9;
   padding: 20px 23px 26px 20px;
 }
+
 .room_price:last-of-type {
   margin-right: 0px;
 }
+
 .room_connection {
   display: flex;
   justify-content: space-between;
   padding-bottom: 112px;
 }
+
 .room_button {
   width: 310px;
   height: 60px;
   line-height: 60px;
 }
+
 .room_conveniences {
   display: flex;
   justify-content: space-between;
@@ -169,17 +195,21 @@
 .bar_wrap {
   display: flex;
 }
+
 .bar_border {
   border: 1px solid rgba(79, 97, 107, 0.1);
   margin-right: 10px;
   cursor: pointer;
 }
+
 .bar_border.active {
   border: 1px solid #900E0E;
 }
+
 .bar_border:last-of-type {
   margin-right: 0;
 }
+
 .bar_img {
   width: 117px;
   height: 72px;
@@ -196,6 +226,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
 .price_title {
   font-weight: 500;
   font-size: 18px;
@@ -203,6 +234,7 @@
   color: #282828;
   padding-bottom: 10px;
 }
+
 .price_date {
   font-size: 14px;
   line-height: 120%;
@@ -213,6 +245,7 @@
   position: relative;
   margin-right: 15px;
 }
+
 .conveniences.big {
   margin-right: 0;
   justify-content: space-between;
@@ -223,20 +256,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .conveniences.big:hover circle {
   stroke: #900E0E;
   stroke-opacity: 1;
 }
+
 .conveniences.big:hover .svg_center {
   fill: #900E0E;
 }
+
 .conveniences.big:hover.conveniences.big {
   border-top: 1px solid #900E0E;
   border-bottom: 1px solid #900E0E;
 }
+
 .conveniences_text {
   margin: auto 0;
 }
+
 .conveniences_icon {
   position: relative;
   z-index: 1;
@@ -246,11 +284,14 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .conveniences_icon.big {
   position: relative;
   width: 70px;
   height: 70px;
 }
+
 .conveniences_icon.big.wifi {
   padding: 10px;
-}/*# sourceMappingURL=room.css.map */
+}
+/*# sourceMappingURL=room.css.map */
