@@ -10,6 +10,6 @@ $(document).ready(function(){
 const mainSliderCatalogOptions = {
     slidesPerView: "auto",
     spaceBetween: 30,
-    loop: true
+    loop: true,
 }
 var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);
