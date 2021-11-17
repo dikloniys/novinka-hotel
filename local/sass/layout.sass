@@ -91,13 +91,28 @@ section
         width: 32px
         height: 32px
         margin-right: 20px
-        &:nth-last-of-type(2)
-            padding-left: 1px
-        &:last-of-type
-            margin-right: 0px
         &:hover .icon_social-center
             fill: $maincolor
             transition: 0.4s
+    &_contact
+        display: flex
+        align-items: center
+        & a:last-of-type
+            margin-left: 10px
+        &-svg
+            height: 26px
+            width: 26px
+            border-radius: 50%
+            border: 1px solid #F2F2F2 
+        &:hover .icon_contact-svg
+            background-color: #fff
+            transition: 0.4s
+        &:hover .icon_hover
+            fill: $secondcolor
+            transition: 0.4s
+@media (max-width: 1000px)
+    .icon_contact
+        display: none
 .vk:hover 
     background: #2C5FE1
     border: 1px solid #2C5FE1
@@ -124,17 +139,7 @@ section
     border: 1px solid #FD000D
     transition: 0.4s 
 
-.icon_contact
-    display: flex
-    align-items: center
-    & a
-        padding-left: 10px
-    &:hover .icon_hover
-        fill: $secondcolor
-        transition: 0.4s
-@media (max-width: 1000px)
-    .icon_contact
-        display: none
+
 .dropdown
     display: flex
     cursor: pointer
@@ -271,6 +276,7 @@ section
         border-bottom: 1px solid $borderconveniences
         padding-bottom: 20px            
     &_arrow
+        cursor: pointer
         display: flex
         align-items: center
         &:hover .arrow_center
