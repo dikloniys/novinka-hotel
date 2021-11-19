@@ -3,6 +3,8 @@
   height: 1005px;
   width: 100%;
   background: url(/local/img/promo-background.png);
+}
+.main-wrapper {
   padding-top: 380px;
 }
 .main_title {
