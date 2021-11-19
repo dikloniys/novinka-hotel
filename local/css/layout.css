@@ -539,7 +539,7 @@ section {
 
 .header {
   position: absolute;
-  padding-top: 25px;
+  padding-top: 23px;
   z-index: 2;
   width: 100%;
 }
@@ -548,13 +548,16 @@ section {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 25px;
+  padding-bottom: 23px;
 }
 .header_nav {
   transition: opacity 2s;
   visibility: visible;
   opacity: 1;
-  height: 1;
+  height: 100%;
+}
+.header .button_transparent {
+  height: 46px;
 }
 .header_wrapper {
   display: flex;

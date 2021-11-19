@@ -1,6 +1,5 @@
 $(function() {
     let header = $('.header');
-
     $(window).scroll(function() {
     if($(this).scrollTop() > 105) {
     header.addClass('fixed');
@@ -10,7 +9,6 @@ $(function() {
     });
 });
 $(function(){
-
     let CurrentScroll = 0;
     $(window).scroll(function(){
         let NextScroll = $(this).scrollTop();
