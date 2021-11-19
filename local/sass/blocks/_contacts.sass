@@ -1,13 +1,15 @@
 .contacts
     background: $sectioncolor
-    padding: $mainpadding 0
-    position: relative
+    padding-left: calc(( 100% - 1400px)/2)
     &_title
     &_subtitle
         padding-bottom: 30px
+        width: 100%
     &_flex
         display: flex
+        justify-content: space-between
     &_wrapper
+        padding-top: 100px
     &_box
         padding-bottom: 30px
     &_icon
@@ -38,11 +40,14 @@
         font-size: 18px
         line-height: 130%
     &_map
-        position: absolute
-        right: 0
-        top: 0
+        width: 48.7%
+        overflow: hidden
+@media (max-width: 1400px)
+    .contacts
+        padding-left: calc(( 100% - 1000px)/2)
 @media (max-width: 1000px)
     .contacts
+        padding-left: calc(( 100% - 700px)/2)
         &_title
         &_subtitle
         &_flex
@@ -59,7 +64,7 @@
         &_svgtitle
         &_text
         &_map
-            position: static
+            width: 700px
             & iframe 
                 height: 352px
                 width: 700px

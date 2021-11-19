@@ -38,8 +38,8 @@
         justify-content: space-between
 .nav
     &_wrapperup
-        &:first-of-type
-            padding-right: 100px
+    &_aboutus
+            padding-right: 95px
     &_wrap
         display: flex
         justify-content: space-between
@@ -84,7 +84,7 @@
         & .icon_wrapper
             align-items: center
     &_copyright
-        width: 433px
+        max-width: 433px
         font-size: 12px
         line-height: 120%
         color: $textfootercolor
@@ -108,14 +108,28 @@
         &_documents
         &-wrap
             display: block
+        &_wrapper
+            padding-bottom: 40px
     .nav
         &_wrapper
+            &:first-of-type
+                padding-bottom: 30px
+                &
             &:nth-of-type(2)
                 padding-right: 100px
+                padding-bottom: 30px
         &_events
             display: flex
-            justify-content: space-between
+            justify-content: flex-start
+            &_wrapper
+                padding-bottom: 0px
         &_menu
+    .nav_events
+        .nav
+            &_wrapper
+                padding-right: 126px
+                &:first-of-type
+                    padding-bottom: 0px
     .copyright
         &_documents 
             &:first-child
@@ -140,9 +154,14 @@
     .nav
         &_wrapper
             &:nth-of-type(2)
-                padding-right: 100px
+                padding-right: 0px
+                padding-bottom: 0px 
         &_events
             display: block
+            .nav_wrapper
+                padding-right: 0px
+                &:first-of-type
+                    padding-bottom: 30px
         &_menu
     .copyright
         &_wrapper
@@ -185,10 +204,17 @@
         &_wrapperup
             &:first-of-type
                 padding-right: 0px
+            &-mobile
+                display: block
+                &.nav_wrapper
+                    display: block
         &_wrapper
             padding-bottom: 20px
+            &:first-of-type
+                padding-bottom: 20px
             &:nth-of-type(2)
-                padding-right: 0px
+                display: none
+        &_aboutus
         &_events
             display: block
         &_title 
@@ -198,12 +224,23 @@
         &_wrapper
             flex-direction: column-reverse
             align-items: flex-start
-            padding: 0 0 20px
+            padding: 20px 0 20px
+            & .icon_wrapper
+                width: 100%
+                padding-bottom: 20px
+                margin-bottom: 20px
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+            & .icon_social
+                width: 40px
+                height: 40px
+                margin-right: 40px
+            & .odnoklassniki
+                padding-top: 9px
         &_wrap
             display: block
             & .copyright_documents-wrap
                 display: flex
-                flex-direction: row
+                flex-direction: column
         &_flex
             border-bottom: 1px solid rgba(255, 255, 255, 0.05)
             width: 100%
@@ -218,7 +255,5 @@
                 padding-right: 0px
         &_copyright
             padding-bottom: 15px
-    .nomobile
-        display: none
     .mobile
         display: block

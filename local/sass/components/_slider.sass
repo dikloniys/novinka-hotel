@@ -4,12 +4,13 @@
     padding-bottom: 30px
     overflow-x: hidden
     margin-left: calc(( 100% - 1400px )/2)
+    position: relative
     &-slide
         width: 675px
-.slick
-    &-preve
-        border-radius: 50%
-        position: relative
+.swiper
+    &-button-prev
+        border-radius: 50% 0 0 50%
+        position: absolute
         display: flex
         border: 2px solid $borderconveniences
         background-color: $sectioncolor
@@ -19,11 +20,8 @@
         height: 40px
         cursor: pointer
         z-index: 1
-        left: -20px
-        top: calc( 50% + 20px )
-        //&:hover.slick-preve span
-            //border: 1px solid $secondcolor
-    &-preve
+        left: 76%
+        top: 25%
         & span
             border: 1px solid $secondcolor
             width: 15px
@@ -37,8 +35,10 @@
                 width: 8px
                 transform: rotate(45deg)
                 bottom: 14px
-    &-nexte 
-        border-radius: 50%
+        &:after 
+            content: ''
+    &-button-next 
+        border-radius:0 50% 50% 0
         position: relative
         display: flex
         border: 2px solid $borderconveniences
@@ -49,13 +49,10 @@
         height: 40px
         cursor: pointer
         z-index: 1
-        left: calc( 100% - 20px )
-        top: calc( -50% - 20px )
-        &:before
-            content: none
-        //&:hover.slick-nexte span
-            //border: 1px solid $secondcolor
-    &-nexte
+        left: 78%
+        top: -380px
+        &::after
+            content: ''
         & span
             border: 1px solid $secondcolor
             width: 15px
