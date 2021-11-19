@@ -381,6 +381,7 @@
 }
 .gallery_wrap-text .gallery_text {
   padding-bottom: 30px;
+  line-height: 160%;
 }
 .gallery_wrap-cards {
   display: grid;
@@ -558,14 +559,18 @@
 }
 .contacts {
   background: #F9F9F9;
-  padding: 100px 0;
-  position: relative;
+  padding-left: calc(( 100% - 1400px)/2);
 }
 .contacts_subtitle {
   padding-bottom: 30px;
+  width: 100%;
 }
 .contacts_flex {
   display: flex;
+  justify-content: space-between;
+}
+.contacts_wrapper {
+  padding-top: 100px;
 }
 .contacts_box {
   padding-bottom: 30px;
@@ -605,11 +610,15 @@
   line-height: 130%;
 }
 .contacts_map {
-  position: absolute;
-  right: 0;
-  top: 0;
+  width: 48.7%;
+  overflow: hidden;
 }
 
+@media (max-width: 1400px) {
+  .contacts {
+    padding-left: calc(( 100% - 1000px)/2);
+  }
+}
 @media (max-width: 1000px) {
   .contacts_flex {
     display: block;
@@ -629,14 +638,15 @@
   padding-bottom: 30px;
   overflow-x: hidden;
   margin-left: calc(( 100% - 1400px )/2);
+  position: relative;
 }
 .swiper-slide {
   width: 675px;
 }
 
-.slick-preve {
-  border-radius: 50%;
-  position: relative;
+.swiper-button-prev {
+  border-radius: 50% 0 0 50%;
+  position: absolute;
   display: flex;
   border: 2px solid rgba(79, 97, 107, 0.1);
   background-color: #F9F9F9;
@@ -646,27 +656,30 @@
   height: 40px;
   cursor: pointer;
   z-index: 1;
-  left: -20px;
-  top: calc( 50% + 20px );
+  left: 76%;
+  top: 25%;
 }
-.slick-preve span {
+.swiper-button-prev span {
   border: 1px solid #900E0E;
   width: 15px;
   position: absolute;
   left: calc( 50% - 8px );
 }
-.slick-preve span:first-of-type {
+.swiper-button-prev span:first-of-type {
   transform: rotate(-45deg);
   width: 8px;
   top: 14px;
 }
-.slick-preve span:last-of-type {
+.swiper-button-prev span:last-of-type {
   width: 8px;
   transform: rotate(45deg);
   bottom: 14px;
 }
-.slick-nexte {
-  border-radius: 50%;
+.swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-next {
+  border-radius: 0 50% 50% 0;
   position: relative;
   display: flex;
   border: 2px solid rgba(79, 97, 107, 0.1);
@@ -677,29 +690,29 @@
   height: 40px;
   cursor: pointer;
   z-index: 1;
-  left: calc( 100% - 20px );
-  top: calc( -50% - 20px );
+  left: 78%;
+  top: -380px;
 }
-.slick-nexte:before {
-  content: none;
+.swiper-button-next::after {
+  content: "";
 }
-.slick-nexte span {
+.swiper-button-next span {
   border: 1px solid #900E0E;
   width: 15px;
   position: absolute;
   right: calc( 50% - 8px );
 }
-.slick-nexte span:first-of-type {
+.swiper-button-next span:first-of-type {
   transform: rotate(45deg);
   width: 8px;
   top: 14px;
 }
-.slick-nexte span:last-of-type {
+.swiper-button-next span:last-of-type {
   width: 8px;
   transform: rotate(-45deg);
   bottom: 14px;
 }
-.slick-dots li {
+.swiper-dots li {
   position: relative;
   display: inline-block;
   width: 68px;
@@ -708,7 +721,7 @@
   padding: 0;
   cursor: pointer;
 }
-.slick-dots li button {
+.swiper-dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -723,7 +736,7 @@
   border: 1px solid rgba(79, 97, 107, 0.1);
   border-radius: 20px;
 }
-.slick-dots li button:before {
+.swiper-dots li button:before {
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
@@ -735,10 +748,10 @@
   content: none;
   text-align: center;
 }
-.slick-active button {
+.swiper-active button {
   background: #fff !important;
 }
-.slick-disabled span {
+.swiper-disabled span {
   color: rgba(79, 97, 107, 0.1);
   border: 1px solid rgba(79, 97, 107, 0.1);
 }

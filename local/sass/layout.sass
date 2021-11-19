@@ -37,13 +37,12 @@ img
         font-size: 22px
         line-height: 120%
         color: $titlecolor
-@media (max-width: 1000px)
-    .subtitle
-        font-weight: 500
-        font-size: 44px
-        line-height: 110%
-        color: $titlecolor
-        width: 50%
+.subtitle
+    font-weight: 500
+    font-size: 44px
+    line-height: 110%
+    color: $titlecolor
+    width: 50%
 @media (max-width: 1400px)
     .subtitle
         font-size: 34px
@@ -97,7 +96,7 @@ section
     &_contact
         display: flex
         align-items: center
-        & a:last-of-type
+        & span:last-of-type
             margin-left: 10px
         &-svg
             height: 26px
@@ -124,12 +123,16 @@ section
     border: none
     transition: 0.4s 
 .odnoklassniki_head
-    margin-bottom: -9px
-    padding-left: 9px
+    display: flex
+    justify-content: center
+    align-items: center
 .odnoklassniki_body
-    padding-left: 8px
+    display: flex
+    justify-content: center
+    align-items: center
 .odnoklassniki
     display: block
+    padding-top: 5px
 .odnoklassniki:hover 
     background: #EC8021
     border: 1px solid #EC8021
@@ -180,6 +183,7 @@ section
             color: $textcolor
         &:hover a
             color: $secondcolor
+
 .button
     background: $maincolor
     width: 220px

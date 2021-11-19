@@ -10,11 +10,16 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.05)
         padding-bottom: 25px
     &_nav
+        transition: opacity 2s
+        visibility: visible
+        opacity:1
+        height:1
     &_wrapper
         display: flex
+        align-items: center
         & .icon_contact
             margin-right: 50px
-        & a
+        & span
             color: $maincolor
             font-weight: normal
             font-size: 18px
@@ -54,7 +59,9 @@
                 left: calc( 50% - 11px )
                 display: block
     &.fixed
-        & a
+        & span
+            color: $titlecolor
+        & .nav_item
             color: $titlecolor
         & .header_contact
             border-bottom: 1px solid rgba(0, 0, 0, 0.05)
@@ -63,8 +70,6 @@
         & path
             fill: $titlecolor
         
-.fixed:first-of-type
-    position: relative
 .fixed
     background-color: #fff
     position: fixed
@@ -72,23 +77,18 @@
     left: 0
     z-index: 20
     &.header_burgher span
-.fixed_hidden 
-    background-color: #fff
-    position: relative
-    animation: fixed_hide 1s forwards
-    & a
-        color: $titlecolor
-    & .header_nav
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05)
-@keyframes fixed_hide
-    0%   
-        top: 0
-        opacity: 1
-    100%
-        top: 88
-        opacity: 0
-.fixed .header_burgher span
-    border: 1px solid $titlecolor
+        border: 1px solid $titlecolor
+    &.header_nav
+        background-color: #fff
+        position: relative
+        & a
+            color: $titlecolor
+        & .header_nav
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+    &_hidden
+        height: 0
+        visibility: hidden
+        opacity:0
 .nav  
     &_dropdown
         display: flex
