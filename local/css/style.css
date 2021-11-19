@@ -620,6 +620,9 @@
   }
 }
 @media (max-width: 1000px) {
+  .contacts {
+    padding-left: calc(( 100% - 700px)/2);
+  }
   .contacts_flex {
     display: block;
   }
@@ -627,7 +630,7 @@
     padding-bottom: 30px;
   }
   .contacts_map {
-    position: static;
+    width: 700px;
   }
   .contacts_map iframe {
     height: 352px;
