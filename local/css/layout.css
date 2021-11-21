@@ -619,16 +619,6 @@ section {
   padding: 22.5px 0;
 }
 
-.header_nav {
-  transition: opacity 2s;
-  visibility: visible;
-  opacity: 1;
-}
-
-.header_nav.hidden {
-  visibility: hidden;
-}
-
 .header_wrapper {
   display: flex;
   align-items: center;
