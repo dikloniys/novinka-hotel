@@ -599,6 +599,16 @@ section {
   top: 50%;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .mobile {
+    display: block;
+  }
+}
+
 .header {
   position: absolute;
   z-index: 2;
@@ -821,7 +831,6 @@ section {
 }
 
 .swiper {
-  padding-bottom: 30px;
   overflow-x: hidden;
   margin-left: calc(( 100% - 1400px )/2);
   position: relative;
@@ -829,6 +838,7 @@ section {
 
 .swiper-slide {
   width: 675px;
+  margin-right: 50px;
 }
 
 .swiper-button-prev {
@@ -843,7 +853,7 @@ section {
   height: 40px;
   cursor: pointer;
   z-index: 1;
-  left: 76%;
+  left: 81%;
   top: 25%;
 }
 
@@ -872,7 +882,7 @@ section {
 
 .swiper-button-next {
   border-radius: 0 50% 50% 0;
-  position: relative;
+  position: absolute;
   display: flex;
   border: 2px solid rgba(79, 97, 107, 0.1);
   background-color: #F9F9F9;
@@ -882,8 +892,8 @@ section {
   height: 40px;
   cursor: pointer;
   z-index: 1;
-  left: 78%;
-  top: -380px;
+  left: 83.2%;
+  top: -25%;
 }
 
 .swiper-button-next::after {
@@ -909,60 +919,12 @@ section {
   bottom: 14px;
 }
 
-.swiper-dots li {
-  position: relative;
-  display: inline-block;
-  width: 68px;
-  height: 6px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.swiper-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 68px;
-  height: 6px;
-  padding: 0px;
-  cursor: pointer;
-  color: rgba(79, 97, 107, 0.1);
-  border: 0;
-  outline: none;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(79, 97, 107, 0.1);
-  border-radius: 20px;
-}
-
-.swiper-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 68px;
-  height: 6px;
-  content: none;
-  text-align: center;
-}
-
-.swiper-active button {
-  background: #fff !important;
-}
-
-.swiper-disabled span {
-  color: rgba(79, 97, 107, 0.1);
-  border: 1px solid rgba(79, 97, 107, 0.1);
-}
-
 @media (max-width: 1400px) {
-  .swiper {
-    padding-bottom: 30px;
-  }
   .swiper-wrap {
     padding-left: 50px;
+  }
+  .swiper-wrapper {
+    margin-left: calc( (100% - 1000px)/2);
   }
 }
 
@@ -979,6 +941,10 @@ section {
   }
   .swiper-button-next {
     display: none;
+  }
+  .swiper-slide {
+    width: 475px;
+    margin-right: 50px;
   }
 }
 
@@ -1324,9 +1290,6 @@ section {
   }
   .copyright_copyright {
     padding-bottom: 15px;
-  }
-  .mobile {
-    display: block;
   }
 }
 /*# sourceMappingURL=layout.css.map */
