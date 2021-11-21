@@ -1,71 +1,60 @@
 @import '../helpers/_variables'
+// Перенести в нужный файл !! Адаптив не делал, сделать по моему примеру
+.rooms
+    &-swiper
+        overflow-x: hidden
+        margin-left: calc(( 100% - 1400px)/2)
+        &-wrap
+            position: relative
+        &-wrapper
+            position: static
+        &-slide
+            width: 675px
+            margin-right: 50px
+        &-navigation
+            position: absolute
+            top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            // этот размер зависит от размера изображения
+            // его (после переноса всех правил в файл room)
+            // можно так же вынести в переменную и присваивать 
+            // изображениям и навигационному окну
+            height: 350px
+            // тут стандартно отнимается правый отступ
+            // и еще -40px (это размер иконки)
+            // чтобы не запутаться размер иконки можно вынести в отдельную переменную 
+            right: calc((100% - 1400px)/2 - 40px)
+            &-arrow
+                border-radius: 50% 0 0 50%
+                position: relative
+                display: flex
+                border: 2px solid $borderconveniences
+                background-color: $sectioncolor
+                align-items: center
+                justify-content: center
+                // речь выше идет о этом размере
+                width: 40px
+                height: 40px
+                cursor: pointer
+                z-index: 1
+                & span
+                    border: 1px solid $secondcolor
+                    width: 15px
+                    position: absolute
+                    left: calc( 50% - 8px )
+                    &:first-of-type
+                        transform: rotate(-45deg)
+                        width: 8px
+                        top: 14px
+                    &:last-of-type
+                        width: 8px
+                        transform: rotate(45deg)
+                        bottom: 14px
+                &-next
+                    transform: rotate(180deg)
 
-.swiper
-    overflow-x: hidden
-    margin-left: calc(( 100% - 1400px )/2)
-    position: relative
-    &_wrapper
-    &-slide
-        width: 675px
-        margin-right: 50px
-    &-button-prev
-        border-radius: 50% 0 0 50%
-        position: absolute
-        display: flex
-        border: 2px solid $borderconveniences
-        background-color: $sectioncolor
-        align-items: center
-        justify-content: center
-        width: 40px
-        height: 40px
-        cursor: pointer
-        z-index: 1
-        left: 81%
-        top: 25%
-        & span
-            border: 1px solid $secondcolor
-            width: 15px
-            position: absolute
-            left: calc( 50% - 8px )
-            &:first-of-type
-                transform: rotate(-45deg)
-                width: 8px
-                top: 14px
-            &:last-of-type
-                width: 8px
-                transform: rotate(45deg)
-                bottom: 14px
-        &:after 
-            content: ''
-    &-button-next 
-        border-radius: 0 50% 50% 0
-        position: absolute
-        display: flex
-        border: 2px solid $borderconveniences
-        background-color: $sectioncolor
-        align-items: center
-        justify-content: center
-        width: 40px
-        height: 40px
-        cursor: pointer
-        z-index: 1
-        left: 83.2%
-        top: -25%
-        &::after
-            content: ''
-        & span
-            border: 1px solid $secondcolor
-            width: 15px
-            position: absolute
-            right: calc( 50% - 8px )
-            &:first-of-type
-                transform: rotate(45deg)
-                width: 8px
-                top: 14px
-            &:last-of-type
-                width: 8px
-                transform: rotate(-45deg)
-                bottom: 14px
 @media (max-width: 1400px)
     .swiper
         &-wrap

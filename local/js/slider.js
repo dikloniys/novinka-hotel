@@ -1,12 +1,12 @@
-
-const mainSliderCatalogOptions = {
-    slidesPerView: 'auto',
-    spaceBetween: 50,
-    loop: true,
-    centeredSlides: true,
-    navigation:{
-        prevEl:'.swiper-button-prev',
-        nextEl:'.swiper-button-next'
+$(document).ready(() => {
+    const mainSliderCatalogOptions = {
+        slidesPerView: 'auto',
+        loop: true,
+        navigation:{
+            prevEl:'.js-room-prev-slide',
+            nextEl:'.js-room-next-slide'
+        }
     }
-}
-var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);
+    var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);
+    
+})
