@@ -25,7 +25,7 @@
         & .gallery_text
             padding-bottom: 80px
     &_card
-        padding-bottom: 100px
+        padding-bottom: 80px
     & img
         padding-bottom: 15px
     &_number
@@ -41,11 +41,15 @@
         border-bottom: 1px solid $borderconveniences
     & .more_arrow
         margin-left: calc( 50% + 27px )
+    & .swiper
+        display: none
 @media (max-width: 1400px)
     .gallery
         & img
             width: 475px
             height: 320px
+        &_card
+            padding-bottom: 60px
 @media (max-width: 1000px)
     .gallery
         & img
@@ -61,3 +65,13 @@
                     padding-bottom: 30px
             &-card
                 display: none
+        &_card
+            padding-bottom: 100px
+        & .swiper
+            display: block
+@media (max-width: 700px)
+    .gallery
+        & .swiper
+            display: block
+        &_card
+            padding-bottom: 0px

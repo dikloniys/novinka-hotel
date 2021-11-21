@@ -1,11 +1,11 @@
 
 const mainSliderCatalogOptions = {
-    slidesPerView: "auto",
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 50,
     loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
+    navigation:{
+        prevEl:'.swiper-button-prev',
+        nextEl:'.swiper-button-next'
+    }
 }
 var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);

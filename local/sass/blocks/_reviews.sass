@@ -6,18 +6,18 @@
         padding-bottom: 30px
     &_wrapper
         display: flex
-        max-width: 1400px
-        margin: 0 auto
     &_card
         padding-right: 50px
         &:last-of-type
             padding-right: 0
+    &_tablet
+        display: none
 @media (max-width: 1400px)
     .reviews
         &_wrapper
-            margin: 0 
-            padding-left: calc(( 100% - 1000px )/2)
-            overflow: hidden
+            display: none
+        &_tablet
+            display: block
 @media (max-width: 1000px)
     .reviews 
         &_wrapper
