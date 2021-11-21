@@ -293,12 +293,10 @@
 .room_wrapper:last-of-type {
   padding-right: 0px;
 }
-.room_wrapper img {
-  padding-bottom: 30px;
-}
 .room_img {
   height: 350px;
   width: 675px;
+  padding-bottom: 30px;
 }
 .room_title {
   padding-bottom: 10px;
@@ -399,7 +397,7 @@
 .gallery_card {
   padding-bottom: 80px;
 }
-.gallery img {
+.gallery_img {
   padding-bottom: 15px;
 }
 .gallery_number {

@@ -1,8 +1,9 @@
 
 const mainSliderCatalogOptions = {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 50,
     loop: true,
+    centeredSlides: true,
     navigation:{
         prevEl:'.swiper-button-prev',
         nextEl:'.swiper-button-next'
