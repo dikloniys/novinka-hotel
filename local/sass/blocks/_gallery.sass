@@ -2,7 +2,7 @@
     padding: $mainpadding 0
     &_title
     &_subtitle
-        padding-bottom: 20px
+        margin-bottom: 20px
     &_wrapper
     &_wrap
         &-text
@@ -10,7 +10,7 @@
             grid-template-columns: 1fr 1fr
             grid-column-gap: 50px
             & .gallery_text
-                padding-bottom: 30px
+                margin-bottom: 30px
                 line-height: 160%
         &-cards
             display: grid
@@ -25,9 +25,9 @@
         & .gallery_text
             padding-bottom: 80px
     &_card
-        padding-bottom: 80px
+        margin-bottom: 80px
     &_img
-        padding-bottom: 15px
+        margin-bottom: 15px
     &_number
         font-size: 13px
         line-height: 120%
@@ -49,7 +49,7 @@
             width: 475px
             height: 320px
         &_card
-            padding-bottom: 60px
+            margin-bottom: 60px
 @media (max-width: 1000px)
     .gallery
         & img
@@ -58,15 +58,15 @@
         &_wrap
             &-text
                 display: block
-                padding-right: 0px
+                margin-right: 0px
                 & .gallery_text:first-of-type
-                    padding-bottom: 20px
+                    margin-bottom: 20px
                 & .gallery_text
-                    padding-bottom: 30px
+                    margin-bottom: 30px
             &-card
                 display: none
         &_card
-            padding-bottom: 100px
+            margin-bottom: 100px
         & .swiper
             display: block
 @media (max-width: 700px)
@@ -74,4 +74,4 @@
         & .swiper
             display: block
         &_card
-            padding-bottom: 0px
+            margin-bottom: 0px

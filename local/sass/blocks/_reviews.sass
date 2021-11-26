@@ -3,13 +3,37 @@
     background: $sectioncolor
     &_title
     &_subtitle
-        padding-bottom: 30px
+        margin-bottom: 30px
     &_wrapper
         display: flex
     &_card
-        padding-right: 50px
+        margin-right: 50px
         &:last-of-type
-            padding-right: 0
+            margin-right: 0
+        &_wrapper
+            background: $maincolor
+            width: 433px
+            padding: 25px 25px 22px
+        &_svg
+            margin-bottom: 20px
+        &_text
+            font-size: 14px
+            line-height: 150%
+            margin-bottom: 30px
+            color: $titlecolor
+        &_photo
+            width: 60px
+            height: 60px
+            margin-bottom: 10px
+        &_name
+            font-weight: 500
+            font-size: 13px
+            line-height: 120%
+            margin-bottom: 5px
+            color: $titlecolor
+        &_date
+            font-size: 13px
+            line-height: 120%
     &_tablet
         display: none
 @media (max-width: 1400px)
@@ -24,31 +48,8 @@
             margin: 0 
             padding-left: calc(( 100% - 700px )/2)
             overflow: hidden
-.card
-    &_wrapper
-        background: $maincolor
-        width: 433px
-        padding: 25px 25px 22px
-    &_svg
-        padding-bottom: 20px
-    &_text
-        font-size: 14px
-        line-height: 150%
-        padding-bottom: 30px
-        color: $titlecolor
-    &_photo
-        width: 60px
-        height: 60px
-        margin-bottom: 10px
-    &_name
-        font-weight: 500
-        font-size: 13px
-        line-height: 120%
-        padding-bottom: 5px
-        color: $titlecolor
-    &_date
-        font-size: 13px
-        line-height: 120%
+.reviews_card
+    
 @media (max-width: 1400px)
     .card
         &_wrapper

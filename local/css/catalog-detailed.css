@@ -3,29 +3,23 @@
   height: 1005px;
   width: 100%;
   background: url(/local/img/promo-background.png);
-}
-
-.main-wrapper {
   padding-top: 380px;
 }
-
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
   font-size: 80px;
   line-height: 130%;
   text-align: center;
-  padding-bottom: 204px;
+  margin-bottom: 204px;
   text-transform: uppercase;
   color: #fff;
 }
-
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -34,9 +28,8 @@
   bottom: 30px;
   cursor: pointer;
 }
-
 .main .button_transparent {
-  margin-left: 37px;
+  margin: 37px;
 }
 
 .scroll_border {
@@ -48,7 +41,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .scroll_border:hover {
   animation: scroll_move 0.9s infinite;
 }
@@ -64,7 +56,6 @@
     padding-top: 6px;
   }
 }
-
 @media (max-width: 1400px) {
   .main {
     height: 720px;
@@ -72,10 +63,9 @@
   }
   .main_title {
     font-size: 64px;
-    padding-bottom: 85px;
+    margin-bottom: 85px;
   }
 }
-
 @media (max-width: 1000px) {
   .main {
     height: 800px;
@@ -83,59 +73,66 @@
   }
   .main_title {
     font-size: 48px;
-    padding-bottom: 202px;
+    margin-bottom: 202px;
+  }
+  .main_request {
+    display: block;
+  }
+  .main .button_transparent {
+    margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    height: 812px;
+    padding-top: 131px;
+  }
+  .main_title {
+    font-size: 32px;
+    margin-bottom: 50px;
   }
   .main_request {
     display: block;
   }
 }
-
 .catalog-detailed {
-  padding: 50px 0 100px;
+  margin: 0px 0px 100px;
 }
-
 .catalog-detailed .slick-dots {
   display: none;
 }
-
 .catalog-detailed_wrapper {
   display: flex;
 }
-
 .catalog-detailed_slider {
   width: 675px;
   height: 452px;
   overflow: hidden;
   margin-right: 50px;
 }
-
 .catalog-detailed_main {
   width: 50%;
 }
-
 .catalog-detailed_title-conveniences {
   font-weight: 500;
   font-size: 26px;
   line-height: 110%;
   color: #282828;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 .catalog-detailed_subtitle {
   width: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  line-height: 110%;
 }
-
 .catalog-detailed_text {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 .catalog-detailed_information {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-
 .catalog-detailed_size {
   display: flex;
   justify-content: space-between;
@@ -144,51 +141,44 @@
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   border-top: 1px solid rgba(79, 97, 107, 0.1);
 }
-
 .catalog-detailed_size:first-of-type {
   margin-right: 50px;
 }
-
 .catalog-detailed_designation {
   font-size: 14px;
   color: #4F616B;
   line-height: 120%;
 }
-
 .catalog-detailed_meaning {
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
   color: #282828;
 }
-
 .catalog-detailed_wrap {
   display: flex;
-  padding: 25px 0 50px;
+  margin: 25px 0 50px;
 }
-
 .catalog-detailed_price {
   margin-right: 15px;
   background-color: #F9F9F9;
   padding: 20px 23px 26px 20px;
+  width: 215px;
+  height: 150px;
 }
-
 .catalog-detailed_price:last-of-type {
   margin-right: 0px;
 }
-
 .catalog-detailed_connection {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 112px;
+  margin-bottom: 112px;
 }
-
 .catalog-detailed_button {
   width: 310px;
   height: 60px;
   line-height: 60px;
 }
-
 .catalog-detailed_conveniences {
   display: flex;
   justify-content: space-between;
@@ -198,21 +188,17 @@
 .bar_wrap {
   display: flex;
 }
-
 .bar_border {
   border: 1px solid rgba(79, 97, 107, 0.1);
   margin-right: 10px;
   cursor: pointer;
 }
-
 .bar_border.active {
   border: 1px solid #900E0E;
 }
-
 .bar_border:last-of-type {
   margin-right: 0;
 }
-
 .bar_img {
   width: 117px;
   height: 72px;
@@ -229,15 +215,13 @@
   align-items: center;
   justify-content: space-evenly;
 }
-
 .price_title {
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
   color: #282828;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 .price_date {
   font-size: 14px;
   line-height: 120%;
@@ -248,7 +232,6 @@
   position: relative;
   margin-right: 15px;
 }
-
 .conveniences.big {
   margin-right: 0;
   justify-content: space-between;
@@ -259,25 +242,22 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .conveniences.big:hover circle {
   stroke: #900E0E;
   stroke-opacity: 1;
 }
-
 .conveniences.big:hover .svg_center {
   fill: #900E0E;
 }
-
 .conveniences.big:hover.conveniences.big {
-  border-top: 1px solid #900E0E;
   border-bottom: 1px solid #900E0E;
 }
-
+.conveniences.big:hover .wifi {
+  border: 1px solid #900E0E;
+}
 .conveniences_text {
   margin: auto 0;
 }
-
 .conveniences_icon {
   position: relative;
   z-index: 1;
@@ -287,14 +267,220 @@
   border-radius: 50%;
   cursor: pointer;
 }
-
 .conveniences_icon.big {
   position: relative;
   width: 70px;
   height: 70px;
 }
-
 .conveniences_icon.big.wifi {
   padding: 10px;
 }
-/*# sourceMappingURL=catalog-detailed.css.map */
+
+@media (max-width: 1400px) {
+  .catalog-detailed {
+    margin: 0px 0px 80px;
+  }
+  .catalog-detailed_slider {
+    width: 475px;
+    height: 318px;
+  }
+  .catalog-detailed_text {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .catalog-detailed_information {
+    display: block;
+  }
+  .catalog-detailed_wrap {
+    display: block;
+    margin: 20px 0;
+  }
+  .catalog-detailed_price {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .catalog-detailed_price:last-of-type {
+    margin-bottom: 0px;
+  }
+  .catalog-detailed_size:first-of-type {
+    border-bottom: none;
+  }
+  .catalog-detailed_button {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .catalog-detailed_connection {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .price_svg {
+    margin-right: 15px;
+    margin-bottom: 0px;
+  }
+  .price_title {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .catalog-detailed {
+    margin: 0px 0px 60px;
+  }
+  .catalog-detailed_slider {
+    width: 475px;
+    height: 318px;
+  }
+  .catalog-detailed_main {
+    width: 100%;
+  }
+  .catalog-detailed_subtitle {
+    font-size: 34px;
+    line-height: 110%;
+  }
+  .catalog-detailed_text {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .catalog-detailed_information {
+    display: flex;
+  }
+  .catalog-detailed_wrap {
+    display: flex;
+    margin: 20px 0;
+  }
+  .catalog-detailed_price {
+    margin-right: 20px;
+    margin-bottom: 0px;
+    padding: 20px 23px 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .catalog-detailed_price:last-of-type {
+    margin-bottom: 0px;
+  }
+  .catalog-detailed_button {
+    margin-bottom: 0px;
+    max-width: 402px;
+  }
+  .catalog-detailed_connection {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  .catalog-detailed_title-conveniences {
+    font-size: 22px;
+  }
+
+  .price_svg {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .price_title {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .conveniences {
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+  }
+  .conveniences.big {
+    width: 340px;
+    height: 100%;
+    border-top: 1px solid rgba(79, 97, 107, 0.1);
+    border-bottom: 1px solid rgba(79, 97, 107, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .conveniences.big:hover circle {
+    stroke: #900E0E;
+    stroke-opacity: 1;
+  }
+  .conveniences.big:hover .svg_center {
+    fill: #900E0E;
+  }
+  .conveniences.big:hover.conveniences.big {
+    border-bottom: 1px solid #900E0E;
+  }
+  .conveniences.big:hover .wifi {
+    border: 1px solid #900E0E;
+  }
+  .conveniences_text {
+    margin: auto 0;
+  }
+  .conveniences_icon {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(79, 97, 107, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .conveniences_icon.big {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  .conveniences_icon.big.wifi {
+    padding: 10px;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .catalog-detailed {
+    margin: 0px 0px 50px;
+  }
+  .catalog-detailed_slider {
+    width: 475px;
+    height: 318px;
+  }
+  .catalog-detailed_main {
+    width: 100%;
+  }
+  .catalog-detailed_subtitle {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .catalog-detailed_text {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .catalog-detailed_information {
+    display: block;
+  }
+  .catalog-detailed_wrap {
+    display: block;
+    margin: 20px 0;
+  }
+  .catalog-detailed_price {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 20px 23px 28px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .catalog-detailed_price:last-of-type {
+    margin-bottom: 10px;
+  }
+  .catalog-detailed_button {
+    margin-bottom: 20px;
+  }
+  .catalog-detailed_connection {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .catalog-detailed_title-conveniences {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=catalog-detailed.css.map */

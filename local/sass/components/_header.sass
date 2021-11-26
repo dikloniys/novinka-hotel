@@ -2,7 +2,7 @@
     position: absolute
     z-index: 2
     width: 100%
-    &.fixed 
+    &.move.fixed 
         background-color: #fff
         position: fixed
         top: 0
@@ -22,6 +22,8 @@
             font-weight: normal
             font-size: 18px
             line-height: 120%
+    & .button_transparent
+        height: 46px
     &_burgher
         display: none
         margin-left: 20px
@@ -67,24 +69,6 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.05)
         & path
             fill: $titlecolor
-
-// .fixed:first-of-type
-//     position: relative
-// .fixed
-//     background-color: #fff
-//     position: fixed
-//     top: 0
-//     left: 0
-//     z-index: 20
-//     &.header_burgher span
-// .fixed_hidden 
-//     background-color: #fff
-//     position: relative
-//     animation: fixed_hide 1s forwards
-//     & a
-//         color: $titlecolor
-//     & .header_nav
-//         border-bottom: 1px solid rgba(0, 0, 0, 0.05)
 .nav  
     &_dropdown
         display: flex
@@ -152,6 +136,8 @@
                 font-size: 16px
             & .icon_contact
                 margin-right: 30px
+            & span
+                font-size: 16px
     .nav  
         &_wrap
         &_bar

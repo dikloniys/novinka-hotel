@@ -1,7 +1,7 @@
 @import '../helpers/_variables'
 @import '../blocks/_main'
 .catalog-detailed
-    padding: 50px 0 100px
+    margin: 0px 0px $mainpadding 
     & .slick-dots
         display: none
     &_wrapper
@@ -19,12 +19,13 @@
             font-size: 26px
             line-height: 110%
             color: $titlecolor
-            padding-bottom: 30px
+            margin-bottom: 30px
     &_subtitle
         width: 100%
-        padding-bottom: 20px
+        margin-bottom: 20px
+        line-height: 110%
     &_text
-        padding-bottom: 30px
+        margin-bottom: 30px
     &_information
         display: flex
         justify-content: space-between
@@ -49,17 +50,19 @@
         color: $titlecolor
     &_wrap
         display: flex
-        padding: 25px 0 50px
+        margin: 25px 0 50px
     &_price
         margin-right: 15px
         background-color: $sectioncolor
         padding: 20px 23px 26px 20px
+        width: 215px
+        height: 150px
         &:last-of-type
             margin-right: 0px
     &_connection
         display: flex
         justify-content: space-between 
-        padding-bottom: 112px
+        margin-bottom: 112px
     &_button
         width: 310px
         height: 60px
@@ -106,7 +109,7 @@
         font-size: 18px
         line-height: 120%
         color: $titlecolor
-        padding-bottom: 10px
+        margin-bottom: 10px
     &_date
         font-size: 14px
         line-height: 120%
@@ -129,8 +132,9 @@
         &:hover .svg_center
             fill: $secondcolor
         &:hover.conveniences.big
-            border-top: 1px solid $secondcolor
             border-bottom: 1px solid $secondcolor
+        &:hover .wifi
+            border: 1px solid $secondcolor
     &_text
         margin: auto 0
     &_icon
@@ -147,3 +151,161 @@
             height: 70px
             &.wifi
                 padding: 10px
+@media (max-width: 1400px)
+    .catalog-detailed
+        margin: 0px 0px $desktoppadding
+        &_slider
+            width: 475px
+            height: 318px
+        &_text
+            margin-bottom: 20px
+            font-size: 13px
+        &_information
+            display: block
+        &_wrap
+            display: block
+            margin: 20px 0
+        &_price
+            margin-right: 0px
+            margin-bottom: 10px
+            display: flex
+            align-items: center
+            width: 100%
+            height: 100%
+            padding: 20px
+            &:last-of-type
+                margin-bottom: 0px
+        &_size
+            &:first-of-type
+                border-bottom: none
+        &_button
+            margin-bottom: 20px
+            width: 100%
+        &_connection
+            display: block
+            margin-bottom: 80px
+    .price
+        &_svg
+            margin-right: 15px
+            margin-bottom: 0px
+        &_title
+            margin-right: 10px
+            margin-bottom: 0px
+        &_date
+@media (max-width: 1000px)
+    .catalog-detailed
+        margin: 0px 0px $tabletpadding
+        &_slider
+            width: 475px
+            height: 318px
+        &_main
+            width: 100%
+        &_subtitle
+            font-size: 34px
+            line-height: 110%
+        &_text
+            margin-bottom: 20px
+            font-size: 13px
+        &_information
+            display: flex
+        &_wrap
+            display: flex
+            margin: 20px 0
+        &_price
+            margin-right: 20px
+            margin-bottom: 0px
+            padding: 20px 23px 28px 20px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &:last-of-type
+                margin-bottom: 0px
+        &_button
+            margin-bottom: 0px
+            max-width: 402px
+        &_connection
+            display: flex
+            margin-bottom: 60px
+        &_title-conveniences
+            font-size: 22px
+    .price
+        &_svg
+            margin-right: 0px
+            margin-bottom: 15px
+        &_title
+            margin-right: 0px
+            margin-bottom: 10px
+        &_date
+    .conveniences
+        display: flex
+        position: relative
+        margin-right: 15px
+        &.big
+            width: 340px
+            height: 100%
+            border-top: 1px solid $borderconveniences
+            border-bottom: 1px solid $borderconveniences
+            padding-top: 20px
+            padding-bottom: 20px
+            &:hover circle
+                stroke: $secondcolor
+                stroke-opacity: 1
+            &:hover .svg_center
+                fill: $secondcolor
+            &:hover.conveniences.big
+                border-bottom: 1px solid $secondcolor
+            &:hover .wifi
+                border: 1px solid $secondcolor
+        &_text
+            margin: auto 0
+        &_icon
+            position: relative
+            z-index: 1
+            width: 40px
+            height: 40px
+            border: 1px solid $borderconveniences
+            border-radius: 50%
+            cursor: pointer
+            &.big
+                position: relative
+                width: 50px
+                height: 50px
+                &.wifi
+                    padding: 10px
+    .desktop
+        display: none
+@media (max-width: 700px)
+    .catalog-detailed
+        margin: 0px 0px $mobilepadding
+        &_slider
+            width: 475px
+            height: 318px
+        &_main
+            width: 100%
+        &_subtitle
+            font-size: 28px
+            line-height: 120%
+        &_text
+            margin-bottom: 20px
+            font-size: 13px
+        &_information
+            display: block
+        &_wrap
+            display: block
+            margin: 20px 0
+        &_price
+            margin-right: 20px
+            margin-bottom: 10px
+            padding: 20px 23px 28px 20px
+            display: flex
+            flex-direction: row
+            &:last-of-type
+                margin-bottom: 10px
+        &_button
+            margin-bottom: 20px
+        &_connection
+            display: block
+            margin-bottom: 50px
+        &_title-conveniences
+            margin-bottom: 20px
+            font-size: 22px

@@ -5,13 +5,12 @@
     &_wrapper
         display: flex
         justify-content: space-between
-        padding-bottom: 30px
+        margin-bottom: 30px
         align-items: center
     &_subtitle
-        padding-right: 25px
+        margin-right: 50px
         width: 50%
     &_text
-        padding-left: 25px
         width: 50%
 .room
     display: flex
@@ -25,12 +24,14 @@
     &_img
         height: 350px
         width: 675px
-        padding-bottom: 30px
+        margin-bottom: 30px
     &_title
-        padding-bottom: 10px
+        margin-bottom: 10px
     &_text
-        padding-bottom: 40px
+        margin-bottom: 40px
 @media (max-width: 1400px)
+    .rooms
+        padding: $desktoppadding 0px
     .room
         padding-left: calc((   100% - 1000px )/2)
         &_img
@@ -39,6 +40,7 @@
 
 @media (max-width: 1000px)
     .rooms
+        padding: $tabletpadding 0px
         &_wrapper
             display: block
         &_subtitle
@@ -77,3 +79,6 @@
         font-weight: 500
         font-size: 15px
         line-height: 120%
+@media (max-width: 700px)
+    .rooms
+        padding: $mobilepadding 0px

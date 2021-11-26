@@ -26,17 +26,54 @@ p
 img
     width: 100%
     height: 100%
+.main
+    &_nobanner
+        padding-top: 230px
+        position: relative
+    &_banner
+        padding-top: 250px
+        background: no-repeat url(/local/img/catalog-detailed.png)
+        background-size: cover 
+        width: 100%
+        height: 650px
+        position: relative
+@media (max-width: 1400px)
+    .main
+        &_nobanner
+            padding-top: 236px
+        &_banner
+            padding-top: 256px
+@media (max-width: 1000px)
+    .main
+        &_nobanner
+            padding-top: 161px
+        &_banner
+            padding-top: 186px
+            & .main_title
+                margin-bottom: 145px
+@media (max-width: 700px)
+    .main
+        &_nobanner
+            padding-top: 111px
+        &_banner
+            padding-top: 131px
+            height: 700px
+            & .main_title
+                margin-bottom: 50px
 .title
     color: $secondcolor
     font-weight: 500
     font-size: 12px
     text-transform: uppercase
-    padding-bottom: 25px
+    margin-bottom: 25px
     &.little
         font-weight: 500
         font-size: 22px
         line-height: 120%
         color: $titlecolor
+@media (max-width: 1400px)
+    .title
+        margin-bottom: 15px
 .subtitle
     font-weight: 500
     font-size: 44px
@@ -49,7 +86,7 @@ img
 @media (max-width: 1000px)
     .subtitle
         width: 100%
-@media (max-width: 1000px)
+@media (max-width: 700px)
     .subtitle
         font-size: 28px
 .text
@@ -148,15 +185,23 @@ section
     background: $maincolor
     width: 220px
     height: 46px
-    text-align: center
     border: 1px solid $secondcolor
-    border-radius: 2px
     color: $secondcolor
+    text-align: center
+    border-radius: 2px
     font-weight: 500
     font-size: 13px
     line-height: 46px
     letter-spacing: 0.01em
     cursor: pointer
+    &_transparent
+        background-color: rgba(0, 0, 0, 0)
+        height: 50px
+        border: 1px solid $maincolor
+        color: $maincolor
+        &.active
+            color: $secondcolor
+            border: 1px solid $secondcolor
     &:hover
         background: $secondcolor
         color: #fff
@@ -216,18 +261,6 @@ section
         &:hover
             border: 1px solid $secondcolor
             color: $secondcolor
-.button_transparent
-    width: 220px
-    height: 50px
-    text-align: center
-    border: 1px solid $maincolor
-    color: $maincolor
-    border-radius: 2px
-    font-weight: 500
-    font-size: 13px
-    line-height: 46px
-    letter-spacing: 0.01em
-    cursor: pointer
 @media (max-width: 1000px)
     .button_transparent
         margin: 0 auto
@@ -323,13 +356,18 @@ section
 .request
     &_wrapper
         display: flex
+    &_flex
+        display: flex
     &_icon
         border-right: 1px solid $maincolor
-        padding: 10px 12px 10px
+        width: 45px
+        display: flex
+        align-items: center
+        justify-content: space-evenly
     &_emptiness
         width: 45px
+        height: 40px
         &:first-of-type
-            height: 33px
             border-left: 1px solid $maincolor
     &_guests
         line-height: 40px
@@ -345,6 +383,14 @@ section
             padding: 40px
     .main .button_transparent
         margin-left: 0px
+@media (max-width: 700px)
+    .request
+        &_flex
+            margin-bottom: 30px
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            padding: 0px
 .popup
     background-color: $roomcolor
     &_wrapper

@@ -1,12 +1,15 @@
 
 const headerScrollCheck = () => {
     let header = $(".js-scroll-check");
+    let header_button = $(".js-header_button");
     let firstBlockHeight = $(".js-first-block").height();
     if ($(this).scrollTop() > firstBlockHeight) {
         header.addClass("fixed");
+        header_button.addClass("active");
         return true
     } else {
         header.removeClass("fixed");
+        header_button.removeClass("active");
         return false
     }
 }
