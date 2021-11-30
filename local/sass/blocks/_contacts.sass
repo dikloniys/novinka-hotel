@@ -1,23 +1,23 @@
 .contacts
     background: $sectioncolor
-    padding-left: calc(( 100% - 1400px)/2)
+    padding: $mainpadding 0px
     &_title
     &_subtitle
-        padding-bottom: 30px
+        margin-bottom: 30px
         width: 100%
     &_flex
+        padding-left: calc(( 100% - 1400px)/2)
         display: flex
         justify-content: space-between
     &_wrapper
-        padding-top: 100px
     &_box
-        padding-bottom: 30px
+        margin-bottom: 30px
     &_icon
         display: flex
         align-items: center
-        padding-bottom: 10px
+        margin-bottom: 10px
         & a
-            padding-left: 10px
+            margin-left: 10px
     &_wrap
         border-radius: 50%
         display: flex
@@ -32,7 +32,7 @@
     &_center
         fill: $secondcolor
     &_svgtitle
-        padding-left: 10px
+        margin-left: 10px
         font-weight: 700
         font-size: 14px
         line-height: 120%
@@ -44,17 +44,20 @@
         overflow: hidden
 @media (max-width: 1400px)
     .contacts
-        padding-left: calc(( 100% - 1000px)/2)
+        padding: $desktoppadding 0px
+        &_flex
+            padding-left: calc(( 100% - 1000px)/2)
 @media (max-width: 1000px)
     .contacts
-        padding-left: calc(( 100% - 700px)/2)
+        padding: $tabletpadding 0px
         &_title
         &_subtitle
         &_flex
+            padding-left: calc(( 100% - 700px)/2)
             display: block
         &_wrapper
             & .more_arrow
-                padding-bottom: 30px
+                margin-bottom: 30px
         &_box
         &_icon
             & a
@@ -68,3 +71,28 @@
             & iframe 
                 height: 352px
                 width: 700px
+@media (max-width: 700px)
+    .contacts
+        padding: $mobilepadding 0px
+        &_title
+        &_subtitle
+        &_flex
+            padding-left: calc(( 100% - 345px)/2)
+            padding-right: calc(( 100% - 345px)/2)
+            display: block
+        &_wrapper
+            & .more_arrow
+                margin-bottom: 30px
+        &_box
+        &_icon
+            & a
+        &_wrap
+            &-email
+        &_center
+        &_svgtitle
+        &_text
+        &_map
+            width: 345px
+            & iframe 
+                height: 400px
+                width: 345px

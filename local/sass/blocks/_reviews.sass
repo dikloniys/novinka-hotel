@@ -38,12 +38,14 @@
         display: none
 @media (max-width: 1400px)
     .reviews
+        padding: $desktoppadding 0px
         &_wrapper
             display: none
         &_tablet
             display: block
 @media (max-width: 1000px)
     .reviews 
+        padding: $tabletpadding 0px
         &_wrapper
             margin: 0 
             padding-left: calc(( 100% - 700px )/2)
@@ -51,6 +53,10 @@
 .reviews_card
     
 @media (max-width: 1400px)
+    .reviews 
+        padding: $mobilepadding 0px
+        &_subtitle
+            margin-bottom: 15px
     .card
         &_wrapper
             width: 475px

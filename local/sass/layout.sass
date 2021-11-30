@@ -26,40 +26,6 @@ p
 img
     width: 100%
     height: 100%
-.main
-    &_nobanner
-        padding-top: 230px
-        position: relative
-    &_banner
-        padding-top: 250px
-        background: no-repeat url(/local/img/catalog-detailed.png)
-        background-size: cover 
-        width: 100%
-        height: 650px
-        position: relative
-@media (max-width: 1400px)
-    .main
-        &_nobanner
-            padding-top: 236px
-        &_banner
-            padding-top: 256px
-@media (max-width: 1000px)
-    .main
-        &_nobanner
-            padding-top: 161px
-        &_banner
-            padding-top: 186px
-            & .main_title
-                margin-bottom: 145px
-@media (max-width: 700px)
-    .main
-        &_nobanner
-            padding-top: 111px
-        &_banner
-            padding-top: 131px
-            height: 700px
-            & .main_title
-                margin-bottom: 50px
 .title
     color: $secondcolor
     font-weight: 500
@@ -358,9 +324,16 @@ section
         display: flex
     &_flex
         display: flex
+        &:last-of-type .request_icon
+            width: 45px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            border-right: 1px solid $maincolor
     &_icon
-        border-right: 1px solid $maincolor
         width: 45px
+        height: 40px
         display: flex
         align-items: center
         justify-content: space-evenly
@@ -376,6 +349,8 @@ section
         width: 130px
         height: 40px
         text-align: center
+        & input
+            border-bottom: 1px solid $maincolor
 @media (max-width: 1000px)
     .request
         &_wrapper

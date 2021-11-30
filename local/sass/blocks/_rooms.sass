@@ -15,11 +15,11 @@
 .room
     display: flex
     overflow: hidden
-    padding-left: calc((   100% - 1400px )/2)
+    margin-left: calc((   100% - 1400px )/2)
     &_wrapper
-        padding-right: 50px
+        margin-right: 50px
         &:last-of-type
-            padding-right: 0px
+            margin-right: 0px
         & img
     &_img
         height: 350px
@@ -33,7 +33,7 @@
     .rooms
         padding: $desktoppadding 0px
     .room
-        padding-left: calc((   100% - 1000px )/2)
+        margin-left: calc((   100% - 1000px )/2)
         &_img
             width: 475px
             height: 250px
@@ -44,13 +44,14 @@
         &_wrapper
             display: block
         &_subtitle
-            padding-right: 0px
+            margin-right: 0px
+            margin-bottom: 20px
             width: 100%
         &_text
-            padding-left: 0px
+            margin-left: 0px
             width: 100%
     .room
-        padding-left: calc((   100% - 700px )/2)
+        margin-left: calc((   100% - 700px )/2)
 .maney
     &_wrap
         cursor: pointer
@@ -75,10 +76,12 @@
         height: 50px
     &_center
     &_text
-        padding-left: 10px
+        margin-left: 10px
         font-weight: 500
         font-size: 15px
         line-height: 120%
 @media (max-width: 700px)
     .rooms
         padding: $mobilepadding 0px
+        &_subtitle
+            margin-bottom: 15px

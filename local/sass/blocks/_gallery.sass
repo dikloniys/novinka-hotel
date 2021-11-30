@@ -40,11 +40,12 @@
         padding-bottom: 20px
         border-bottom: 1px solid $borderconveniences
     & .more_arrow
-        margin-left: calc( 50% + 27px )
+        margin-left: calc( 50% - 175px )
     & .swiper
         display: none
 @media (max-width: 1400px)
     .gallery
+        padding: $desktoppadding 0
         & img
             width: 475px
             height: 320px
@@ -52,6 +53,7 @@
             margin-bottom: 60px
 @media (max-width: 1000px)
     .gallery
+        padding: $tabletpadding 0
         & img
             width: 475px
             height: 320px
@@ -71,7 +73,31 @@
             display: block
 @media (max-width: 700px)
     .gallery
+        padding: $mobilepadding 0
         & .swiper
             display: block
         &_card
             margin-bottom: 0px
+        &_title
+        &_subtitle
+            margin-bottom: 15px
+        &_wrapper
+        &_wrap
+            &-text
+                & .gallery_text
+                    margin-bottom: 22px
+                & .gallery_text:first-of-type
+                    margin-bottom: 10px
+            &-cards
+            &-card:last-of-type
+        & img
+        &_wrap-cards
+            & .gallery_text
+        &_card
+        &_img
+        &_number
+        &_signature
+        & .more_arrow
+            display: none
+        & .swiper
+        
