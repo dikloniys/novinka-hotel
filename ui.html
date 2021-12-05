@@ -95,29 +95,102 @@
                 <form class="form" action="/html/tags/html_form_tag_action.cfm" target="_blank" method="get" id="customer_name">
                     <div>
                         <label>
-                            <div class="form_text">Имя<sup>*</sup></div><input type="text" name="first_name" maxlength="100" placeholder="Иванов Иван">
+                            <div class="form_text">
+                                Имя
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" name="first_name" maxlength="100" placeholder="Иванов Иван">
                         </label>
                     </div>
                     <div>
                         <label>
-                            <div class="form_text">Телефон<sup>*</sup></div><input type="text" name="last_name" maxlength="100" placeholder="+7 (999) 588-88-88">
+                            <div class="form_text">
+                                Телефон
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" name="last_name" maxlength="100" placeholder="+7 (999) 588-88-88">
                         </label>
                     </div>
                     <div class="form_button button button_transparent active">
                         Отправить
                     </div>
                 </form>
-                <div class="form_error">  
-                    Необходимо заполнить данное поле
-                </div>
-                <div class="form_error">
-                    Необходимо заполнить данное поле
-                </div>
-                <div class="form_approval">
-                    Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных
+                <div class="form_wrap">
+                    <div class="form_error js-form-name">  
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_error js-form-phone">
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_approval">
+                        Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div> 
+        <div class="popup_wrapper erorr">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Ошибка в работе формы</h2>
+                <div class="button_circle">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Мы знаем об ошибке и уже устраняем ее. Приносим свои извинения за временные неудобства.
+                Готовы ответить на вопросы по телефону: <a href="tel:84952121060">+7 495-212-10-60</a>
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
+        <div class="popup_wrapper confirmation active">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Спасибо за обращение!</h2>
+                <div class="button_circle">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Наш менеджер свяжется с вами в ближайшее время и ответит на все интересующие Вас вопросы.
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
     </div>
+    <div class="booking active">
+        <div class="booking_wrapper">
+            <div class="booking_wrap">
+                <h2 class="booking_title title">
+                    Форма бронирования номера
+                </h2>
+                <div class="button_circle">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>
+                    <div class="form_text">
+                        Фамилия, Имя, Отчество<sup>*</sup> 
+                    </div>
+                    <input type="text" name="first_name" maxlength="100" placeholder="Иванов Иван">
+                </label>
+            </div>
+
+        </div>
+    </div> 
 </body>
 </html>

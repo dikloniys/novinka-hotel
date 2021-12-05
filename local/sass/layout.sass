@@ -380,6 +380,22 @@ section
         border-radius: 20px
         background-color: $maincolor
         padding: 30px
+        display: none
+        max-width: 800px
+        min-height: 230px
+        &.erorr
+            border-radius: 20px
+            background-color: $maincolor
+            padding: 30px
+            & .popup_wrap
+                margin-bottom: 9px
+        &.confirmation
+            & .popup_wrap
+                margin-bottom: 9px
+            & .popup_title
+                color: $thirdcolor
+            & .popup_text
+                margin-bottom: 30px
     &_wrap
         display: flex
         justify-content: space-between
@@ -393,6 +409,40 @@ section
     &_form
     &.active
         display: flex
+    &_text
+        font-size: 14px
+        line-height: 140%
+        margin-bottom: 15px
+        & a
+            color: $secondcolor
+    &_button
+        color: #8E8E8E
+        background-color: #F6F8FC
+        height: 50px
+        width: 100%
+        font-size: 12px
+        line-height: 130%
+        text-align: center
+        line-height: 46px
+
+.booking
+    background-color: $roomcolor
+    height: 100vh
+    width: 100vw
+    display: none
+    align-items: center
+    justify-content: space-evenly
+    position: absolute
+    top: 0
+    z-index: 9999
+    &_wrapper
+        border-radius: 20px
+        background-color: $maincolor
+        padding: 30px
+        max-width: 800px
+        min-height: 230px
+    &_wrap
+    &_title
 .form
     display: flex
     align-items: flex-end
@@ -415,14 +465,23 @@ section
             background-color: #EDF5FE
     &_button
         font-size: 16px
+    &_wrap
+        display: flex
     &_error
-        color: $texterror
+        color: transparent
+        font-size: 12px
+        line-height: 120%
+        width: 230px
+        margin-right: 25px 
+        &.active
+            color: $texterror
     &_approval
-        margin-left: 510px
         width: 220px
         font-size: 10px
 .mobile
     display: none
+.active
+    display: block
 @media (max-width: 700px)
     .mobile
         display: block
