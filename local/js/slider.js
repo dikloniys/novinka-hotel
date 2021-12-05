@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
     const mainSliderCatalogOptions = {
         slidesPerView: 'auto',
@@ -9,6 +8,6 @@ $(document).ready(() => {
             nextEl:'.js-room-next-slide'
         }
     }
+
     var swiper = new Swiper(".js-main-swiper-catalog", mainSliderCatalogOptions);
-    
 })
