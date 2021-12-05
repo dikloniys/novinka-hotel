@@ -545,6 +545,26 @@ section {
   border-radius: 20px;
   background-color: #fff;
   padding: 30px;
+  display: none;
+  max-width: 800px;
+  min-height: 230px;
+}
+.popup_wrapper.erorr {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px;
+}
+.popup_wrapper.erorr .popup_wrap {
+  margin-bottom: 9px;
+}
+.popup_wrapper.confirmation .popup_wrap {
+  margin-bottom: 9px;
+}
+.popup_wrapper.confirmation .popup_title {
+  color: #40A629;
+}
+.popup_wrapper.confirmation .popup_text {
+  margin-bottom: 30px;
 }
 .popup_wrap {
   display: flex;
@@ -561,7 +581,43 @@ section {
 .popup.active {
   display: flex;
 }
+.popup_text {
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+.popup_text a {
+  color: #900E0E;
+}
+.popup_button {
+  color: #8E8E8E;
+  background-color: #F6F8FC;
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  line-height: 46px;
+}
 
+.booking {
+  background-color: #E5E5E5;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+.booking_wrapper {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px;
+  max-width: 800px;
+  min-height: 230px;
+}
 .form {
   display: flex;
   align-items: flex-end;
@@ -588,17 +644,30 @@ section {
 .form_button {
   font-size: 16px;
 }
+.form_wrap {
+  display: flex;
+}
 .form_error {
+  color: transparent;
+  font-size: 12px;
+  line-height: 120%;
+  width: 230px;
+  margin-right: 25px;
+}
+.form_error.active {
   color: #EF3232;
 }
 .form_approval {
-  margin-left: 510px;
   width: 220px;
   font-size: 10px;
 }
 
 .mobile {
   display: none;
+}
+
+.active {
+  display: block;
 }
 
 @media (max-width: 700px) {
