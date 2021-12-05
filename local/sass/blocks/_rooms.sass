@@ -12,6 +12,59 @@
         width: 50%
     &_text
         width: 50%
+    &-swiper
+        overflow-x: hidden
+        margin-left: calc(( 100% - 1400px)/2)
+        &-wrap
+            position: relative
+        &-wrapper
+            position: static
+        &-slide
+            width: 675px
+        &-navigation
+            position: absolute
+            top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            // этот размер зависит от размера изображения
+            // его (после переноса всех правил в файл room)
+            // можно так же вынести в переменную и присваивать 
+            // изображениям и навигационному окну
+            height: 350px
+            // тут стандартно отнимается правый отступ
+            // и еще -40px (это размер иконки)
+            // чтобы не запутаться размер иконки можно вынести в отдельную переменную 
+            right: calc((100% - 1400px)/2 - 40px)
+            &-arrow
+                border-radius: 50% 0 0 50%
+                position: relative
+                display: flex
+                border: 2px solid $borderconveniences
+                background-color: $sectioncolor
+                align-items: center
+                justify-content: center
+                // речь выше идет о этом размере
+                width: 40px
+                height: 40px
+                cursor: pointer
+                z-index: 1
+                & span
+                    border: 1px solid $secondcolor
+                    width: 15px
+                    position: absolute
+                    left: calc( 50% - 8px )
+                    &:first-of-type
+                        transform: rotate(-45deg)
+                        width: 8px
+                        top: 14px
+                    &:last-of-type
+                        width: 8px
+                        transform: rotate(45deg)
+                        bottom: 14px
+                &-next
+                    transform: rotate(180deg)
+
 .room
     display: flex
     overflow: hidden
@@ -32,6 +85,22 @@
 @media (max-width: 1400px)
     .rooms
         padding: $desktoppadding 0px
+        &-swiper
+            margin-left: calc(( 100% - 1000px)/2)
+            &-wrap
+                position: relative
+            &-wrapper
+                position: static
+            &-slide
+                width: 475px
+            &-navigation
+                right: calc((100% - 1000px)/2 - 40px)
+                &-arrow
+                    & span
+                        &:first-of-type
+                        &:last-of-type
+                    &-next
+
     .room
         margin-left: calc((   100% - 1000px )/2)
         &_img
