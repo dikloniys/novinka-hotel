@@ -17,10 +17,10 @@ const headerScrollCheck = () => {
 const headerNavVisibilityCheck = (fixed, direction) => {
     let headerNav = $(".js-header-nav");
     if (fixed && direction === "down") {
-        headerNav.hide()
+        headerNav.hide(200)
     }
     else {
-        headerNav.show()
+        headerNav.show(200)
     }
 };
 let scrollPos = 0;

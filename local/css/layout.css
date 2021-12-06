@@ -836,6 +836,9 @@ section {
   fill: #900E0E;
   transition: 0.4s;
 }
+.dropdown_wrap {
+  padding-top: 30px;
+}
 .dropdown_list {
   position: absolute;
   left: 0;
