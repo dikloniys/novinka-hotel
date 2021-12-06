@@ -62,7 +62,7 @@
                     <ul class="nav_wrap">
                         <li class="nav_bar">
                             <div class="dropdown">
-                                <a href="#aboutus" class="nav_item dropdown_text">О Нас</a>
+                                <a href="#aboutus" class="scroll-to nav_item dropdown_text">О Нас</a>
                                 <div class="dropdown_svg">
                                     <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="dropdown_svg-center" d="M4 6L0.535898 0H7.4641L4 6Z" fill="#50616B"/>
@@ -90,7 +90,7 @@
                         </li>
                         <li class="nav_bar">
                             <div class="dropdown">
-                                <a href="#CEO" class="nav_item dropdown_text">Мероприятия</a>
+                                <a href="#CEO" class="scroll-to nav_item dropdown_text">Мероприятия</a>
                                 <div class="dropdown_svg">
                                     <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="dropdown_svg-center" d="M4 6L0.535898 0H7.4641L4 6Z" fill="#50616B"/>
@@ -99,10 +99,10 @@
                             </div>
                         </li>
                         <li class="nav_bar">
-                            <a  class="nav_item scroll-to" href="#gallery">Фотогалерия</a>
+                            <a  class="scroll-to nav_item scroll-to" href="#gallery">Фотогалерия</a>
                         </li>
                         <li class="nav_bar">
-                            <a class="nav_item scroll-to" href="#contacts">Контакты</a>
+                            <a class="scroll-to nav_item scroll-to" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                     <div class="icon_wrapper">
@@ -208,7 +208,7 @@
                 </div>           
             </div>
         </section>
-        <section class="aboutus">
+        <section id="aboutus" class="aboutus">
             <div class="container">
                 <div class="aboutus_wrapper">
                     <div class="aboutus_wrap">
@@ -779,7 +779,7 @@
                                     <path class="arrow_center" d="M15.5303 6.53033C15.8232 6.23744 15.8232 5.76256 15.5303 5.46967L10.7574 0.6967C10.4645 0.403807 9.98959 0.403807 9.6967 0.6967C9.40381 0.989593 9.40381 1.46447 9.6967 1.75736L13.9393 6L9.6967 10.2426C9.40381 10.5355 9.40381 11.0104 9.6967 11.3033C9.98959 11.5962 10.4645 11.5962 10.7574 11.3033L15.5303 6.53033ZM-6.55671e-08 6.75L15 6.75L15 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="#900E0E"/>
                                 </svg>            
                             </div>
-                            <div class="arrow_text">Заказать обратный звонок</div>
+                            <div class="arrow_text js-btn-callback">Заказать обратный звонок</div>
                         </div>
                     </div>
                 </div>
@@ -917,6 +917,94 @@
             </div>
         </div>
     </footer>
+    <div class="popup js-callback">
+        <div class="popup_wrapper js-callback-works">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Заказать обратный звонок</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close ">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_form">
+                <form class="form" action="/html/tags/html_form_tag_action.cfm" target="_blank" method="get" id="customer_name">
+                    <div>
+                        <label>
+                            <div class="form_text">
+                                Имя
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" required name="first_name" maxlength="100" placeholder="Иванов Иван">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <div class="form_text">
+                                Телефон
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" required name="last_name" maxlength="100" placeholder="+7 (999) 588-88-88">
+                        </label>
+                    </div>
+                    <div class="form_button button button_transparent active js-send">
+                        Отправить
+                    </div>
+                </form>
+                <div class="form_wrap">
+                    <div class="form_error js-form-name">  
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_error js-form-phone">
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_approval">
+                        Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="popup_wrapper erorr">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Ошибка в работе формы</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Мы знаем об ошибке и уже устраняем ее. Приносим свои извинения за временные неудобства.
+                Готовы ответить на вопросы по телефону: <a href="tel:84952121060">+7 495-212-10-60</a>
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
+        <div class="popup_wrapper  confirmation js-callback-confirmation">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Спасибо за обращение!</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Наш менеджер свяжется с вами в ближайшее время и ответит на все интересующие Вас вопросы.
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
+    </div>
 </body>
 <script src="/local/js/jquery-3.4.1.min.js"></script>
 <script src="/local/js/jquery.mask.min.js"></script>
@@ -926,4 +1014,5 @@
 <script src="/local/js/script.js"></script>
 <script src="/local/js/scroll.js"></script>
 <script src="/local/js/swiper.min.js"></script>
+<script src="/local/js/popup.js"></script>
 </html>

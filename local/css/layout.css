@@ -532,13 +532,14 @@ section {
 }
 .popup {
   background-color: #E5E5E5;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: none;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 9999;
 }
 .popup_wrapper {
@@ -577,6 +578,7 @@ section {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 0px;
+  text-transform: none;
 }
 .popup.active {
   display: flex;
@@ -615,9 +617,23 @@ section {
   border-radius: 20px;
   background-color: #fff;
   padding: 30px;
-  max-width: 800px;
+  width: 800px;
   min-height: 230px;
 }
+.booking_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.booking_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  text-transform: none;
+}
+
 .form {
   display: flex;
   align-items: flex-end;
@@ -626,9 +642,21 @@ section {
 .form_text {
   color: #282828;
   margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 120%;
 }
 .form_text sup {
   color: #900E0E;
+}
+.form_initials {
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  background-color: #ECF1F7;
+  border: none;
+}
+.form_initials:hover {
+  background-color: #EDF5FE;
 }
 .form input {
   border: none;
