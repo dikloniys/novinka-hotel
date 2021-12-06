@@ -138,9 +138,6 @@
     margin-bottom: 50px;
   }
 }
-.service {
-  padding: 100px 0;
-}
 .service_wrapper {
   display: flex;
 }
@@ -233,9 +230,6 @@ h3.service_subtitle.subtitle {
 }
 
 @media (max-width: 1400px) {
-  .service {
-    padding: 100px 0;
-  }
   .service_wrapper {
     display: flex;
   }
@@ -248,9 +242,6 @@ h3.service_subtitle.subtitle {
   }
 }
 @media (max-width: 1000px) {
-  .service {
-    padding: 100px 0;
-  }
   .service_wrapper {
     display: block;
   }
@@ -264,9 +255,6 @@ h3.service_subtitle.subtitle {
   }
 }
 @media (max-width: 700px) {
-  .service {
-    padding: 100px 0;
-  }
   .service_wrapper {
     display: block;
   }

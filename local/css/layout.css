@@ -617,7 +617,7 @@ section {
   border-radius: 20px;
   background-color: #fff;
   padding: 30px;
-  width: 800px;
+  width: 600px;
   min-height: 230px;
 }
 .booking_wrap {
@@ -668,6 +668,22 @@ section {
 }
 .form input:hover {
   background-color: #EDF5FE;
+}
+.form_contacts {
+  border: none;
+  width: 260px;
+  height: 50px;
+  padding-left: 15px;
+  background-color: #ECF1F7;
+}
+.form_contacts-wrap {
+  display: flex;
+}
+.form_contacts:hover {
+  background-color: #EDF5FE;
+}
+.form_contacts:first-of-type {
+  margin-right: 20px;
 }
 .form_button {
   font-size: 16px;

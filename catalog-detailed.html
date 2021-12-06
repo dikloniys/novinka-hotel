@@ -256,7 +256,7 @@
                                 <div class="price_date">Июнь, Июль, Август. 2021</div>
                             </div>
                         </div>
-                        <div class="catalog-detailed_connection">
+                        <div class="catalog-detailed_connection js-btn-callback">
                             <div class="catalog-detailed_button button filled">Забронировать номер</div>
                             <div class="more_arrow">
                                 <div class="arrow">
@@ -470,8 +470,95 @@
             </div>
         </div>
     </footer>
+    <div class="popup js-callback">
+        <div class="popup_wrapper js-callback-works">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Заказать обратный звонок</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close ">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_form">
+                <form class="form" action="/html/tags/html_form_tag_action.cfm" target="_blank" method="get" id="customer_name">
+                    <div>
+                        <label>
+                            <div class="form_text">
+                                Имя
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" required name="first_name" maxlength="100" placeholder="Иванов Иван">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <div class="form_text">
+                                Телефон
+                                <sup>
+                                    *
+                                </sup>
+                            </div>
+                            <input type="text" required name="last_name" maxlength="100" placeholder="+7 (999) 588-88-88">
+                        </label>
+                    </div>
+                    <div class="form_button button button_transparent active js-send">
+                        Отправить
+                    </div>
+                </form>
+                <div class="form_wrap">
+                    <div class="form_error js-form-name">  
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_error js-form-phone">
+                        Необходимо заполнить данное поле
+                    </div>
+                    <div class="form_approval">
+                        Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="popup_wrapper erorr">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Ошибка в работе формы</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Мы знаем об ошибке и уже устраняем ее. Приносим свои извинения за временные неудобства.
+                Готовы ответить на вопросы по телефону: <a href="tel:84952121060">+7 495-212-10-60</a>
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
+        <div class="popup_wrapper  confirmation js-callback-confirmation">
+            <div class="popup_wrap">
+                <h2 class="popup_title title">Спасибо за обращение!</h2>
+                <div class="button_circle js-btn-close">
+                    <div class="button_close">
+                        <span class="button_bord"></span>
+                        <span class="button_bord"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_text">
+                Наш менеджер свяжется с вами в ближайшее время и ответит на все интересующие Вас вопросы.
+            </div>
+            <div class="popup_button">
+                Это окно автоматически закроется через 20 секунд
+            </div>
+        </div>
+    </div>
 </body>
-<script src="/local/js/jquery.min.js"></script>
-<script type="text/javascript" src="/local/slick-1.8.1/slick/slick.min.js"></script>
-<script src="/local/js/slidercatalog-detailed.js"></script>
+<script src="/local/js/jquery-3.4.1.min.js"></script>
+<script src="/local/js/popup.js"></script>
 </html>
