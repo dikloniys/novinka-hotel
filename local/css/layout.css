@@ -921,10 +921,6 @@ section {
   .swiper-button-next {
     display: none;
   }
-  .swiper-slide {
-    width: 475px;
-    margin-right: 50px;
-  }
 }
 .footer {
   padding-top: 70px;

@@ -5,6 +5,7 @@
   background: url(/local/img/promo-background.png);
   padding-top: 380px;
 }
+
 .main_title {
   font-family: Cormorant;
   font-weight: 600;
@@ -15,11 +16,13 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .main_request {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .main_scroll {
   display: inline-block;
   position: absolute;
@@ -28,13 +31,16 @@
   bottom: 30px;
   cursor: pointer;
 }
+
 .main .button_transparent {
   margin-left: 37px;
 }
+
 .main_nobanner {
   padding-top: 230px;
   position: relative;
 }
+
 .main_banner {
   padding-top: 250px;
   background: no-repeat url(/local/img/catalog-detailed.png);
@@ -43,6 +49,7 @@
   height: 650px;
   position: relative;
 }
+
 .main_banner .button_transparent {
   margin-left: 37px;
 }
@@ -56,6 +63,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .scroll_border:hover {
   animation: scroll_move 0.9s infinite;
 }
@@ -71,6 +79,7 @@
     padding-top: 6px;
   }
 }
+
 @media (max-width: 1400px) {
   .main {
     height: 720px;
@@ -87,6 +96,7 @@
     padding-top: 256px;
   }
 }
+
 @media (max-width: 1000px) {
   .main {
     height: 800px;
@@ -115,6 +125,7 @@
     margin-bottom: 145px;
   }
 }
+
 @media (max-width: 700px) {
   .main {
     height: 812px;
@@ -138,6 +149,7 @@
     margin-bottom: 50px;
   }
 }
+
 .catalog__wrap {
   display: grid;
 }
@@ -146,12 +158,15 @@
   padding: 100px;
   background-color: #E5E5E5;
 }
+
 .catalogrooms_subtitle {
   padding-bottom: 30px;
 }
+
 .catalogrooms_filter {
   padding-bottom: 30px;
 }
+
 .catalogrooms_cardroom {
   display: flex;
   justify-content: space-between;
@@ -161,9 +176,11 @@
 .filter {
   margin-right: 15px;
 }
+
 .filter:last-of-type {
   padding-right: 0px;
 }
+
 .filter_wrapper {
   display: flex;
 }
@@ -172,14 +189,17 @@
   width: 440px;
   padding-bottom: 40px;
 }
+
 .cardroom_wrap {
   background-color: #fff;
   padding: 20px;
 }
+
 .cardroom_wrap-maney {
   display: flex;
   justify-content: space-between;
 }
+
 .cardroom_img {
   display: flex;
   align-items: flex-end;
@@ -187,6 +207,7 @@
   height: 250px;
   padding: 0 20px;
 }
+
 .cardroom_slide {
   display: flex;
   align-items: flex-end;
@@ -194,9 +215,11 @@
   margin-right: 15px;
   cursor: pointer;
 }
+
 .cardroom_slide:last-of-type {
   margin-right: 0px;
 }
+
 .cardroom_slide-visible {
   width: 68px;
   height: 6px;
@@ -204,15 +227,19 @@
   border-radius: 20px;
   margin-bottom: 15px;
 }
+
 .cardroom_slide-visible.active {
   background: white;
 }
+
 .cardroom_title {
   padding-bottom: 10px;
 }
+
 .cardroom_text {
   padding-bottom: 15px;
 }
+
 .cardroom_icon {
   padding: 20px 0;
   margin-bottom: 20px;
@@ -220,6 +247,7 @@
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   border-top: 1px solid rgba(79, 97, 107, 0.1);
 }
+
 .cardroom_maney {
   display: flex;
 }
@@ -233,6 +261,7 @@
     padding: 0 40px;
   }
 }
+
 @media (max-width: 1000px) {
   .cardroom_wrapper {
     width: 340px;
@@ -259,11 +288,11 @@
   .cardroom_maney {
     flex-direction: column;
   }
-
   .maney_icon {
     padding-bottom: 20px;
   }
 }
+
 @media (max-width: 700px) {
   .cardroom_wrapper {
     width: 345px;
@@ -273,9 +302,11 @@
     padding: 0 27px;
   }
 }
+
 .maney_icon {
   display: flex;
 }
+
 .maney_svg {
   width: 50px;
   height: 50px;
@@ -286,6 +317,7 @@
   justify-content: center;
   margin-right: 10px;
 }
+
 .maney_text {
   margin-bottom: 2px;
   font-weight: 500;
@@ -293,6 +325,7 @@
   line-height: 120%;
   color: #282828;
 }
+
 .maney_text-little {
   font-size: 14px;
   line-height: 120%;
@@ -344,4 +377,5 @@
 
 .zindex12 {
   z-index: 12;
-}/*# sourceMappingURL=catalog.css.map */
+}
+/*# sourceMappingURL=catalog.css.map */
