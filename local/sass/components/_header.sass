@@ -2,10 +2,19 @@
     position: absolute
     z-index: 2
     width: 100%
-    &.move.fixed 
-        background-color: #fff
-        position: fixed
-        top: 0
+    &_logo
+        font-family: 'Cormorant'
+        font-weight: 600
+        font-size: 36px
+        line-height: 120%
+        text-transform: uppercase
+        color: #fff
+    &.move
+        &.fixed 
+            background-color: #fff
+            position: fixed
+            animation: bar .4s ease-in-out 
+            top: 0px
     &_contact
         display: flex
         align-items: center
@@ -24,6 +33,7 @@
             line-height: 120%
     & .button_transparent
         height: 46px
+        border: 1px solid rgba(255, 255, 255, 0.15)
     &_burgher
         display: none
         margin-left: 20px
@@ -42,7 +52,7 @@
             &:first-of-type
                 margin-top: 16px
             &:last-of-type
-    &_burgher:hover
+    &_burgher.active
         & span 
             display: none
             &:first-of-type
@@ -59,6 +69,15 @@
                 left: calc( 50% - 11px )
                 display: block
     &.fixed
+        & .active
+            & .cross
+                border: 1px solid $titlecolor
+        &.active
+            & .hide
+                display: none
+        & .color
+            & span 
+                border: 1px solid $titlecolor
         & span
             color: $titlecolor
         & .nav_item
@@ -67,8 +86,27 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.05)
         & .header_nav
             border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+        & .header_logo.mobile
+            color: $titlecolor
         & path
-            fill: $titlecolor
+            fill: #50616B
+        & .button_transparent
+            border: 1px solid $secondcolor
+            color: $secondcolor
+            &:hover
+                color: #fff
+        & .dropdown_svg
+            border: 2px solid rgba(0, 0, 0, 0.1)
+        & .icon_contact-svg
+            border: 1px solid rgba(0, 0, 0, 0.1)
+        & .icon_social
+            border: 1px solid rgba(0, 0, 0, 0.1)
+@keyframes bar
+    from
+        top: -100%
+    to
+        top: 0px
+
 .nav  
     &_dropdown
         display: flex
@@ -81,11 +119,13 @@
         display: flex
         justify-content: space-between
         align-items: center
+        &.active
+            flex-direction: column
     &_bar
         position: relative
-        padding-right: 70px 
+        margin-right: 70px 
         &:last-of-type
-            padding-right: 0px
+            margin-right: 0px
     &_item
         color: $maincolor
 .dropdown
@@ -98,26 +138,26 @@
     &_svg
         border-radius: 50%
         display: flex
-        border: 2px solid #F2F2F2
+        border: 2px solid $border
         align-items: center
         justify-content: center
         width: 18px
         height: 18px
-    &:hover .dropdown_svg-center
-        fill: $secondcolor
-        transition: 0.4s
     &_wrap
-        padding-top: 30px
+        display: none
     &_list
         position: absolute
         left: 0
-        display: none
         top: 30px
         background: #FFFFFF
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
         border-radius: 2px
-    &:hover .dropdown_list
-        display: block
+        &::before
+            width: 100%
+            height: 15px
+            position: absolute
+            top: -15px
+            content: " "
     &_item
         font-weight: 400
         font-size: 15px
@@ -128,10 +168,22 @@
             border-bottom: none
         & a
             color: $textcolor
-        &:hover a
-            color: $secondcolor
-
-@media (max-width: 1400px)
+@media (min-width: 1100px)
+    .dropdown
+        &:hover .dropdown_svg-center
+            fill: $secondcolor
+            transition: 0.4s
+        &_wrap
+            &:hover
+                display: block
+        &:hover 
+            &+.dropdown_wrap
+                display: block
+        &_item
+            &:hover a
+                color: $secondcolor
+    
+@media (max-width: 1510px)
     .header
         &_wrapper
             & a
@@ -143,18 +195,91 @@
     .nav  
         &_wrap
         &_bar
-            padding-right: 40px 
-@media (max-width: 1000px)
+            margin-right: 40px 
+@media (max-width: 1100px)
     .header
         &_wrapper
             & a
                 font-size: 16px
             & .icon_contact
-                padding-right: 30px
+                margin-right: 30px
         &_nav
-            display: none
         &_burgher
             display: block
-@media (max-width: 700px)
-    .header .button
-        display: none
+    .nav  
+        &_dropdown
+            height: 100vh
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-start
+            padding: 0
+            &.active
+                & .dropdown
+                    justify-content: space-between
+                    &.active
+                        padding-bottom: 19px
+                        border-bottom: 1px solid $borderconveniences
+                        transition: .4s
+                    &_wrap
+                        padding: 0
+                    &_list
+                        position: static
+                        background: #FFFFFF
+                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0)
+                        border-radius: 0px
+                    &_item
+                        margin: 0
+                        &:last-of-type
+                            padding-bottom: 0px    
+            & .nav_wrap
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: flex-start
+                width: 100%
+                & .nav_bar
+                    padding: 17px 0 19px
+                    border-bottom: 1px solid rgba(40, 40, 40, 0.05)
+                    width: 100%
+                    & .dropdown a
+                        padding: 0
+                    & a
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 120%
+                    &:last-of-type
+                        margin-bottom: 30px
+    @keyframes submenu-open
+        0%
+            height: 0%
+        100%
+            height: 100%
+    @keyframes submenu-closed
+        0%
+            height: 100%
+        100%
+            height: 0%
+    .dropdown
+        &_svg
+            width: 20px
+            height: 20px
+        &_wrap
+            &.js-open
+                display: block
+                z-index: 1
+                position: relative
+                overflow: hidden
+                animation: submenu-open .4s ease-in-out
+            &.js-closed
+                display: block
+                z-index: 1
+                position: relative
+                overflow: hidden
+                animation: submenu-closed .4s ease-in-out
+    
+@media (max-width: 760px)
+    .burgher_min_wrap
+        flex-direction: column
+        & .burgher_button 
+            margin-bottom: 61px

@@ -7,17 +7,25 @@
         display: flex
         justify-content: space-between
     &_card
+        display: flex
+        flex-direction: column
+        justify-content: space-between
         margin-right: 50px
+        height: auto
         &:last-of-type
-            padding-right: 0
-.card
-    &_img
-        margin-bottom: 20px
-    &_title
-        margin-bottom: 20px
-    &_text
-        margin-bottom: 40px
-@media (max-width: 1400px)
+            margin-right: 0
+    & .card
+        &_img
+            margin-bottom: 20px
+        &_title
+            margin-bottom: 20px
+            text-transform: capitalize
+        &_text
+            margin-bottom: 40px
+    &_swiper
+        display: none
+        overflow: hidden
+@media (max-width: 1510px)
     .advantages
         padding: $desktoppadding 0
         &_title
@@ -27,10 +35,18 @@
         &_img svg
             width: 50px
             height: 50px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .advantages
         padding: $tabletpadding 0
-@media (max-width: 700px)
+        &_wrapper
+            display: none
+        &_swiper
+            display: block
+            margin-left: calc((100% - 700px)/2)
+        &_card
+            width: 300px
+            margin: 0px
+@media (max-width: 760px)
     .advantages
         padding: $mobilepadding 0
         &_title
@@ -39,3 +55,6 @@
             display: block
         &_card
             margin-bottom: 30px
+            width: 100%
+        &_swiper
+            display: none

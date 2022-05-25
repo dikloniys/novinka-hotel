@@ -26,6 +26,7 @@ p
 img
     width: 100%
     height: 100%
+    vertical-align: middle
 .title
     color: $secondcolor
     font-weight: 500
@@ -37,7 +38,7 @@ img
         font-size: 22px
         line-height: 120%
         color: $titlecolor
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .title
         margin-bottom: 15px
 .subtitle
@@ -46,19 +47,19 @@ img
     line-height: 110%
     color: $titlecolor
     width: 50%
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .subtitle
         font-size: 34px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .subtitle
         width: 100%
-@media (max-width: 700px)
+@media (max-width: 760px)
     .subtitle
         font-size: 28px
 .text
     font-size: 15px
     line-height: 160%
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .text
         font-size: 14px
 section
@@ -71,23 +72,25 @@ section
     margin: 0 auto
     max-width: $content-size
     width: 100%
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .container
         max-width: 1000px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .container
         max-width: 700px
-@media (max-width: 700px)
+@media (max-width: 760px)
     .container
         max-width: 345px
 .icon
     &_wrapper
         display: flex
+        a:last-of-type .icon_social
+            margin-right: 0px
     &_social
         cursor: pointer
         border-radius: 50%
         display: flex
-        border: 1px solid #F2F2F2
+        border: 1px solid $border
         align-items: center
         justify-content: center
         width: 32px
@@ -105,16 +108,20 @@ section
             height: 26px
             width: 26px
             border-radius: 50%
-            border: 1px solid #F2F2F2 
+            border: 1px solid $border
         &:hover .icon_contact-svg
             background-color: #fff
             transition: 0.4s
         &:hover .icon_hover
             fill: $secondcolor
             transition: 0.4s
-@media (max-width: 1000px)
-    .icon_contact
-        display: none
+@media (max-width: 1100px)
+    .icon
+        &_contact
+            display: none
+        &_social
+            width: 40px
+            height: 40px
 .vk:hover 
     background: #2C5FE1
     border: 1px solid #2C5FE1
@@ -204,11 +211,31 @@ section
             transform: rotate(45deg)
         &:last-child
             transform: rotate(-45deg)
-@media (max-width: 1000px)
+.burgher
+    &_min 
+        display: none
+@media (max-width: 1100px)
     .button
         &.filled
             &.catalog
                 width: 100%
+@media (max-width: 1100px)
+    .burgher
+        &_min 
+            display: block
+            & .icon_contact
+                display: flex
+                align-items: center
+                font-weight: 400
+                font-size: 20px
+                line-height: 120%
+            &_wrap
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 100%
+        &_button
+            width: 345px
 .filter
     cursor: pointer
     border-radius: 100px
@@ -227,10 +254,10 @@ section
         &:hover
             border: 1px solid $secondcolor
             color: $secondcolor
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .button_transparent
         margin: 0 auto
-@media (max-width: 700px)
+@media (max-width: 760px)
     .header
         .button_transparent
             display: none
@@ -324,6 +351,8 @@ section
         display: flex
     &_flex
         display: flex
+        height: 40px
+        border-left: 1px solid $maincolor
         &:last-of-type .request_icon
             width: 45px
             height: 40px
@@ -331,103 +360,42 @@ section
             align-items: center
             justify-content: space-evenly
             border-right: 1px solid $maincolor
+        & input
+            line-height: 40px
+            border: none
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+            color: $maincolor
+            width: 130px
+            height: 40px
+            margin-left: 45px
+            background-color: transparent
+            outline: none
+            text-align: center
+            z-index: 1
     &_icon
         width: 45px
         height: 40px
         display: flex
         align-items: center
         justify-content: space-evenly
-    &_emptiness
-        width: 45px
-        height: 40px
-        &:first-of-type
-            border-left: 1px solid $maincolor
-    &_guests
-        line-height: 40px
-        border-bottom: 1px solid $maincolor
-        color: $maincolor
-        width: 130px
-        height: 40px
-        text-align: center
-        & input
-            border-bottom: 1px solid $maincolor
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .request
         &_wrapper
             margin: 0 auto 
             padding: 40px
     .main .button_transparent
         margin-left: 0px
-@media (max-width: 700px)
+@media (max-width: 760px)
     .request
         &_flex
             margin-bottom: 30px
+            border-right: 1px solid $maincolor
+            &:last-of-type
+                border-right: 0px solid $maincolor
         &_wrapper
             flex-direction: column
             align-items: center
             padding: 0px
-.popup
-    background-color: $roomcolor
-    height: 100%
-    width: 100%
-    display: none
-    align-items: center
-    justify-content: space-evenly
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 9999
-    &_body
-    &_wrapper
-        border-radius: 20px
-        background-color: $maincolor
-        padding: 30px
-        display: none
-        max-width: 800px
-        min-height: 230px
-        &.erorr
-            border-radius: 20px
-            background-color: $maincolor
-            padding: 30px
-            & .popup_wrap
-                margin-bottom: 9px
-        &.confirmation
-            & .popup_wrap
-                margin-bottom: 9px
-            & .popup_title
-                color: $thirdcolor
-            & .popup_text
-                margin-bottom: 30px
-    &_wrap
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 24px
-    &_title
-        font-weight: 500
-        font-size: 24px
-        line-height: 28px
-        margin-bottom: 0px
-        text-transform: none
-    &_form
-    &.active
-        display: flex
-    &_text
-        font-size: 14px
-        line-height: 140%
-        margin-bottom: 15px
-        & a
-            color: $secondcolor
-    &_button
-        color: #8E8E8E
-        background-color: #F6F8FC
-        height: 50px
-        width: 100%
-        font-size: 12px
-        line-height: 130%
-        text-align: center
-        line-height: 46px
-
 .booking
     background-color: $roomcolor
     height: 100vh
@@ -466,7 +434,7 @@ section
         margin-bottom: 8px
         font-size: 15px
         line-height: 120%
-        & sup
+        & span
             color: $secondcolor
     &_initials
         width: 100%
@@ -474,6 +442,7 @@ section
         padding-left: 15px
         background-color: #ECF1F7
         border: none
+        margin-bottom: 20px
         &:hover
             background-color: #EDF5FE
     & input
@@ -487,12 +456,26 @@ section
             background-color: #EDF5FE
     &_input
         &-wrap
+    &_data
+        margin-bottom: 20px
+        border: none
+        width: 260px
+        height: 50px
+        padding-left: 15px
+        background-color: #ECF1F7
+        &-wrap
+            display: flex
+        &:hover
+            background-color: #EDF5FE
+        &:first-of-type
+            margin-right: 20px
     &_contacts
         border: none
         width: 260px
         height: 50px
         padding-left: 15px
         background-color: #ECF1F7
+        margin-bottom: 20px
         &-wrap
             display: flex
         &:hover
@@ -514,14 +497,15 @@ section
     &_approval
         width: 220px
         font-size: 10px
+.desktop
+    display: block
 .mobile
     display: none
-.active
-    display: block
-@media (max-width: 700px)
+@media (max-width: 760px)
+    .desktop
+        display: none
     .mobile
         display: block
 @import 'components/header'
-@import 'components/slider'
-
 @import 'components/footer'
+@import 'components/popup'

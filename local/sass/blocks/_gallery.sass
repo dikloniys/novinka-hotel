@@ -1,9 +1,7 @@
 .gallery
     padding: $mainpadding 0
-    &_title
     &_subtitle
         margin-bottom: 20px
-    &_wrapper
     &_wrap
         &-text
             display: grid
@@ -19,7 +17,7 @@
         &-card:last-of-type
             padding-top: 50px
     & img
-        width: 675px
+        max-width: 675px
         height: 450px
     &_wrap-cards
         & .gallery_text
@@ -43,19 +41,19 @@
         margin-left: calc( 50% - 175px )
     & .swiper
         display: none
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .gallery
         padding: $desktoppadding 0
         & img
-            width: 475px
+            max-width: 475px
             height: 320px
         &_card
             margin-bottom: 60px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .gallery
         padding: $tabletpadding 0
         & img
-            width: 475px
+            max-width: 100%
             height: 320px
         &_wrap
             &-text
@@ -70,34 +68,22 @@
         &_card
             margin-bottom: 100px
         & .swiper
+            overflow: hidden
             display: block
-@media (max-width: 700px)
+@media (max-width: 760px)
     .gallery
         padding: $mobilepadding 0
         & .swiper
             display: block
         &_card
             margin-bottom: 0px
-        &_title
         &_subtitle
             margin-bottom: 15px
-        &_wrapper
         &_wrap
             &-text
                 & .gallery_text
                     margin-bottom: 22px
                 & .gallery_text:first-of-type
                     margin-bottom: 10px
-            &-cards
-            &-card:last-of-type
-        & img
-        &_wrap-cards
-            & .gallery_text
-        &_card
-        &_img
-        &_number
-        &_signature
         & .more_arrow
             display: none
-        & .swiper
-        

@@ -14,7 +14,6 @@
             margin-bottom: 50px
     &_difference
         display: flex
-        justify-content: space-between
         margin-bottom: 57px
     &_photo
         width: 600px
@@ -36,8 +35,8 @@
         &-wrap
             display: none
             align-items: center  
+            cursor: pointer
             &:hover .arrow_center
-                fill: #fff
                 transition: 0.4s
             &:hover .more_wrap
                 border-bottom: 1px solid $secondcolor
@@ -46,14 +45,14 @@
                 background: $secondcolor
                 transition: 0.4s
                 animation: arrow 1.8s infinite
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .aboutus
         padding: $desktoppadding 0px
         &_photo 
             width: 450px
             height: 500px
             margin-left: 50px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .aboutus
         padding: $tabletpadding 0px
         &_wrapper
@@ -71,9 +70,9 @@
             margin-bottom: 30px
         &_arrow
             &-wrap
-                padding-left: calc( 700px - (50% + 100px))
+                margin-left: calc( 700px - (50% + 100px))
                 display: flex
-@media (max-width: 700px)
+@media (max-width: 760px)
     .aboutus
         padding: $mobilepadding 0px
         &_wrapper
@@ -92,7 +91,7 @@
             height: 431px
         &_arrow
             &-wrap
-                padding-left: calc( 340px - 50% )
+                margin-left: calc( 340px - 50% )
 .difference
     &_wrapper
         border-radius: 50%
@@ -103,6 +102,10 @@
         flex-direction: column
         width: 200px
         height: 200px
+        margin-right: 50px
+        flex-shrink: 0
+        &:last-of-type
+            margin-right: 0px
     &_pluses
         font-weight: 300
         font-size: 80px
@@ -113,11 +116,12 @@
         line-height: 130%
         text-align: center
         padding: 0 35px
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .difference
         &_wrapper
             width: 170px
             height: 170px
+            margin-right: 20px
         &_pluses
             font-size: 70px
         &_description
@@ -125,11 +129,11 @@
             line-height: 130%
             text-align: center
             padding: 0 35px
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .difference
         &_wrapper
             margin-right: 16px
-@media (max-width: 700px)
+@media (max-width: 760px)
     .difference
         &_wrapper
             width: 160px

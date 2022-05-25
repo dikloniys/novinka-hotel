@@ -29,14 +29,7 @@
             display: flex
             justify-content: center
             align-items: center
-            // этот размер зависит от размера изображения
-            // его (после переноса всех правил в файл room)
-            // можно так же вынести в переменную и присваивать 
-            // изображениям и навигационному окну
             height: 350px
-            // тут стандартно отнимается правый отступ
-            // и еще -40px (это размер иконки)
-            // чтобы не запутаться размер иконки можно вынести в отдельную переменную 
             right: calc((100% - 1400px)/2 - 40px)
             &-arrow
                 border-radius: 50% 0 0 50%
@@ -46,7 +39,6 @@
                 background-color: $sectioncolor
                 align-items: center
                 justify-content: center
-                // речь выше идет о этом размере
                 width: 40px
                 height: 40px
                 cursor: pointer
@@ -84,34 +76,41 @@
         margin-bottom: 10px
     &_text
         margin-bottom: 40px
-@media (max-width: 1400px)
+@media (min-width: 1100px)
+    .room
+        &_img
+            &:hover
+                height: 120%
+                width: 120%
+                z-index: 15
+@media (min-width: 1510px)
+    .room
+        &_img
+            &:hover
+                height: 120%
+                width: 120%
+                z-index: 15
+@media (max-width: 1510px)
     .rooms
         padding: $desktoppadding 0px
         &-swiper
             margin-left: calc((100% - 1000px)/2)
-            &-wrap
-                position: relative
-            &-wrapper
-                position: static
             &-slide
                 width: 475px
             &-navigation
                 right: calc((100% - 1000px)/2 - 40px)
-                &-arrow
-                    & span
-                        &:first-of-type
-                        &:last-of-type
-                    &-next
-
     .room
-        margin-left: calc((100% - 1000px )/2)
         &_img
             width: 475px
             height: 250px
 
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .rooms
         padding: $tabletpadding 0px
+        &-swiper
+            margin-left: calc((100% - 700px)/2)
+            &-navigation
+                display: none
         &_wrapper
             display: block
         &_subtitle
@@ -121,8 +120,11 @@
         &_text
             margin-left: 0px
             width: 100%
-    .room
-        margin-left: calc((100% - 700px )/2)
+@media (max-width: 760px)
+    .rooms
+        &-swiper
+            margin: 0 calc((100% - 345px)/2)
+            &-navigation
 .maney
     &_wrap
         cursor: pointer
@@ -151,7 +153,7 @@
         font-weight: 500
         font-size: 15px
         line-height: 120%
-@media (max-width: 700px)
+@media (max-width: 760px)
     .rooms
         padding: $mobilepadding 0px
         &_subtitle

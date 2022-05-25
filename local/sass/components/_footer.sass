@@ -34,40 +34,39 @@
             color: $maincolor
     &_nav 
         display: flex
-        width: 47%
+        width: 48%
         justify-content: space-between
-.nav
-    &_wrapperup
-    &_aboutus
-            margin-right: 95px
-    &_wrap
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-    &_wrapper
-        &:first-of-type
-            margin-bottom: 40px
-    &_aboutus
-    &_menu
-    &_events
-    &_title 
-        margin-bottom: 20px
-        & a
-            font-weight: 500
-            font-size: 16px
-            line-height: 120%
-            color: $maincolor
-    &_list 
-        margin-bottom: 15px
-        & a
-            color: $textfootercolor
-            font-size: 14px
-            line-height: 120%
-        &:last-of-type
-            margin-bottom: 0px
-    & .nomobile 
-.mobile 
-    display: none
+    .nav
+        &_wrapperup
+        &_aboutus
+                margin-right: 95px
+        &_wrap
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+        &_wrapper
+            &:first-of-type
+                margin-bottom: 40px
+        &_aboutus
+        &_menu
+        &_events
+            justify-content: space-between
+        &_title 
+            margin-bottom: 20px
+            & a
+                font-weight: 500
+                font-size: 16px
+                line-height: 120%
+                color: $maincolor
+        &_list 
+            margin-bottom: 15px
+            & a
+                color: $textfootercolor
+                font-size: 14px
+                line-height: 120%
+            &:last-of-type
+                margin-bottom: 0px
+        & .nomobile 
 .copyright
     &_wrapper
         display: flex
@@ -100,7 +99,7 @@
             font-size: 12px
             line-height: 130%
             color: $textfootercolor
-@media (max-width: 1400px)
+@media (max-width: 1510px)
     .footer
         padding-top: 50px
         &_nav 
@@ -136,7 +135,7 @@
                 margin-bottom: 8px
             &-wrap
                 flex-direction: column
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .footer
         &_wrapper
             display: block
@@ -185,14 +184,15 @@
                 display: none
         &_copyright
             margin-bottom: 20px
-@media (max-width: 700px)
+@media (max-width: 760px)
     .footer
         &_wrap
             display: block
         &_nav 
             display: block
+        & .nav_wrap
+            flex-direction: column
         &_documents
-        &-wrap
         &_logo
             margin-bottom: 20px
         &_numbers
@@ -212,8 +212,6 @@
             margin-bottom: 20px
             &:first-of-type
                 margin-bottom: 20px
-            &:nth-of-type(2)
-                display: none
         &_aboutus
         &_events
             display: block

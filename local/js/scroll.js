@@ -1,16 +1,20 @@
-
 const headerScrollCheck = () => {
     let header = $(".js-scroll-check");
     let header_button = $(".js-header_button");
+    let header_button_burger = $(".js-header-burgher-menu");
     let firstBlockHeight = $(".js-first-block").height();
-    if ($(this).scrollTop() > firstBlockHeight) {
-        header.addClass("fixed");
-        header_button.addClass("active");
-        return true
-    } else {
-        header.removeClass("fixed");
-        header_button.removeClass("active");
-        return false
+    if($('.js-header-burgher-list').hasClass('js-burgher-open') === false){
+        if ($(this).scrollTop() > firstBlockHeight) {
+                header.addClass("fixed");
+                header_button.addClass("active");
+                header_button_burger.addClass("color");
+                return true
+            }
+        else {
+            header.removeClass("fixed");
+            header_button.removeClass("active");
+            return false
+        }
     }
 }
 
@@ -33,22 +37,24 @@ const checkScrollDirection = (st) => {
     return "down"
 }
 $(window).scroll(function() {
-    headerScrollCheck()
-    let scrollDirection = checkScrollDirection($(this).scrollTop())
-    headerNavVisibilityCheck(headerScrollCheck(), scrollDirection)
+    if($('.js-header-burgher-list').hasClass('js-burgher-open') === false){
+        headerScrollCheck()
+        let scrollDirection = checkScrollDirection($(this).scrollTop())
+        headerNavVisibilityCheck(headerScrollCheck(), scrollDirection)
+    }
 });
 
 const anchors = document.querySelectorAll('a.scroll-to')
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href')
-    
-    document.querySelector(blockID).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+        e.preventDefault()
+        e.stopPropagation()
+        const blockID = anchor.getAttribute('href')
+        
+        document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
     })
 })
 }

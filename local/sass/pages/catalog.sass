@@ -1,6 +1,5 @@
 @import '../helpers/_variables'
 @import '../blocks/_main'
-
 .catalog
     &__wrap
         display: grid
@@ -13,9 +12,9 @@
     &_filter
         padding-bottom: 30px
     &_cardroom
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(422px,1fr))
+        grid-gap: 40px
 .filter
     margin-right: 15px
     &:last-of-type
@@ -23,37 +22,49 @@
     &_wrapper
         display: flex
 .cardroom
-    &_wrapper
-        width: 440px
-        padding-bottom: 40px
+    background-color: $maincolor
+    &-slider
+        position: relative
+        overflow-x: hidden
+        &__pagination
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            top: 0
+            z-index: 100
+            display: flex
+            grid-gap: 15px
+            padding: 12.5px
+            align-items: flex-end
+        & .swiper-pagination-bullet
+            position: relative
+            width: 100%
+            height: 100%
+            background: transparent
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 6px
+                background: #fff
+                opacity: 0.5
+                border-radius: 20px
+                bottom: 0
+            &-active::before
+                opacity: 1    
+    &-image 
+        display: flex
+        align-items: flex-end
+        background: url(/local/img/luxury.png)
+        width: 100%
+        height: 250px
     &_wrap
-        background-color: $maincolor
+        
         padding: 20px
         &-maney
             display: flex
             justify-content: space-between
-    &_img
-        display: flex
-        align-items: flex-end
-        background: url(/local/img/luxury.png)
-        height: 250px
-        padding: 0 20px 
-    &_slide
-        display: flex
-        align-items: flex-end
-        height: 100%
-        margin-right: 15px
-        cursor: pointer
-        &:last-of-type
-            margin-right: 0px
-        &-visible
-            width: 68px
-            height: 6px
-            background: rgba(255, 255, 255, 0.5)
-            border-radius: 20px
-            margin-bottom: 15px
-            &.active
-                background: rgb(255, 255, 255)
     &_title
         padding-bottom: 10px
     &_text
@@ -66,14 +77,16 @@
         border-top: 1px solid $borderconveniences
     &_maney
         display: flex
-@media (max-width: 1400px)
+        justify-content: space-between
+    
+@media (max-width: 1510px)
     .cardroom
         &_wrapper
             width: 480px
             padding-bottom: 40px
         &_img
             padding: 0 40px 
-@media (max-width: 1000px)
+@media (max-width: 1100px)
     .cardroom
         &_wrapper
             width: 340px
@@ -96,7 +109,7 @@
             flex-direction: column
     .maney_icon
         padding-bottom: 20px
-@media (max-width: 700px)
+@media (max-width: 760px)
     .cardroom
         &_wrapper
             width: 345px
