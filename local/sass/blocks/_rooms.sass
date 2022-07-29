@@ -68,7 +68,15 @@
         &:last-of-type
             margin-right: 0px
         & img
+            transition: 0.4s
+        &:hover .maney_wrap
+            border-bottom: 1px solid $secondcolor
+            transition: 0.4s
+        &:hover .maney_svg
+            border: 2px solid $secondcolor
+            transition: 0.4s
     &_img
+        position: relative
         height: 350px
         width: 675px
         margin-bottom: 30px
@@ -79,7 +87,8 @@
 @media (min-width: 1100px)
     .room
         &_img
-            &:hover
+            &:hover img
+                position: absolute
                 height: 120%
                 width: 120%
                 z-index: 15
@@ -87,9 +96,9 @@
     .room
         &_img
             &:hover
-                height: 120%
-                width: 120%
-                z-index: 15
+                // height: 120%
+                // width: 120%
+                // z-index: 15
 @media (max-width: 1510px)
     .rooms
         padding: $desktoppadding 0px
@@ -130,12 +139,6 @@
         cursor: pointer
         border-bottom: 1px solid $borderconveniences
         padding-bottom: 20px
-        &:hover.maney_wrap
-            border-bottom: 1px solid $secondcolor
-            transition: 0.4s
-        &:hover .maney_svg
-            border: 2px solid $secondcolor
-            transition: 0.4s
     &_icon
         display: flex
         align-items: center

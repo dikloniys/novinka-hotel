@@ -6,6 +6,7 @@
         display: none
     &_wrapper
         display: flex
+        position: relative
     &_slider
         width: 675px
         height: 350px 
@@ -118,10 +119,8 @@
         justify-content: space-between 
         flex-wrap: wrap
 .slide
-    &_for
     &_slide
         width: 117px
-    &_wrapper
     &_img
         &_thumbs
             cursor: pointer
@@ -129,7 +128,7 @@
             padding: 5px
             border: 1px solid rgba(80, 97, 107, 0.1)      
             transition: 0.4s  
-.swiper-slide-active 
+.swiper-slide-thumb-active 
     & .slide_img_thumbs
         border: 1px solid #900E0E
 .bar
@@ -211,6 +210,8 @@
         &_slider
             width: 475px
             height: 245px
+            &_thumbs
+                width: 475px
         &-swiper-navigation
             height: 245px
             &-arrow-next
@@ -250,19 +251,26 @@
             margin-right: 10px
             margin-bottom: 0px
         &_date
+    .slide
+        &_slide
+            width: 77px
+        &_img
+            &_thumbs
+                width: 77px
 @media (max-width: 1100px)
     .catalog-detailed
         margin: 0px 0px $tabletpadding
+        &_tablet
+            position: relative
         &_slider
             width: 100%
-            height: 318px
+            height: 469px
+            &_thumbs
+                width: 100%
             &_wrapper
-                &.mobile
-                    display: block
-                    width: 100%
+                width: 100%
         &-swiper-navigation
-            height: 318px
-            top: 19%
+            height: 100%
             &-arrow-next
                 left: 642px
         &_main
@@ -342,8 +350,12 @@
                 &.wifi
                     padding: 10px
     .slide
+        &_slide
+            width: 117px
         &_img
-            height: 318px
+            height: 469px
+            &_thumbs
+                width: 117px
 @media (max-width: 760px)
     .catalog-detailed
         margin: 0px 0px $mobilepadding
@@ -383,3 +395,36 @@
         &_title-conveniences
             margin-bottom: 20px
             font-size: 22px
+        &_slider_wrapper
+            position: relative
+        &-slider
+            position: relative
+            overflow-x: hidden
+            &__pagination
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                top: 0
+                z-index: 10
+                display: flex 
+                grid-gap: 15px
+                padding: 12.5px
+                align-items: flex-end
+            & .swiper-pagination-bullet
+                position: relative
+                width: 100%
+                height: 100%
+                background: transparent
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 6px
+                    background: #fff
+                    opacity: 0.5
+                    border-radius: 20px
+                    bottom: 0
+                &-active::before
+                    opacity: 1 
+            

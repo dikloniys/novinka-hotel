@@ -432,9 +432,9 @@
   z-index: 1;
   width: 100%;
   height: 84px;
-  right: -36px;
+  right: 0px;
   position: absolute;
-  background-color: #fff;
+  background-color: #F9F9F9;
 }
 
 .excursion_arc.top {
@@ -512,11 +512,27 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 50px;
-  height: auto;
+  height: 100%;
 }
 
-.advantages_card:last-of-type {
-  margin-right: 0;
+.advantages_card:hover .arrow_center {
+  fill: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.advantages_card:hover .more_wrap {
+  border-bottom: 1px solid #900E0E;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.advantages_card:hover .arrow {
+  background: #900E0E;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation: arrow 1.8s infinite;
+          animation: arrow 1.8s infinite;
 }
 
 .advantages .card_img {
@@ -561,9 +577,8 @@
     display: block;
     margin-left: calc((100% - 700px)/2);
   }
-  .advantages_card {
+  .advantages_slide {
     width: 300px;
-    margin: 0px;
   }
 }
 
@@ -709,7 +724,25 @@
   margin-right: 0px;
 }
 
+.room_wrapper img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.room_wrapper:hover .maney_wrap {
+  border-bottom: 1px solid #900E0E;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.room_wrapper:hover .maney_svg {
+  border: 2px solid #900E0E;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .room_img {
+  position: relative;
   height: 350px;
   width: 675px;
   margin-bottom: 30px;
@@ -724,15 +757,8 @@
 }
 
 @media (min-width: 1100px) {
-  .room_img:hover {
-    height: 120%;
-    width: 120%;
-    z-index: 15;
-  }
-}
-
-@media (min-width: 1510px) {
-  .room_img:hover {
+  .room_img:hover img {
+    position: absolute;
     height: 120%;
     width: 120%;
     z-index: 15;
@@ -792,18 +818,6 @@
   cursor: pointer;
   border-bottom: 1px solid rgba(79, 97, 107, 0.1);
   padding-bottom: 20px;
-}
-
-.maney_wrap:hover.maney_wrap {
-  border-bottom: 1px solid #900E0E;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.maney_wrap:hover .maney_svg {
-  border: 2px solid #900E0E;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .maney_icon {

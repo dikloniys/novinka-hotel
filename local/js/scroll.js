@@ -3,7 +3,6 @@ const headerScrollCheck = () => {
     let header_button = $(".js-header_button");
     let header_button_burger = $(".js-header-burgher-menu");
     let firstBlockHeight = $(".js-first-block").height();
-    if($('.js-header-burgher-list').hasClass('js-burgher-open') === false){
         if ($(this).scrollTop() > firstBlockHeight) {
                 header.addClass("fixed");
                 header_button.addClass("active");
@@ -11,20 +10,23 @@ const headerScrollCheck = () => {
                 return true
             }
         else {
-            header.removeClass("fixed");
             header_button.removeClass("active");
+            setTimeout(function(){header.removeClass("fixed")},400);
             return false
         }
-    }
+    
 }
 
 const headerNavVisibilityCheck = (fixed, direction) => {
     let headerNav = $(".js-header-nav");
-    if (fixed && direction === "down") {
-        headerNav.hide(200)
-    }
-    else {
-        headerNav.show(200)
+    
+    if($(window).width() > 1100){
+        if (fixed && direction === "down") {
+            headerNav.hide(200)
+        }
+        else {
+            headerNav.show(200)
+        }
     }
 };
 let scrollPos = 0;

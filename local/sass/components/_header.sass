@@ -42,6 +42,10 @@
         height: 46px
         position: relative
         cursor: pointer
+        & .color
+            span
+                background: $maincolor
+                border: 1px solid $maincolor
         & span
             margin: 4px auto
             display: block
@@ -72,6 +76,9 @@
         & .active
             & .cross
                 border: 1px solid $titlecolor
+        & .color
+            & .cross
+                border: 1px solid $textcolor
         &.active
             & .hide
                 display: none
@@ -119,11 +126,11 @@
         display: flex
         justify-content: space-between
         align-items: center
-        &.active
-            flex-direction: column
     &_bar
         position: relative
         margin-right: 70px 
+        &.js-open .dropdown_svg-center
+            fill: $secondcolor
         &:last-of-type
             margin-right: 0px
     &_item
@@ -164,20 +171,22 @@
         margin: 0 15px
         padding: 15px 0 
         border-bottom: 1px solid $borderconveniences
-        &:last-of-type
-            border-bottom: none
         & a
             color: $textcolor
 @media (min-width: 1100px)
     .dropdown
+        cursor: pointer
         &:hover .dropdown_svg-center
             fill: $secondcolor
             transition: 0.4s
         &_wrap
             &:hover
                 display: block
+            &:hover+ .dropdown_svg-center
+                fill: $secondcolor
+                transition: 0.4s
         &:hover 
-            &+.dropdown_wrap
+            & .dropdown_wrap
                 display: block
         &_item
             &:hover a
@@ -204,9 +213,12 @@
             & .icon_contact
                 margin-right: 30px
         &_nav
+            display: none
         &_burgher
             display: block
-    .nav  
+    .nav 
+        &_bar
+            margin-right: 0px  
         &_dropdown
             height: 100vh
             display: flex
@@ -217,10 +229,9 @@
             &.active
                 & .dropdown
                     justify-content: space-between
-                    &.active
-                        padding-bottom: 19px
-                        border-bottom: 1px solid $borderconveniences
-                        transition: .4s
+                    padding-bottom: 19px
+                    border-bottom: 1px solid $borderconveniences
+                    transition: .4s
                     &_wrap
                         padding: 0
                     &_list
@@ -230,26 +241,25 @@
                         border-radius: 0px
                     &_item
                         margin: 0
-                        &:last-of-type
-                            padding-bottom: 0px    
-            & .nav_wrap
-                display: flex
-                flex-direction: column
-                align-items: flex-start
-                justify-content: flex-start
-                width: 100%
-                & .nav_bar
-                    padding: 17px 0 19px
-                    border-bottom: 1px solid rgba(40, 40, 40, 0.05)
-                    width: 100%
-                    & .dropdown a
-                        padding: 0
-                    & a
-                        font-weight: 500
-                        font-size: 20px
-                        line-height: 120%
-                    &:last-of-type
-                        margin-bottom: 30px
+                        
+        &_wrap
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-start
+            width: 100%
+        &_bar
+            padding: 17px 0 19px
+            border-bottom: 1px solid rgba(40, 40, 40, 0.05)
+            width: 100%
+            & .dropdown a
+                padding: 0
+            & a
+                font-weight: 500
+                font-size: 20px
+                line-height: 120%
+            &:last-of-type
+                margin-bottom: 30px
     @keyframes submenu-open
         0%
             height: 0%
@@ -264,6 +274,11 @@
         &_svg
             width: 20px
             height: 20px
+        &_menu
+            padding-bottom: 0px
+            border-bottom: none
+            &.active
+                border-bottom: 1px solid rgba(40, 40, 40, 0.05)
         &_wrap
             &.js-open
                 display: block

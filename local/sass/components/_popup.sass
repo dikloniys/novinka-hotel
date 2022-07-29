@@ -1,23 +1,24 @@
 .popup
     display: none
-    &_main
+    &_main 
         display: flex
         background-color: rgba(28, 28, 32, 0.5)
-        height: 100%
         width: 100%
-        align-items: center
+        align-items: flex-start
         justify-content: space-evenly
         position: fixed
         top: 0
         left: 0
         z-index: 10
         transition: .4s ease-in-out
+        max-height: 100vh
+        overflow-Y: auto
     &_wrapper
-        position: absolute
+        position: absolute 
         border-radius: 20px
         background-color: #fff
         padding: 30px
-        display: block
+        display: none
         max-width: 800px
         min-height: 230px
         transition: .4s ease-in-out
@@ -54,6 +55,8 @@
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         align-items: end
+        &-wrap
+            &
         &_text
             margin-bottom: 8px
             & sup
@@ -66,8 +69,6 @@
             border: none
             background-color: #ECF1F7
             color: #8F8F8F
-            &.erorr
-                background-color: #F7E0E0
         &_button
             cursor: pointer
             display: flex
@@ -89,6 +90,8 @@
         &_approval
                 font-size: 10px
                 position: absolute
+    &_data
+        position: relative
     &_button
         &_circle
             position: relative
@@ -133,6 +136,7 @@
         position: relative
     &_dropdown
         position: absolute
+        display: none
         top: 62px
         width: 100%
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
@@ -141,6 +145,7 @@
         padding: 15px 10px
     &_list
         margin-bottom: 15px
+        cursor: pointer
         &:last-of-type
             margin-bottom: 0px
     &_number
@@ -166,6 +171,7 @@
         padding: 30px
         background-color: #fff
         border-radius: 20px
+        display: none
         & input
             width: 100%
             height: 50px
@@ -178,6 +184,8 @@
                 background-color: #EDF5FE
             &:focus
                 outline: none
+    &_back
+        display: none
     & .request
         max-width: 600px
         z-index: 10
@@ -194,6 +202,7 @@
     &.fixed
         &.button_transparent
             color: #900E0E
+
 .reserve
     &_name
         margin-bottom: 20px
@@ -270,3 +279,22 @@
             width: 100%
         &_button_circle
             display: none
+        &_back
+            display: block
+        &_form_approval
+            position: static 
+.back
+    &_wrapper
+        display: inline-flex
+        margin-bottom: 30px
+        cursor: pointer
+        flex: content
+    &_arrow
+        transform: rotate(180deg)
+        margin-right: 8px
+        &_center
+            fill: $titlecolor
+        &_text
+input
+    &.erorr
+        background-color: #F7E0E0

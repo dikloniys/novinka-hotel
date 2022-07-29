@@ -56,3 +56,26 @@ filterButtons.forEach((button)=>{
         }
     })
 })
+
+document.querySelectorAll('.catalog-detailed_slider_wrapper').forEach(slider=>{        
+    console.log(slider)
+    var CatalogThumbs = new Swiper(slider.querySelector(".js-swiper-catalog-thumbs"), {
+        loop: true,
+        slidesPerView: 5,
+        slideToClickedSlide: true,
+        watchSlidesProgress: true,
+        });
+    var CatalogSwiper = new Swiper (slider.querySelector('.js-swiper-catalog'), {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.catalog-detailed-swiper-navigation-arrow-next',
+            prevEl: '.catalog-detailed-swiper-navigation-arrow-prev',
+        },
+        thumbs: {
+            swiper: CatalogThumbs,
+            }
+    });
+CatalogSwiper.controller.control = CatalogSwiper;
+CatalogThumbs.controller.control = CatalogThumbs;
+});

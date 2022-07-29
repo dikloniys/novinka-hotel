@@ -11,9 +11,17 @@
         flex-direction: column
         justify-content: space-between
         margin-right: 50px
-        height: auto
-        &:last-of-type
-            margin-right: 0
+        height: 100%
+        &:hover .arrow_center
+            fill: #fff
+            transition: 0.4s
+        &:hover .more_wrap
+            border-bottom: 1px solid $secondcolor
+            transition: 0.4s
+        &:hover .arrow
+            background: $secondcolor
+            transition: 0.4s
+            animation: arrow 1.8s infinite
     & .card
         &_img
             margin-bottom: 20px
@@ -43,9 +51,8 @@
         &_swiper
             display: block
             margin-left: calc((100% - 700px)/2)
-        &_card
+        &_slide
             width: 300px
-            margin: 0px
 @media (max-width: 760px)
     .advantages
         padding: $mobilepadding 0

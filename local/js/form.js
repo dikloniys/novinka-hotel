@@ -45,6 +45,42 @@ $(document).ready(function() {
 		$('.popup_form')[0].reset();
 		}
 	});
+	$(document).on('focusout' , 'input', function(e) { 
+		if(this.value==""){	
+			$(this).addClass('erorr')
+			if(this.name=="name"){
+				$(this).next().html('Введите ваше имя')
+			}
+			if(this.name=="phone"){
+				$(this).next().html('Введите ваш телефон')
+			}
+			if(this.name=="email"){
+				$(this).next().html('Введите ваш email')
+			}
+		}
+		if(this.value!==""){
+			
+			if(this.name=="name"){
+				$(this).next().html('')
+			}
+			if(this.name=="phone"){
+				$(this).next().html('')
+			}
+			if(this.name=="email"){
+				$(this).next().html('')
+			}
+		}
+		// console.log(e)
+		// console.log(this)
+		// console.log(this.value=="")
+		// console.log(this.value=="")
+	});
+	$(document).on('click' , 'input', function(e) { 
+			$(this).removeClass('erorr')
+	});
 });
 $('[name="phone"]').mask("+7 (000) 000-00-00");
+
+
+
 
