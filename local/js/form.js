@@ -46,6 +46,7 @@ $(document).ready(function() {
 		}
 	});
 	$(document).on('focusout' , 'input', function(e) { 
+		var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
 		if(this.value==""){	
 			$(this).addClass('erorr')
 			if(this.name=="name"){
@@ -59,21 +60,26 @@ $(document).ready(function() {
 			}
 		}
 		if(this.value!==""){
-			
 			if(this.name=="name"){
 				$(this).next().html('')
 			}
 			if(this.name=="phone"){
-				$(this).next().html('')
+				$(this).addClass('erorr')
+				$(this).next().html("Введите ваш телефон до конца");
+				if($(this).val().length == 18){
+					$(this).removeClass('erorr')
+					$(this).next().html('')
+				}
 			}
 			if(this.name=="email"){
-				$(this).next().html('')
+				$(this).addClass('erorr')
+				$(this).next().html('Введите ваш email')
+				if($(this).val().search(pattern) == 0){
+					$(this).removeClass('erorr')
+					$(this).next().html('')
+				}
 			}
 		}
-		// console.log(e)
-		// console.log(this)
-		// console.log(this.value=="")
-		// console.log(this.value=="")
 	});
 	$(document).on('click' , 'input', function(e) { 
 			$(this).removeClass('erorr')

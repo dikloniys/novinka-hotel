@@ -39,9 +39,10 @@ $(".js-quantity").on('click', function() {
     
 })
 $(".popup_list").on('click', function() {
-    let id = $(this).data('id')
+    let id = $(this).html()
     $(this).parent().prev().attr("data-id",id)
     $(this).parent().prev().children().first().html(id)
-    $(this).parent().removeClass('active')
+    console.log($(this).parent().parent())
+    $(this).parent().parent().removeClass('active')
     $(this).parent().slideUp()
 })

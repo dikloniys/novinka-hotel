@@ -144,18 +144,21 @@
         background-color: #fff
         padding: 15px 10px
     &_list
-        margin-bottom: 15px
+        padding-bottom: 15px
         cursor: pointer
         &:last-of-type
-            margin-bottom: 0px
+            padding-bottom: 0px
+        &:hover
+            color: $secondcolor
     &_number
         display: flex
         align-items: center
+        justify-content: space-between
         cursor: pointer
         height: 50px
         background-color: #ECF1F7
         border-radius: 2px
-        padding-left: 15px
+        padding: 0 15px
     &_button
         color: $secondcolor
         background-color: $maincolor
@@ -220,7 +223,7 @@
             justify-content: center
             width: 100%
             height: 50px
-            color: $secondcolor 
+            color: #8f8f8f
             font-size: 15px
             line-height: 120%
             padding: 0 15px
@@ -239,7 +242,7 @@
             justify-content: center
             width: 100%
             height: 50px
-            color: $secondcolor
+            color: #8f8f8f
             font-size: 15px
             line-height: 120%
             &:hover

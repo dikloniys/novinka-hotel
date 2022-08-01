@@ -1172,7 +1172,7 @@
                                         *
                                     </sup>
                                 </div>
-                                <input type="text" data-id = 'name' name = "name" maxlength="100" placeholder="Иванов Иван">
+                                <input type="text" name = "name" maxlength="100" placeholder="Иванов Иван">
                                 <div class="popup_form_error js-erorr-name">
                                 </div>
                             </label>
@@ -1291,13 +1291,23 @@
                             </sup>
                         </div>
                         <div class="popup_quantity">
-                            <div class="popup_number js-quantity"><span>0</span><span>&nbsp;взрослых</span></div>
+                            <div class="popup_number js-quantity">
+                                <span>
+                                    0 взрослых
+                                </span>
+                                
+                                <span>
+                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L0.803848 0H11.1962L6 9Z" fill="#50616B"/>
+                                    </svg>
+                                </span>
+                            </div>
                             <div class="popup_dropdown js-quantity-dropdown">
-                                <div class="popup_list" data-id='1'>1</div>
-                                <div class="popup_list" data-id='2'>2</div>
-                                <div class="popup_list" data-id='3'>3</div>
-                                <div class="popup_list" data-id='4'>4</div>
-                                <div class="popup_list" data-id='5'>5</div>
+                                <div class="popup_list" data-id='1'>1 взрослый</div>
+                                <div class="popup_list" data-id='2'>2 взрослых</div>
+                                <div class="popup_list" data-id='3'>3 взрослых</div>
+                                <div class="popup_list" data-id='4'>4 взрослых</div>
+                                <div class="popup_list" data-id='5'>5 взрослых</div>
                             </div>
                         </div>
                     </div>
@@ -1309,14 +1319,24 @@
                             </sup>
                         </div>
                         <div class="popup_quantity">
-                            <div class="popup_number js-quantity"><span>0</span><span>&nbsp;детей</span></div>
+                            <div class="popup_number js-quantity">
+                                <span>
+                                    0 детей
+                                </span>
+                                
+                                <span>
+                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L0.803848 0H11.1962L6 9Z" fill="#50616B"/>
+                                    </svg>
+                                </span>
+                            </div>
                             <div class="popup_dropdown js-quantity-dropdown">
-                                <div class="popup_list" data-id='0'>0</div>
-                                <div class="popup_list" data-id='1'>1</div>
-                                <div class="popup_list" data-id='2'>2</div>
-                                <div class="popup_list" data-id='3'>3</div>
-                                <div class="popup_list" data-id='4'>4</div>
-                                <div class="popup_list" data-id='5'>5</div>
+                                <div class="popup_list" data-id='0'>0 детей</div>
+                                <div class="popup_list" data-id='1'>1 ребенка</div>
+                                <div class="popup_list" data-id='2'>2 ребенка</div>
+                                <div class="popup_list" data-id='3'>3 ребенка</div>
+                                <div class="popup_list" data-id='4'>4 ребенка</div>
+                                <div class="popup_list" data-id='5'>5 детей</div>
                             </div>
                         </div>
                     </div>
@@ -1324,15 +1344,15 @@
                 <div class="reserve_box">
                     <div class="reserve_wrap">
                         <div class="reserve_space">
-                            <div class="reserve_space_button active js-reserve-space-dtn">1 место</div>
-                            <div class="reserve_space_button js-reserve-space-dtn">2 места</div>
-                            <div class="reserve_space_button js-reserve-space-dtn">3 места</div>
+                            <div class="reserve_space_button active js-reserve-space-dtn" data-id='1'>1 место</div>
+                            <div class="reserve_space_button js-reserve-space-dtn" data-id='2'>2 места</div>
+                            <div class="reserve_space_button js-reserve-space-dtn" data-id='3'>3 места</div>
                         </div>
                     </div>
                     <div class="reserve_wrap">
                         <div class="reserve_need">
-                            <div class="reserve_need_button active js-reserve-need-dtn">Не надо</div>
-                            <div class="reserve_need_button js-reserve-need-dtn">Надо</div>
+                            <div class="reserve_need_button active js-reserve-need-dtn" data-id='0'>Не надо</div>
+                            <div class="reserve_need_button js-reserve-need-dtn" data-id='1'>Надо</div>
                         </div>
                     </div>
                 </div>
